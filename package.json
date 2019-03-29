@@ -1,0 +1,34 @@
+{
+  "name": "musings",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.2.0",
+    "axios": "^0.18.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-fade-in": "^0.1.6",
+    "react-lazy-load": "^3.0.13",
+    "react-parallax": "^1.8.0",
+    "react-photo-gallery": "^6.3.2",
+    "react-responsive-carousel": "^3.1.43",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.5",
+    "react-skylight": "^0.5.1",
+    "react-twitter-embed": "^2.0.3",
+    "reactjs-popup": "^1.3.0",
+    "three": "^0.95.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
