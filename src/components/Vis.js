@@ -136,7 +136,26 @@ var content = [
     ],
     length: 17
   },
-  { name: "video", col: [[], [], []], length: 0 },
+  {
+    name: "video",
+    col: [[], [], []],
+    url: [
+      "D4pTO071HWY",
+      "O6o3W5Y0VBs",
+      "fy8_rat_1po",
+      "quxjxidM46E",
+      "OYtsxw30PQ4",
+      "ittkUn-sTXY",
+      "3tgVEHaQYWM",
+      "mFr0CZzlSxM",
+      "RYAuXpsukJQ",
+      "-3CjvaFNjJA",
+      "CrDblBx0zUA",
+      "6IPcP1-vj-g",
+      "OZI_YA_zy9E"
+    ],
+    length: 13
+  },
   {
     name: "homegrown",
     col: [[], [], []],
@@ -148,16 +167,24 @@ var content = [
 for (var type = 0; type < 4; type++) {
   var organizer = 0;
   for (var i = 0; i < content[type].length; i++) {
-    content[type].col[organizer].push(
-      "https://res.cloudinary.com/dgmuzb9mm/image/upload/v" +
-        content[type].url[i] +
-        "/" +
-        content[type].name +
-        "/" +
-        content[type].name +
-        i +
-        ".jpg"
-    );
+    if (type === 2) {
+      content[type].col[organizer].push(
+        "https://www.youtube.com/embed/" +
+          content[type].url[i] +
+          "?modestbranding=1&rel=0"
+      );
+    } else {
+      content[type].col[organizer].push(
+        "https://res.cloudinary.com/dgmuzb9mm/image/upload/v" +
+          content[type].url[i] +
+          "/" +
+          content[type].name +
+          "/" +
+          content[type].name +
+          i +
+          ".jpg"
+      );
+    }
     console.log(content[type].col[organizer]);
     if (organizer === 2) {
       organizer = 0;
@@ -309,47 +336,100 @@ class Vis extends Component {
         <div className="photoDiv">
           <div className="tri">
             {content[this.state.filter].col[0].map((address, index) => {
-              return (
-                <LazyLoad height={200} once>
-                  <img
-                    src={address}
-                    onClick={() => this.handlePop(0, index + 2 * index, index)}
-                    className="photo hover"
-                  />
-                </LazyLoad>
-              );
+              if (this.state.filter === 2) {
+                return (
+                  <LazyLoad height={200} once>
+                    <iframe
+                      title="yt"
+                      className="yt"
+                      width="100%"
+                      height="300px"
+                      src={address}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </LazyLoad>
+                );
+              } else {
+                return (
+                  <LazyLoad height={200} once>
+                    <img
+                      src={address}
+                      onClick={() =>
+                        this.handlePop(0, index + 2 * index, index)
+                      }
+                      className="photo hover"
+                    />
+                  </LazyLoad>
+                );
+              }
             })}
           </div>
 
           <div className="tri">
             {content[this.state.filter].col[1].map((address, index) => {
-              return (
-                <LazyLoad height={200} once>
-                  <img
-                    src={address}
-                    className="photo hover"
-                    onClick={() =>
-                      this.handlePop(1, index + 1 + 2 * index, index)
-                    }
-                  />
-                </LazyLoad>
-              );
+              if (this.state.filter === 2) {
+                return (
+                  <LazyLoad height={200} once>
+                    <iframe
+                      title="yt"
+                      className="yt"
+                      width="100%"
+                      height="300px"
+                      src={address}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </LazyLoad>
+                );
+              } else {
+                return (
+                  <LazyLoad height={200} once>
+                    <img
+                      src={address}
+                      className="photo hover"
+                      onClick={() =>
+                        this.handlePop(1, index + 1 + 2 * index, index)
+                      }
+                    />
+                  </LazyLoad>
+                );
+              }
             })}
           </div>
 
           <div className="tri">
             {content[this.state.filter].col[2].map((address, index) => {
-              return (
-                <LazyLoad height={200} once>
-                  <img
-                    src={address}
-                    className="photo hover"
-                    onClick={() =>
-                      this.handlePop(2, index + 2 + 2 * index, index)
-                    }
-                  />
-                </LazyLoad>
-              );
+              if (this.state.filter === 2) {
+                return (
+                  <LazyLoad height={200} once>
+                    <iframe
+                      title="yt"
+                      className="yt"
+                      width="100%"
+                      height="300px"
+                      src={address}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </LazyLoad>
+                );
+              } else {
+                return (
+                  <LazyLoad height={200} once>
+                    <img
+                      src={address}
+                      className="photo hover"
+                      onClick={() =>
+                        this.handlePop(2, index + 2 + 2 * index, index)
+                      }
+                    />
+                  </LazyLoad>
+                );
+              }
             })}
           </div>
         </div>

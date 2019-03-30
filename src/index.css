@@ -172,6 +172,9 @@ canvas {
 .returnIcon:hover {
   opacity: 0.8;
 }
+.yt {
+  padding-top: 3%;
+}
 .photo {
   width: 100%;
   margin: 0px;
