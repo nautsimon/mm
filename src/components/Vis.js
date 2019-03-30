@@ -152,9 +152,11 @@ var content = [
       "-3CjvaFNjJA",
       "CrDblBx0zUA",
       "6IPcP1-vj-g",
-      "OZI_YA_zy9E"
+      "OZI_YA_zy9E",
+      "y17Ts5t2PxQ",
+      "5EENGXp9eMU"
     ],
-    length: 13
+    length: 15
   },
   {
     name: "homegrown",
@@ -193,7 +195,7 @@ for (var type = 0; type < 4; type++) {
     }
   }
 }
-const align = -50;
+
 class Vis extends Component {
   constructor(props) {
     super(props);
@@ -297,38 +299,38 @@ class Vis extends Component {
         </div>
         <br />
         <div className="topBar">
-          <a className="subMenu">
+          <div className="subMenu">
             <img
               src={photo}
-              alt="photo"
+              alt="phot"
               className="menuIcon"
               onClick={() => this.handleMenu(0)}
             />
-          </a>
-          <a className="subMenu">
+          </div>
+          <div className="subMenu">
             <img
               src={legacy}
-              alt="legacy"
+              alt="legac"
               className="menuIcon"
               onClick={() => this.handleMenu(1)}
             />
-          </a>
-          <a className="subMenu">
+          </div>
+          <div className="subMenu">
             <img
               src={video}
-              alt="video"
+              alt="vide"
               className="menuIcon"
               onClick={() => this.handleMenu(2)}
             />
-          </a>
-          <a className="subMenu">
+          </div>
+          <div className="subMenu">
             <img
               src={original}
-              alt="homegrown"
+              alt="homegrow"
               className="menuIcon"
               onClick={() => this.handleMenu(3)}
             />
-          </a>
+          </div>
         </div>
         <p className="center">
           <i>{content[this.state.filter].name}</i>
@@ -356,6 +358,7 @@ class Vis extends Component {
                   <LazyLoad height={200} once>
                     <img
                       src={address}
+                      alt="img"
                       onClick={() =>
                         this.handlePop(0, index + 2 * index, index)
                       }
@@ -389,6 +392,7 @@ class Vis extends Component {
                   <LazyLoad height={200} once>
                     <img
                       src={address}
+                      alt="img"
                       className="photo hover"
                       onClick={() =>
                         this.handlePop(1, index + 1 + 2 * index, index)
@@ -422,6 +426,7 @@ class Vis extends Component {
                   <LazyLoad height={200} once>
                     <img
                       src={address}
+                      alt="img"
                       className="photo hover"
                       onClick={() =>
                         this.handlePop(2, index + 2 + 2 * index, index)

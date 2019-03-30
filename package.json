@@ -11,6 +11,7 @@
     "react-lazy-load": "^3.0.13",
     "react-lazyload": "^2.5.0",
     "react-parallax": "^1.8.0",
+    "react-pdf": "^4.0.5",
     "react-photo-gallery": "^6.3.2",
     "react-responsive-carousel": "^3.1.43",
     "react-router-dom": "^4.3.1",
