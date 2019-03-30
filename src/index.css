@@ -23,7 +23,26 @@ canvas {
   position: absolute;
   z-index: -1;
 }
-
+.center {
+  text-align: center;
+}
+.popDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+}
+.popOutDiv {
+  width: 80% !important;
+}
+.hover {
+  transition: 0.2s;
+}
+.hover:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
 .landing {
   display: flex;
   flex-direction: row;
@@ -90,18 +109,23 @@ canvas {
 
 /*Display Page Div Styling*/
 .photoDiv {
+  padding: 0px;
   display: inline-flex;
   width: 96%;
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 0px;
 }
-
+.photoF {
+  max-height: 43vh;
+  padding-top: 20px;
+}
 .tri {
   display: flex;
-  margin-left: 1%;
-  margin-right: 1%;
-  flex-basis: 31%;
+
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  flex-basis: 32.3%;
   flex-direction: column;
 }
 .topBar {
@@ -150,15 +174,34 @@ canvas {
 }
 .photo {
   width: 100%;
-  padding: 4px;
+  margin: 0px;
+  padding: 4px 0px;
   -webkit-transition: transform 2s; /* For Safari 3.1 to 6.0 */
   transition: transform 2s;
+}
+
+.dialogStyles {
+  background-color: #ffffff;
+  height: 45vh;
+  text-align: center;
+  width: 80%;
+
+  /* margin-left: -42vw; */
+}
+
+@media screen and (max-width: 880px) {
+  .photoF {
+    max-height: 400000000px;
+    width: 80%;
+    margin: 0px;
+  }
 }
 @media screen and (max-width: 660px) {
   .aboutDiv {
     margin-top: 95vh;
     left: 95%;
   }
+
   .landing {
     flex-direction: column;
   }
@@ -169,8 +212,10 @@ canvas {
   .photoDiv {
     display: inline-block;
   }
-  .tri {
+  .tri,
+  .photo {
     width: 100%;
-    margin: 0%;
+    margin: 0px;
+    padding: 4px 0px;
   }
 }

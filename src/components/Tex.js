@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import suit from "../img/suit.png";
 import original from "../img/original.png";
-import all from "../img/all.png";
+import all from "../img/picture.png";
 import inspire from "../img/inspire.png";
 import returnImg from "../img/return.png";
 import PopulateText from "./PopulateText";
