@@ -210,7 +210,7 @@ class Vis extends Component {
           backgroundColor: "#ffffff",
           minHeight: "auto",
           top: 0,
-          marginTop: "5%"
+          marginTop: "15%"
         }
       });
     } else {
