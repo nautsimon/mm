@@ -205,7 +205,7 @@ class Vis extends Component {
       this.setState({
         popupStyle: {
           width: "80%",
-          marginLeft: "-42vw",
+          marginLeft: "-42.2vw",
           textAlign: "center",
           backgroundColor: "#ffffff",
           minHeight: "auto",
@@ -222,7 +222,7 @@ class Vis extends Component {
           backgroundColor: "#ffffff",
           minHeight: "auto",
           top: 0,
-          marginTop: "5%"
+          marginTop: "10%"
         }
       });
     }
