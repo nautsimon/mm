@@ -5,8 +5,8 @@
   "dependencies": {
     "@tweenjs/tween.js": "^17.2.0",
     "axios": "^0.18.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-fade-in": "^0.1.6",
     "react-lazy-load": "^3.0.13",
     "react-lazyload": "^2.5.0",

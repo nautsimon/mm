@@ -86,6 +86,13 @@ canvas {
   height: 100%;
   opacity: 1;
 }
+.bikeDiv {
+  position: fixed;
+  left: 50%;
+  margin-left: -9px;
+  z-index: 500;
+  margin-top: 3vh;
+}
 .aboutDiv {
   position: fixed;
   left: 50%;
@@ -93,17 +100,21 @@ canvas {
   z-index: 500;
   margin-top: 95vh;
 }
-.aboutIcon {
+.aboutIcon,
+.bikeIcon {
   width: 20px;
   pointer-events: all;
+  transition: 0.3s;
 }
-.aboutIcon:hover {
+.aboutIcon:hover,
+.bikeIcon:hover {
   opacity: 0.6;
 }
 .titleTextDiv {
   z-index: 100;
   width: 100%;
   height: 100vh;
+  transition: 0.3s;
 }
 .titleTextDiv:hover {
   opacity: 0.8;
@@ -120,7 +131,6 @@ canvas {
   margin-top: 0px;
 }
 .photoF {
-  max-height: 43vh;
   padding-top: 20px;
 }
 .tri {
@@ -276,19 +286,15 @@ canvas {
   /* margin-left: -42vw; */
 }
 
-@media screen and (max-width: 880px) {
-  .photoF {
-    max-height: 400000000px;
-    width: 80%;
-    margin: 0px;
-  }
-}
 @media screen and (max-width: 660px) {
   .aboutDiv {
     margin-top: 95vh;
     left: 95%;
   }
-
+  .bikeDiv {
+    margin-top: 95vh;
+    left: 5%;
+  }
   .landing {
     flex-direction: column;
   }
@@ -315,6 +321,11 @@ canvas {
   .inspireTex,
   .originalTex,
   .mmTex {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .photoF {
     width: 100%;
   }
 }

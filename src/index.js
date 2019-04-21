@@ -4,9 +4,13 @@ import "./index.css";
 
 // import Scene from "./components/ThreeRender";
 import About from "./components/About";
+// import Pro from "./components/Pro";
 import Tex from "./components/Tex";
+import Bike from "./components/Bike";
 import Vis from "./components/Vis";
 import aboutIcon from "./img/aboutIcon.png";
+import bikeIcon from "./img/bikeIcon.png";
+// import projectIcon from "./img/inspire.png";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Route from "react-router-dom/Route";
 
@@ -23,6 +27,24 @@ class App extends Component {
               return (
                 <div>
                   <div className="landing">
+                    {/* <div className="aboutDiv">
+                      <Link to="/pro" className="linkStyle">
+                        <img
+                          className="aboutIcon"
+                          alt="aboutIco"
+                          src={projectIcon}
+                        />
+                      </Link>
+                    </div> */}
+                    <div className="bikeDiv">
+                      <Link to="/bike" className="linkStyle">
+                        <img
+                          className="bikeIcon"
+                          alt="bikeIco"
+                          src={bikeIcon}
+                        />
+                      </Link>
+                    </div>
                     <div className="aboutDiv">
                       <Link to="/about" className="linkStyle">
                         <img
@@ -32,6 +54,7 @@ class App extends Component {
                         />
                       </Link>
                     </div>
+
                     <div className="landLeft">
                       <Link to="/vis" className="linkStyle">
                         <div className="titleTextDiv">
@@ -83,6 +106,22 @@ class App extends Component {
               return <About />;
             }}
           />
+          <Route
+            path="/bike"
+            exact
+            strict
+            render={() => {
+              return <Bike />;
+            }}
+          />
+          {/* <Route
+            path="/pro"
+            exact
+            strict
+            render={() => {
+              return <Pro />;
+            }}
+          /> */}
         </div>
       </Router>
     );

@@ -10,13 +10,17 @@ import original from "../img/original.png";
 import returnImg from "../img/return.png";
 import { Link } from "react-router-dom";
 // var popupStyle = {
-//   // height: "64vh"
-//   // marginTop: "-300px",
-//   // marginLeft: "-35%"
+//   width: "400px",
+//   left: "50%",
+//   marginLeft: "-216px",
+//   textAlign: "center",
+//   backgroundColor: "#ffffff",
+//   minHeight: "auto"
 // };
 var content = [
   {
     name: "photo",
+    popUrl: [],
     col: [[], [], []],
     url: [
       1553831078,
@@ -94,6 +98,7 @@ var content = [
   },
   {
     name: "legacy",
+    popUrl: [],
     col: [[], [], []],
     url: [
       1553934050,
@@ -160,6 +165,7 @@ var content = [
   },
   {
     name: "homegrown",
+    popUrl: [],
     col: [[], [], []],
     url: [1553930821, 1553930822, 1553930821],
     captions: ["whip", "whip", "whip"],
@@ -186,7 +192,19 @@ for (var type = 0; type < 4; type++) {
           i +
           ".jpg"
       );
+      content[type].popUrl.push(
+        "https://res.cloudinary.com/dgmuzb9mm/image/upload/" +
+          "w_400,c_fill,ar_4:3/v" +
+          content[type].url[i] +
+          "/" +
+          content[type].name +
+          "/" +
+          content[type].name +
+          i +
+          ".jpg"
+      );
     }
+    console.log("popual: ", content[type].popUrl);
     console.log(content[type].col[organizer]);
     if (organizer === 2) {
       organizer = 0;
@@ -204,7 +222,8 @@ class Vis extends Component {
       img: "x",
       caption: "x",
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
+      popupStyle: {}
     };
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
@@ -230,28 +249,26 @@ class Vis extends Component {
 
   updateStyle() {
     console.log(this.state.width);
-    if (this.state.width < 880) {
+    if (this.state.width < 460) {
       this.setState({
         popupStyle: {
           width: "80%",
-          marginLeft: "-42.2vw",
+          left: "50%",
+          marginLeft: "-45%",
           textAlign: "center",
           backgroundColor: "#ffffff",
-          minHeight: "auto",
-          top: 0,
-          marginTop: "15%"
+          minHeight: "auto"
         }
       });
     } else {
       this.setState({
         popupStyle: {
-          width: "45%",
-          marginLeft: "-24vw",
+          width: "400px",
+          left: "50%",
+          marginLeft: "-216px",
           textAlign: "center",
           backgroundColor: "#ffffff",
-          minHeight: "auto",
-          top: 0,
-          marginTop: "10%"
+          minHeight: "auto"
         }
       });
     }
@@ -267,7 +284,7 @@ class Vis extends Component {
     console.log("colNum: ", colNum);
     this.setState(
       {
-        img: content[this.state.filter].col[colNum][index],
+        img: content[this.state.filter].popUrl[indexFull],
         caption: content[this.state.filter].captions[indexFull]
       },
       this.phoPop.show()
@@ -287,6 +304,9 @@ class Vis extends Component {
               <img src={this.state.img} alt="photo" className="photoF" />
               <p>
                 <i>"{this.state.caption}"</i>
+              </p>
+              <p>
+                <i>""</i>
               </p>
             </div>
           </div>
