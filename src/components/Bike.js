@@ -125,9 +125,20 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/12/19",
+    location: "Case Western Reserve University to Toledo",
+    miles: 120,
+    money: 40,
+    captions: [
+      "CLE",
+      "flat",
+      "shoddy patching job",
+      "barn",
+      "yes",
+      "MLK bridge @ Toledo"
+    ],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Woke up not feeling strong. Realized I forgot to plan for today. there’s supposed to be a big rainstorm and snow from Cleveland to Toledo tomorrow which gave me two options: bike to Sandusky, camp, then brave the horrible weather the following day or just bike 120 miles to Toledo all in one day. After staring at some weather maps for half an hour I said f*ck it and chose the latter. I did hop on the red line rta to cle Bc f*ck you. Anyways started from cle. Felt tired Bc I kept waking up in the night plus I didn’t eat too much the previous night shoutout to Zoe for the chicken though. Biked route 6 along lake eerie. Lots of big ass houses. Stopped in Lorain for a god subway sub. Continued smashing miles until like 8 miles out from Huron. Ran over some sharp metal and got a flat. Spent two hours trying to fix it. Bernie, the bike homie who hooked me up with my extra inner tubes gave me ones that were too big. Was definitely feeling the bern. Had to patch the tires. Repatched my tube at least three times before realizing that the little piece of metal had cut both sides of my tube. After fixing that I continued on my way. Had to pump up every mile or so Bc patches are weak. Fell asleep at some random Dairy Queen by mistake. Got to Huron. Had no clue of what to do. Still had 65+ miles to go and it was already 5. I’m paying for the cheapest data plan so I can’t like set routes or look for bike shops unless I’m on WiFi so I found some cafe and wasted half an hour trying to figure out what to do. Decided I was gonna bike to dicks in Sandusky to get a new tube. Biked to dicks. A bro helped me out. Bought a strong headlight. South Sandusky smells like butt. Stopped in a McDonald’s. Deposited a large load in their toilet.Then began my 62 mile ride to Toledo in the dark. I’ve never biked more than 85 miles before. I didn’t really train for this either but honestly it wasn’t that bad. I bumped music. Raced a train and won. Got 5$ pizza at Fremont. Called Jan, a paramedic I used to work with who introduced me to 5$ pizza. He actually was actually like a yard away from the dudes when a man get popped in the face at ummc. He’s a huge dad and bought me food and stuff in the struggle days. Thanked Jan. My headlight was jumpin with lumens. Saw tons of cats. Arrived to Toledo at 1."
   },
   {
     day: "day_8",
@@ -142,9 +153,20 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/11/19",
+    location: "Youngstown to Case Western Reserve University",
+    miles: 69,
+    money: 2,
+    captions: [
+      "BAIL BONDS",
+      "farmin ft clouds coming in",
+      "lunch",
+      "??",
+      "bridge",
+      "nature walk"
+    ],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "left joys house at 730. She made me a bomb breakfast and even packed me a lunch. Thank you mommy. Saw the clouds coming in all morning. Got mega dripped on and got soaked. Saw lots of Amish people. Ate joys lunch under a Walgreens overhang. Started biking again but thunder and lighting started coming down so I chilled in a McDonald’s for two hours to wait out the rain. Had the saddest 1$ hamburger. Met this woman in the McDonald’s that was trying to solve a Rubik’s cube. I told her that there are algorithms that smart people figured out for the cube. She insisted that because she had figured out sudoku herself that she could solve a cube by herself. Good luck McDonald’s lady. Biked the rest of the way to case at 2. Encountered lots of hills. Will the pizza guy from yesterday said that Ohio was flat. The only thing flat about today was the Fanta I had at McDonald’s. Got to case. Engaged in some dummy behavior. Met some cool dudes. Went on a nature walk."
   },
   {
     day: "day_7",
@@ -154,14 +176,28 @@ var days = [
       1555921078,
       1555921114,
       1555942748,
-      1555917111
+      1555917111,
+      1555963201
     ],
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+
+    date: "04/10/19",
+    location: "Pittsburgh to Youngstown",
+    miles: 81,
+    money: 2.39,
+    captions: [
+      "on the road",
+      "abandoned",
+      "the rusty staircase",
+      "cleared the staircase",
+      "trail in ohio",
+      "youngstown cemetary",
+      "Will"
+    ],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Left Wyatt’s house at 8. Almost perished Bc I was biking on a skinny path next to the road and my left pannier bumped into a telephone phone that sent me into oncoming traffic. Car swerved barely missing me, smh. Got to this bridge but it was closed so I had to take a 5 mile detour up a mountain. Google maps bike trail api or whatever wrecked me as well and took me to a highway with no side room for me to bike. Had to walk two miles on the other side of the impact barrier. So many bushes and trash. Got to this rusty staircase that went down to train tracks and a road. Was done with walking so I moved my bike on the staircase. I had to stand on the impact barrier and lift my bike over the rail as shown on pic two. Then I had to push through all the branches and stuff on the stairs while carrying my bike and stuff. Once I cleared that I felt invincible. Crushed the rest of the trip. Met a nice guy named will who bought me a pizza. Love you will. Secured pizza box with my jacket and finished it in Youngstown. Staying in joys house. She’s a nice mom and professor. Saw lots road kill at least."
   },
   {
     day: "day_6",
@@ -169,9 +205,14 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/09/19",
+    location: "Pittsburgh",
+    miles: 0,
+    money: 5,
+    captions: ["upitt", "the triangle", "flex"],
+
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Explored, rested, worked on rd recicla, payed 150$ worth of speeding tickets, learned adobe pro, made new friends, showered, relaxed, and healed my ass. "
   },
   {
     day: "day_5",
@@ -179,9 +220,13 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/08/19",
+    location: "Pittsburgh",
+    miles: 0,
+    money: 0,
+    captions: ["@luisorlouie", "alley", "getting my bike oiled up"],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Explored and went out to dinner with wyatt and his friends. Went down to the Triangle and saw lots of cool stuff. "
   },
   {
     day: "day_4",
@@ -199,9 +244,23 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    captions: [
+      "break",
+      "pretty",
+      "bridhe",
+      "red",
+      "bike",
+      "white",
+      "train",
+      "friend",
+      "back"
+    ],
+    date: "04/07/19",
+    location: " Ohiopyle to Pittsburgh",
+    miles: 75,
+    money: 50,
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Biked to Pittsburgh, went fast so I would arrive early. Had another godly subway sandwich. Tried taking a shortcut through an abandoned building in Pittsburgh and a cop rolled up out of no where and told me it was private property. Took my first shower in 5 days. My ass is ruined. My legs are super sore and the ligaments under my knee hurt so bad. Anyways, my ass. In the shower chunks of skin were peeling off. It’s literally like a huge exposed blister with a big bruise underneath. Gonna stay awhile to heal. That’s what I get for literally doing no training 🤡. Bought a lot of pizza and played smash with Wyatt, the couchsurfing host/upitt student and his roommates and friends. Good time. "
   },
   {
     day: "day_3",
@@ -246,6 +305,7 @@ var days = [
       "dinner",
       "sleep spot"
     ],
+    date: "04/06/19",
     location: " Mt Savage viewpoint to Ohiopyle",
     miles: 64,
     money: 25,
@@ -509,7 +569,9 @@ class Vis extends Component {
                   dollars spent
                 </p>
               </div>
-              <p className="center photoDiv smallFont">{day.text}</p>
+              <div className="outerBikeDiv">
+                <p className="center  smallFont">{day.text}</p>
+              </div>
               <div className="photoDiv">
                 <div className="tri">
                   {day.col[0].map((address, index) => {

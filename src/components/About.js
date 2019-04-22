@@ -15,8 +15,6 @@ class PopulateText extends Component {
                 <img src={returnImg} alt="return" className="returnIconAbout" />
               </Link>
             </div>
-            <h1 className="abouth1">fools log</h1>
-            <p className="aboutText">life is pain</p>
           </div>
           <img className="aboutPhoto" src={simonDumb} alt="simonDumb" />
           <p className="aboutText">
@@ -37,9 +35,9 @@ class PopulateText extends Component {
           <p className="aboutText">
             <b>shoe size:</b> 9.5US
           </p>
-          <Link to="/projects" className="linkStyle">
-            <b className="aboutLink">PROJECTS</b>
-          </Link>
+
+          <b className="aboutLink">PROJECTS (coming soon eventually)</b>
+
           <p className="aboutText">
             <b>
               <a className="aboutLink" href="https://instagram.com/simonmahns/">
