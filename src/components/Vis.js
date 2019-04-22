@@ -221,6 +221,7 @@ class Vis extends Component {
       filter: 0,
       img: "x",
       caption: "x",
+      link: "x",
       width: window.innerWidth,
       height: window.innerHeight,
       popupStyle: {}
@@ -285,6 +286,7 @@ class Vis extends Component {
     this.setState(
       {
         img: content[this.state.filter].popUrl[indexFull],
+        link: content[this.state.filter].col[colNum][index],
         caption: content[this.state.filter].captions[indexFull]
       },
       this.phoPop.show()
@@ -301,12 +303,11 @@ class Vis extends Component {
         >
           <div className="popDiv">
             <div>
-              <img src={this.state.img} alt="photo" className="photoF" />
+              <a href={this.state.link}>
+                <img src={this.state.img} alt="photo" className="photoF" />
+              </a>
               <p>
                 <i>"{this.state.caption}"</i>
-              </p>
-              <p>
-                <i>""</i>
               </p>
             </div>
           </div>

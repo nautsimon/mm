@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 
@@ -14,11 +16,17 @@ html {
 @-ms-viewport {
   width: device-width;
 }
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 
 /*Front Page Div Styling*/
 a {
   text-decoration: none;
+}
+
+.bottomBord {
+  border-bottom: 1px solid #2c3e50;
+  margin: 0px 2%;
+
+  margin-bottom: 40px;
 }
 canvas {
   width: 100%;
@@ -41,6 +49,31 @@ canvas {
 }
 .hover {
   transition: 0.2s;
+  cursor: pointer;
+}
+.dayDiv {
+  padding-bottom: 40px;
+}
+.menuBike {
+  margin: 0px;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+.absol {
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: 140px;
+  z-index: -1;
+}
+.outerBikeDiv {
+  margin: 0px 1%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .hover:hover {
   opacity: 0.8;
@@ -51,6 +84,9 @@ canvas {
   flex-direction: row;
   width: 100%;
   height: 100vh;
+}
+.smallFont {
+  font-size: 13px;
 }
 .landLeft {
   background: #c6ffdd; /* fallback for old browsers */
@@ -132,6 +168,10 @@ canvas {
 }
 .photoF {
   padding-top: 20px;
+  transition: 0.3s;
+}
+.photoF:hover {
+  opacity: 0.7;
 }
 .tri {
   display: flex;
