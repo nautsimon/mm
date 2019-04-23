@@ -21,6 +21,7 @@ var content = [
   {
     name: "photo",
     popUrl: [],
+    ogUrl: [],
     col: [[], [], []],
     url: [
       1553831078,
@@ -98,6 +99,7 @@ var content = [
   },
   {
     name: "legacy",
+    ogUrl: [],
     popUrl: [],
     col: [[], [], []],
     url: [
@@ -144,6 +146,7 @@ var content = [
   {
     name: "video",
     col: [[], [], []],
+
     url: [
       "D4pTO071HWY",
       "O6o3W5Y0VBs",
@@ -166,6 +169,7 @@ var content = [
   {
     name: "homegrown",
     popUrl: [],
+    ogUrl: [],
     col: [[], [], []],
     url: [1553930821, 1553930822, 1553930821],
     captions: ["whip", "whip", "whip"],
@@ -174,16 +178,24 @@ var content = [
 ];
 for (var type = 0; type < 4; type++) {
   var organizer = 0;
-  for (var i = 0; i < content[type].length; i++) {
-    if (type === 2) {
+  if (type == 2) {
+    for (var i = 0; i < content[type].url.length; i++) {
       content[type].col[organizer].push(
         "https://www.youtube.com/embed/" +
           content[type].url[i] +
           "?modestbranding=1&rel=0"
       );
-    } else {
+
+      if (organizer === 2) {
+        organizer = 0;
+      } else {
+        organizer++;
+      }
+    }
+  } else {
+    for (var i = 0; i < content[type].captions.length; i++) {
       content[type].col[organizer].push(
-        "https://res.cloudinary.com/dgmuzb9mm/image/upload/v" +
+        "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco/v" +
           content[type].url[i] +
           "/" +
           content[type].name +
@@ -194,7 +206,7 @@ for (var type = 0; type < 4; type++) {
       );
       content[type].popUrl.push(
         "https://res.cloudinary.com/dgmuzb9mm/image/upload/" +
-          "w_400,c_fill,ar_4:3/v" +
+          "q_auto:eco,w_400,c_fill,ar_4:3/v" +
           content[type].url[i] +
           "/" +
           content[type].name +
@@ -203,13 +215,22 @@ for (var type = 0; type < 4; type++) {
           i +
           ".jpg"
       );
-    }
-    console.log("popual: ", content[type].popUrl);
-    console.log(content[type].col[organizer]);
-    if (organizer === 2) {
-      organizer = 0;
-    } else {
-      organizer++;
+      content[type].ogUrl.push(
+        "https://res.cloudinary.com/dgmuzb9mm/image/upload/v" +
+          content[type].url[i] +
+          "/" +
+          content[type].name +
+          "/" +
+          content[type].name +
+          i +
+          ".jpg"
+      );
+
+      if (organizer === 2) {
+        organizer = 0;
+      } else {
+        organizer++;
+      }
     }
   }
 }
@@ -286,7 +307,7 @@ class Vis extends Component {
     this.setState(
       {
         img: content[this.state.filter].popUrl[indexFull],
-        link: content[this.state.filter].col[colNum][index],
+        link: content[this.state.filter].ogUrl[indexFull],
         caption: content[this.state.filter].captions[indexFull]
       },
       this.phoPop.show()
@@ -303,6 +324,7 @@ class Vis extends Component {
         >
           <div className="popDiv">
             <div>
+              <p className="absol">click to view raw img</p>
               <a href={this.state.link}>
                 <img src={this.state.img} alt="photo" className="photoF" />
               </a>

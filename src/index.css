@@ -29,7 +29,7 @@ a {
   margin-bottom: 40px;
 }
 canvas {
-  width: 100%;
+  width: 50%;
   height: 100vh;
   position: absolute;
   z-index: -1;
@@ -89,19 +89,20 @@ canvas {
   font-size: 13px;
 }
 .landLeft {
-  background: #c6ffdd; /* fallback for old browsers */
+  background: transparent;
+  /* background: #c6ffdd; 
   background: -webkit-linear-gradient(
     to right,
     #f7797d,
     #fbd786,
     #c6ffdd
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #f7797d,
     #fbd786,
     #c6ffdd
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );  */
 }
 .landRight {
   background: #bdc3c7; /* fallback for old browsers */
@@ -147,6 +148,7 @@ canvas {
   opacity: 0.6;
 }
 .titleTextDiv {
+  background: transparent;
   z-index: 100;
   width: 100%;
   height: 100vh;
@@ -327,6 +329,9 @@ canvas {
 }
 
 @media screen and (max-width: 660px) {
+  canvas {
+    width: 100%;
+  }
   .aboutDiv {
     margin-top: 5vh;
     left: 95%;
