@@ -25,96 +25,96 @@ const musings = [
   { musing: "whip and nae", date: "09/24/1999" }
 ];
 const inspiringTexts = [
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  }
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // }
 ];
 const homegrownTexts = [
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  },
-  {
-    name1: "pale blue dot | Carl Sagan",
-    address1:
-      "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
-    name2: "edgy commentary on war | Von Moltke",
-    address2:
-      "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
-  }
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // },
+  // {
+  //   name1: "pale blue dot | Carl Sagan",
+  //   address1:
+  //     "https://drive.google.com/file/d/1UeqA_Bh-PrfNNOmcVyrWtt2Qf8qRdIfR/view?usp=sharing",
+  //   name2: "edgy commentary on war | Von Moltke",
+  //   address2:
+  //     "https://drive.google.com/file/d/1u1-m3eazPqeyYfMsTPUNjuT9hkEJWjho/view?usp=sharing"
+  // }
 ];
 class Tex extends Component {
   constructor(props) {
@@ -134,7 +134,7 @@ class Tex extends Component {
             <img src={returnImg} alt="return" className="returnIcon" />
           </Link>
         </div>
-
+        <p className="center"> under construction my g</p>
         <div className="textDiv">
           <div className="originalTex center">
             <p>
