@@ -89,20 +89,10 @@ canvas {
   font-size: 13px;
 }
 .landLeft {
-  background: transparent;
-  /* background: #c6ffdd; 
-  background: -webkit-linear-gradient(
-    to right,
-    #f7797d,
-    #fbd786,
-    #c6ffdd
-  ); 
-  background: linear-gradient(
-    to right,
-    #f7797d,
-    #fbd786,
-    #c6ffdd
-  );  */
+  /* background: transparent; */
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
 }
 .landRight {
   background: #bdc3c7; /* fallback for old browsers */
