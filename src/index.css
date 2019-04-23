@@ -328,11 +328,11 @@ canvas {
 
 @media screen and (max-width: 660px) {
   .aboutDiv {
-    margin-top: 95vh;
+    margin-top: 5vh;
     left: 95%;
   }
   .bikeDiv {
-    margin-top: 95vh;
+    margin-top: 5vh;
     left: 5%;
   }
   .landing {

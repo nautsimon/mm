@@ -25,9 +25,13 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    captions: ["bonfire"],
+    date: "04/21/19",
+    location: "Chicago",
+    miles: 0,
+    money: 3,
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "left the apt at 3. couldnt get my bike bc the security guard was ignorant. Carried my panniers to the blue line. got picked up by lily. shes cool, deciding between princeton and colorado college. Ate dinner at her house. Drank some Bougie wine. It was a passover/easter dinner. Everyone was so cool. Had a little bonfire afterwards. Later that night I started working on this. Sifted through all my pics. Stayed up until 330am working on this damn site. Watched the new GOT episode, Inception, and The Prestige in the process. "
   },
   {
     day: "day_16",
@@ -35,9 +39,13 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    captions: ["up in da apt", "420", "statue"],
+    date: "04/20/19",
+    location: "Chicago",
+    miles: 0,
+    money: 17,
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Woke up, worked on Rd Recicla. Almost done. Little 420 event in this bougie chicago apt. Walked around millennium park area. Roch a huge english skater man led the way. Celebrated. Skaters pulled up. Danced. ate cereal. Went back to the apt. Hung out. Two asian girls pulled up. Split an uber to go to the fashion showcase in east chicago. Pretty cool place. megan and i left early. Stopped and got some subway cookies. blue/redline back. drake and josh. case pulled up. they went to a show. watched spongebob w/meg. finished Rd Recicla. passed out after it worked on mobile."
   },
   {
     day: "day_15",
@@ -52,9 +60,20 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    captions: [
+      "quadrangles",
+      "hot",
+      "talent",
+      "singing",
+      "punk rock",
+      "megan's chinese food"
+    ],
+    date: "04/19/19",
+    location: "Chicago",
+    miles: 0,
+    money: 12,
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Ate in Cathy. Saw Lucy from the Alaska Middle school days. Wild. Bought a shirt with some ghostbuster goons. Walked around campus with some ghostbusters. Stopped by the Oriental museum. Went back to inner Chicago with the Metra. Went to a fashion show rehearsal with megan. Went to the actual fashion show with megan. Megan performed. Absolutely killed it. Talented. Went to get some food afterwards with her, case, and hannah. Went to Harry's. Watched spongebob with megan. Geeked. Tried Dill Chips. Pretty good. Megan resolved a long time polygon related issue."
   },
   {
     day: "day_14",
@@ -62,9 +81,18 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/18/19",
+    location: "Chicago",
+    miles: 0,
+    money: 0,
+    captions: [
+      "ghost busters",
+      "another group photo",
+      "growth spurt/i love ibra",
+      "growth spurt/i love ibra"
+    ],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "First night of the UChicago overnight. Sat in on a cs security class. Took a tour of the physics building. Hung out. My host showed me the cs building and a few Astrophysics labs. I am ecstatic and beyond excited to start school. Played smash. Went to a root beer float party in max p. Went to a hitchcock house meeting, it was bizarre to say the least. Jayson and I dipped. Hung out in south for a bit. Stopped by a frat party. Went to a boba party. Ate homemade pretzels and cheese. Slept at midnight. So excited to start school. "
   },
   {
     day: "day_13",
@@ -72,9 +100,13 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/17/19",
+    location: "South Bend to Chicago",
+    miles: 0,
+    money: 0,
+    captions: ["bean", "bean gang"],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "Took the ssl into Chicago. Worked 8 hours straight in a cafe answering emails, cooking up some footage and working on rd recicla. Still got tons responsibilities on this trip. Smh. Linked up with Megan. Ate some good ass burgers. Walked around. Started my YouTube vlogging career. Acted like a fool. Saw like 20 bike police try to break up a big fight. We almost got murked by some geese. Made ice cream cookie sandwich’s. Pulled up to this kid Harry’s bday. Hype to meet uchicago homies tomorrow."
   },
   {
     day: "day_12",
@@ -91,9 +123,22 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/16/19",
+    location: "Angola to South Bend",
+    miles: 75,
+    money: 15,
+    captions: [
+      "road",
+      "pig",
+      "friend",
+      "goodbye",
+      "damn",
+      "damn",
+      "dinner",
+      "sleep"
+    ],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "woke up at 8. My hosts had spread out a feast of bagels doughnuts and muffins. I ate. Left at 9. Went through a lot of yeehaw country. Country music hits different in the country. (Re?)discovered mean by Taylor Swift. Bumped that. Met a bunch of Amish people. Amish people are the nicest people ever. Stopped at this place called blue gate bakery. Had the best doughnut of all time. It had this glaze nicknamed Amish crack. Good stuff. Finally got around to adjusting my seat. Lifted it up like two inches and my knees instantly stopped bitching as hard as they usually do. i really messed around an injured myself Bc I procrastinated lifting up my seat. Smh. Met a feline homie on a trail. We became close friends. Felt bad when I just left him. Sorry bro, gotta get to Alaska. Ate a good as Argentinian sandwich for dinner. Sleeping in the south bend airport tonight."
   },
   {
     day: "day_11",
@@ -108,9 +153,27 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["regret", "departing my apt", "harbor", "cars", "break"],
+    date: "04/15/19",
+    location: "Toledo to Angola",
+    miles: 81,
+    money: 0,
+    captions: ["trees", "power", "corn", "rest", "my house", "posted up"],
     text:
-      "ended up leaving 12 hours late today. Spent the morning commuting back to Baltimore after borrowing Elaine’s car to move my couch to Ron’s dorm at around 1am. Once I got back to my apt, I spent the rest of the day cleaning all my shit to ensure I got all of my deposit (food) money back. Also walked to ups to return my router. Left Baltimore around 545pm. Biked in the dark for awhile. Started thinking about the extremely high possibility of becoming a part of a YouTube video like “top ten people who mysteriously disappeared” or “ten pictures taken before a tragic death” and having a picture of me with like ten circles photoshopped onto it as a video thumb nail... ultra mega poopy. Anyways, I got a little past mt airy at like 1130pm and Katherine looked at my location and saw I was biking in the dark so she ducking drove out and picked me up 😂😂😂😂😂😂😂😂. Ended up sleeping at the Bukis instead of at fspace. Overall pretty poopy day."
+      "stayed in two houses. My first host was the coolest mf ever. First of all when I told him I was rolling up at 1am he was just like “ok I’ll leave the front door unlocked”. I pulled up to his house last night at 1am and opened the door and it was like a ligit mueseum. Mans like traveled everywhere and has like artifacts literally everywhere. Bro let me hit his didgeridoo. He has all these cool ass paintings on the walls and in the vents too. In his bedroom he has the Michelangelo creation of Adam on the ceiling and these hand sculptures on the window seals. He also had this self sustaining garden with snails and fish that somehow contribute through their poop and stuff. It was wild. When I woke up he walked outside and got fresh eggs from his hens. He spent awhile today singing and recording music. He played some music of his own creation, see final slide. Man is a living legend. At 5 I did a slow rollover to Toledo university, where I’m at rn. Jack, the guy I’m staying with, is a senior at toledo uni and the raddest man alive. Jack is A botanist of sorts (of the fungi variety), a rock climber and an intelligent physics major. Dudes even interned a cern. What a god. Made some pasta, jack made good sauce. Got my trail mix reserve refilled. My knees hurt."
+  },
+  {
+    day: "day_10",
+    url: [1555947846, 1555947988, 1555947838, 1555954579],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    date: "04/14/19",
+    location: "Toledo",
+    miles: 0,
+    money: 0,
+    captions: ["yo lemmie hit that", "art", "cooking up with Jack"],
+    text:
+      "stayed in two houses. My first host was the coolest mf ever. First of all when I told him I was rolling up at 1am he was just like “ok I’ll leave the front door unlocked”. I pulled up to his house last night at 1am and opened the door and it was like a ligit museum. Dude had all the artifacts and souvenirs from his may travels spread throughout his house. Bro let me hit his didgeridoo. He has all these cool ass paintings on the walls and in the vents too. In his bedroom he has the Michelangelo creation of Adam on the ceiling and these hand sculptures on the window seals. He also had this self sustaining garden with snails and fish that somehow contribute through their poop and stuff. It was wild. When I woke up he walked outside and got fresh eggs from his hens. He spent awhile today singing and recording music. He played some music of his own creation. Man is a living legend. At 5 I did a slow rollover to Toledo university, where I’m at rn. Jack, the guy I’m staying with, is a senior at toledo uni and the raddest man alive. Jack is A botanist of sorts (of the fungi variety), a rock climber and an intelligent physics major. Dudes even interned a cern. What a god. Made some pasta, jack made good sauce. Got my trail mix reserve refilled. My knees hurt."
   },
   {
     day: "day_9",
@@ -125,7 +188,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    date: "04/12/19",
+    date: "04/13/19",
     location: "Case Western Reserve University to Toledo",
     miles: 120,
     money: 40,
@@ -153,7 +216,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    date: "04/11/19",
+    date: "04/12/19",
     location: "Youngstown to Case Western Reserve University",
     miles: 69,
     money: 2,
@@ -183,7 +246,7 @@ var days = [
     popUrl: [],
     ogUrl: [],
 
-    date: "04/10/19",
+    date: "04/11/19",
     location: "Pittsburgh to Youngstown",
     miles: 81,
     money: 2.39,
@@ -205,7 +268,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    date: "04/09/19",
+    date: "04/10/19",
     location: "Pittsburgh",
     miles: 0,
     money: 5,
@@ -220,7 +283,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    date: "04/08/19",
+    date: "04/09/19",
     location: "Pittsburgh",
     miles: 0,
     money: 0,
@@ -255,7 +318,7 @@ var days = [
       "friend",
       "back"
     ],
-    date: "04/07/19",
+    date: "04/08/19",
     location: " Ohiopyle to Pittsburgh",
     miles: 75,
     money: 50,
@@ -305,7 +368,7 @@ var days = [
       "dinner",
       "sleep spot"
     ],
-    date: "04/06/19",
+    date: "04/07/19",
     location: " Mt Savage viewpoint to Ohiopyle",
     miles: 64,
     money: 25,
@@ -348,7 +411,7 @@ var days = [
   },
   {
     day: "day_1",
-    date: "04/05/19",
+
     url: [
       1555910846,
       1555911105,
@@ -370,6 +433,7 @@ var days = [
       "pitch black darkness",
       "hancock"
     ],
+    date: "04/05/19",
     location: "Frederick to Indigo Neck Campground",
     miles: 70,
     money: 10,
