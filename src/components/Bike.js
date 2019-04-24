@@ -31,7 +31,7 @@ var days = [
     miles: 0,
     money: 3,
     text:
-      "left the apt at 3. couldnt get my bike bc the security guard was ignorant. Carried my panniers to the blue line. got picked up by lily. shes cool, deciding between princeton and colorado college. Ate dinner at her house. Drank some Bougie wine. It was a passover/easter dinner. Everyone was so cool. Had a little bonfire afterwards. Later that night I started working on this. Sifted through all my pics. Stayed up until 330am working on this damn site. Watched the new GOT episode, Inception, and The Prestige in the process. "
+      "left the apt at 3. couldnt get my bike bc the security guard was ignorant. Carried my panniers to the blue line. got picked up by lily. shes cool. Ate dinner at peter's house. Drank some Bougie wine. It was a passover/easter dinner. Everyone was so cool. Had a little bonfire afterwards. Later that night I started working on this. Sifted through all my pics. Stayed up until 330am working on this damn site. Watched the new GOT episode, Inception, and The Prestige in the process. "
   },
   {
     day: "day_16",
@@ -45,7 +45,7 @@ var days = [
     miles: 0,
     money: 17,
     text:
-      "Woke up, worked on Rd Recicla. Almost done. Little 420 event in this bougie chicago apt. Walked around millennium park area. Roch a huge english skater man led the way. Celebrated. Skaters pulled up. Danced. ate cereal. Went back to the apt. Hung out. Two asian girls pulled up. Split an uber to go to the fashion showcase in east chicago. Pretty cool place. megan and i left early. Stopped and got some subway cookies. blue/redline back. drake and josh. case pulled up. they went to a show. watched spongebob w/meg. finished Rd Recicla. passed out after it worked on mobile."
+      "Woke up, worked on Rd Recicla. Almost done. Little 420 event in this bougie chicago apt. Walked around millennium park area. Roch a huge english skater man led the way. Celebrated. Skaters pulled up. ate cereal. Went back to the apt. Hung out. Two asian girls pulled up. Split an uber to go to the fashion showcase in east chicago. Pretty cool place. megan and i left early. Stopped and got some subway cookies. blue/redline back. drake and josh. case pulled up. they went to a show. watched spongebob w/meg. finished Rd Recicla. passed out after it worked on mobile."
   },
   {
     day: "day_15",
