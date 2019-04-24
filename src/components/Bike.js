@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 import * as Scroll from "react-scroll";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/black-and-white.css";
 import {
   Link as ScrollLink,
   Element,
@@ -19,6 +21,36 @@ import { Link } from "react-router-dom";
 //   // marginLeft: "-35%"
 // };
 var days = [
+  {
+    day: "day_19",
+    url: [1556126620, 1556120474, 1556126102, 1556126124, 1556126150],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["bonfire"],
+    date: "04/23/19",
+    location: "Chicago to Milwaukee",
+    miles: 0,
+    money: 3,
+    text: ""
+  },
+  // My security deposit for the apt I had in Baltimore was supposed to arrive before the 22nd but didn’t show up until today. I actually thought that my landlord just didn’t send it so I just left Chicago thinking that I would work out this issue later but I guess not. This money is important because it’s a full rack and what I’m gonna b living off of for the rest of my trip. Anyways, taking a bus back to Chicago tomorrow to pick it up.
+  // This morning peter guided me out of Illinois to Wisconsin. He helped me unlock my pp Chakras and now I can bike at a speedy boy pace. Left late at 930. Ate in Zion with peter at some midwestern fast food chain called Culver’s (?). Stopped in a Wendy’s for an hour to charge my phone. Tried to take a Snapchat of these geodesic domes once in Wisconsin but it like shorted my phone and I had to charge my phone in a gas station in the hood to navigate the last three miles of my trip. This cop inside the gas station (who was like guarding the place or smn) was talking about how if somebody was getting beat on outside the door he wasn’t gonna do shit Bc he don’t give a shit. Then he started talking bout how his son got in trouble and how he’s gonna get buttraped in jail. Arrived to Ed’s house, Peters friend, at 830. He’s a nice professor.
+  // Also I just copped plane tickets. I got a plane to catch in Edmonton on May 10th which is like 1600 miles away in Canada. I have to do a presentation for the new makerspace in Frederick on May 15 and do a event preview for a camp I’m running for the housing authority of Frederick. I have to build a bunch of shit so I’m gonna be flying back to Baltimore for a few days then flying back to Edmonton to continue onto my third leg of the trip. Idk how tf I’m gonna make it to Edmonton by May 10th. Prolly gonna hitchhike lol.
+  {
+    day: "day_18",
+    url: [1556120446],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["Fixing up the bike"],
+    date: "04/22/19",
+    location: "Chicago",
+    miles: 0,
+    money: 6,
+    text:
+      "Worked on this site, picked up a package. My deposit never came so im kinda screwed. Cleaned and oiled up my bike. Went to this cool ice cream place."
+  },
   {
     day: "day_17",
     url: [1555956548],
@@ -640,21 +672,20 @@ class Vis extends Component {
                 <div className="tri">
                   {day.col[0].map((address, index) => {
                     return (
-                      <LazyLoad height={200} once>
-                        <img
-                          src={address}
-                          alt="img"
-                          onClick={() =>
-                            this.handlePop(
-                              0,
-                              index + 2 * index,
-                              index,
-                              dayIndex
-                            )
-                          }
-                          className="photo hover"
-                        />
-                      </LazyLoad>
+                      // <LazyLoad height={200} once>
+                      <LazyLoadImage
+                        visibleByDefault
+                        alt={"img"}
+                        effect="black-and-white"
+                        placeholderSrc={address}
+                        className="photo hover"
+                        src={address}
+                        onClick={() =>
+                          this.handlePop(0, index + 2 * index, index, dayIndex)
+                        }
+                      />
+
+                      // </LazyLoad>
                     );
                   })}
                 </div>
@@ -662,21 +693,22 @@ class Vis extends Component {
                 <div className="tri">
                   {day.col[1].map((address, index) => {
                     return (
-                      <LazyLoad height={200} once>
-                        <img
-                          src={address}
-                          alt="img"
-                          className="photo hover"
-                          onClick={() =>
-                            this.handlePop(
-                              1,
-                              index + 1 + 2 * index,
-                              index,
-                              dayIndex
-                            )
-                          }
-                        />
-                      </LazyLoad>
+                      <LazyLoadImage
+                        visibleByDefault
+                        alt={"img"}
+                        effect="black-and-white"
+                        placeholderSrc={address}
+                        className="photo hover"
+                        src={address}
+                        onClick={() =>
+                          this.handlePop(
+                            1,
+                            index + 1 + 2 * index,
+                            index,
+                            dayIndex
+                          )
+                        }
+                      />
                     );
                   })}
                 </div>
@@ -684,21 +716,22 @@ class Vis extends Component {
                 <div className="tri">
                   {day.col[2].map((address, index) => {
                     return (
-                      <LazyLoad height={200} once>
-                        <img
-                          src={address}
-                          alt="img"
-                          className="photo hover"
-                          onClick={() =>
-                            this.handlePop(
-                              2,
-                              index + 2 + 2 * index,
-                              index,
-                              dayIndex
-                            )
-                          }
-                        />
-                      </LazyLoad>
+                      <LazyLoadImage
+                        visibleByDefault
+                        alt={"img"}
+                        effect="black-and-white"
+                        placeholderSrc={address}
+                        className="photo hover"
+                        src={address}
+                        onClick={() =>
+                          this.handlePop(
+                            2,
+                            index + 2 + 2 * index,
+                            index,
+                            dayIndex
+                          )
+                        }
+                      />
                     );
                   })}
                 </div>
