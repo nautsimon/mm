@@ -22,12 +22,12 @@ a {
   text-decoration: none;
 }
 
-.bottomBord {
+/* .bottomBord {
   border-bottom: 1px solid #2c3e50;
   margin: 0px 2%;
 
   margin-bottom: 40px;
-}
+} */
 canvas {
   width: 50%;
   height: 100vh;
@@ -47,6 +47,9 @@ canvas {
 .popOutDiv {
   width: 80% !important;
 }
+.imgPH {
+  min-height: 300px;
+}
 .hover {
   transition: 0.2s;
   cursor: pointer;
@@ -58,6 +61,49 @@ canvas {
   margin: 0px;
   margin-bottom: 2px;
   font-size: 11px;
+}
+.hoverMen:hover {
+  transition: 0.2s;
+  cursor: pointer;
+}
+.hoverMen:hover {
+  color: #f7797d;
+}
+.botMenu {
+  opacity: 0;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  margin-left: -3%;
+  margin-top: -40px;
+  background: white;
+  transition: 0.2s;
+  padding: 10px 0px;
+  /* text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; */
+}
+.hoverSeek {
+  opacity: 0.9;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  font-size: 13px;
+  margin-top: -48px;
+  margin-left: -3%;
+  height: 36px;
+  background: white;
+  transition: 0.2s;
+}
+.botMenu:hover {
+  opacity: 1;
+}
+.botMenu:hover + .hoverSeek {
+  opacity: 0;
+}
+
+.linky {
 }
 .absol {
   position: absolute;

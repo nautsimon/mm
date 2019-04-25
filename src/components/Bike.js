@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 import * as Scroll from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/black-and-white.css";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import {
   Link as ScrollLink,
   Element,
@@ -27,16 +29,14 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["bonfire"],
+    captions: ["domes", "beer", "car", "bike", "bird"],
     date: "04/23/19",
     location: "Chicago to Milwaukee",
     miles: 0,
     money: 3,
-    text: ""
+    text:
+      "This morning peter guided me out of Illinois to Wisconsin. He helped me maintain a much faster pace than I usually hold. Left late at 930. Ate in Zion with peter at some midwestern fast food chain called Culver’s (?). Stopped in a Wendy’s for an hour to charge my phone. Tried to take a Snapchat of these geodesic domes once in Wisconsin but it like shorted my phone and I had to charge my phone in a gas station in the hood to navigate the last three miles of my trip. Arrived to Ed’s house, Peters friend, at 830. He’s a nice professor. Gonna have to go back to Chicago to pick up my security deposit tomorrow."
   },
-  // My security deposit for the apt I had in Baltimore was supposed to arrive before the 22nd but didn’t show up until today. I actually thought that my landlord just didn’t send it so I just left Chicago thinking that I would work out this issue later but I guess not. This money is important because it’s a full rack and what I’m gonna b living off of for the rest of my trip. Anyways, taking a bus back to Chicago tomorrow to pick it up.
-  // This morning peter guided me out of Illinois to Wisconsin. He helped me unlock my pp Chakras and now I can bike at a speedy boy pace. Left late at 930. Ate in Zion with peter at some midwestern fast food chain called Culver’s (?). Stopped in a Wendy’s for an hour to charge my phone. Tried to take a Snapchat of these geodesic domes once in Wisconsin but it like shorted my phone and I had to charge my phone in a gas station in the hood to navigate the last three miles of my trip. This cop inside the gas station (who was like guarding the place or smn) was talking about how if somebody was getting beat on outside the door he wasn’t gonna do shit Bc he don’t give a shit. Then he started talking bout how his son got in trouble and how he’s gonna get buttraped in jail. Arrived to Ed’s house, Peters friend, at 830. He’s a nice professor.
-  // Also I just copped plane tickets. I got a plane to catch in Edmonton on May 10th which is like 1600 miles away in Canada. I have to do a presentation for the new makerspace in Frederick on May 15 and do a event preview for a camp I’m running for the housing authority of Frederick. I have to build a bunch of shit so I’m gonna be flying back to Baltimore for a few days then flying back to Edmonton to continue onto my third leg of the trip. Idk how tf I’m gonna make it to Edmonton by May 10th. Prolly gonna hitchhike lol.
   {
     day: "day_18",
     url: [1556120446],
@@ -545,6 +545,7 @@ class Vis extends Component {
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
   }
 
   componentDidMount() {
@@ -565,7 +566,6 @@ class Vis extends Component {
   }
 
   updateStyle() {
-    console.log(this.state.width);
     if (this.state.width < 460) {
       this.setState({
         popupStyle: {
@@ -596,22 +596,26 @@ class Vis extends Component {
     console.log(this.state);
   }
   handlePop(colNum, indexFull, index, dayIndex) {
-    console.log("indexFull: ", indexFull);
-    console.log("index: ", index);
-    console.log("colNum: ", colNum);
     this.setState(
       {
         img: days[dayIndex].popUrl[indexFull],
         link: days[dayIndex].col[colNum][index],
         caption: days[dayIndex].captions[indexFull]
       },
-      this.phoPop.show()
+      () => {
+        this.phoPop.show();
+      }
     );
   }
+  _executeAfterModalClose() {
+    this.setState({ img: "x" });
+  }
+
   render() {
     return (
       <div className="outerBikeDiv">
         <SkyLight
+          afterClose={this._executeAfterModalClose}
           closeButtonStyle={{ color: "#000" }}
           dialogStyles={this.state.popupStyle}
           hideOnOverlayClicked
@@ -621,7 +625,12 @@ class Vis extends Component {
             <div>
               <p className="absol">click to view raw img</p>
               <a href={this.state.link}>
-                <img src={this.state.img} alt="photo" className="photoF" />
+                <LazyLoadImage
+                  alt={"img"}
+                  src={this.state.img}
+                  effect="blur"
+                  className="photoF imgPH"
+                />
               </a>
               <p>
                 <i>"{this.state.caption}"</i>
@@ -630,6 +639,25 @@ class Vis extends Component {
           </div>
         </SkyLight>
 
+        <div className="botMenu row">
+          {days.map(day => {
+            return (
+              <ScrollLink
+                to={day.day}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="linky"
+              >
+                <p className=" hoverMen menuBike">[{day.day}]</p>
+              </ScrollLink>
+            );
+          })}
+        </div>
+        <div className="hoverSeek">
+          <p className="center">hover to seek</p>
+        </div>
         <div className="returnDiv">
           <Link to="/" className="linkStyle">
             <img src={returnImg} alt="return" className="returnIcon" />
@@ -640,21 +668,7 @@ class Vis extends Component {
         <p className="center">
           <i>Baltimore, MD to Anchorage, AK</i>
         </p>
-        <div className="center row bottomBord">
-          {days.map(day => {
-            return (
-              <ScrollLink
-                to={day.day}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                <p className="center hover menuBike">[{day.day}]</p>
-              </ScrollLink>
-            );
-          })}
-        </div>
+
         {days.map((day, dayIndex) => {
           return (
             <Element name={day.day} className="dayDiv">
