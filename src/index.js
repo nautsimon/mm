@@ -11,6 +11,7 @@ import Vis from "./components/Vis";
 import aboutIcon from "./img/aboutIcon.png";
 import bikeIcon from "./img/bikeIcon.png";
 // import projectIcon from "./img/inspire.png";
+import SceneAlt from "./components/ThreeRenderAlt";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import Route from "react-router-dom/Route";
 
@@ -56,6 +57,7 @@ class App extends Component {
                     </div>
 
                     <div className="landLeft">
+                      <SceneAlt />
                       <Link to="/vis" className="linkStyle">
                         <div className="titleTextDiv">
                           <p className="titleText">VISUALS</p>

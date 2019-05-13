@@ -21,13 +21,36 @@ html {
 a {
   text-decoration: none;
 }
-
-/* .bottomBord {
+.linkK {
+  color: black;
+  border-bottom: 1px solid #ec70dc;
+  transition: 0.3s;
+}
+.linkK:hover {
+  color: #ec70dc;
+}
+.quad {
+  width: 24%;
+  margin: 0px 0.5%;
+  margin-bottom: 20px;
+}
+.img {
+  width: 100%;
+}
+.bottomBord {
   border-bottom: 1px solid #2c3e50;
   margin: 0px 2%;
-
-  margin-bottom: 40px;
-} */
+}
+.subtitle {
+  margin-top: -15px;
+  font-size: 12px;
+}
+.titleL {
+  margin-bottom: -1px;
+}
+.titleX {
+  margin-bottom: -7px;
+}
 canvas {
   width: 50%;
   height: 100vh;
@@ -36,6 +59,11 @@ canvas {
 }
 .center {
   text-align: center;
+}
+.colBack {
+}
+.mediumSize {
+  font-size: 13px;
 }
 .popDiv {
   height: 100%;
@@ -61,22 +89,21 @@ canvas {
   margin: 0px;
   margin-bottom: 2px;
   font-size: 11px;
+  cursor: pointer;
 }
 .hoverMen:hover {
   transition: 0.2s;
   cursor: pointer;
-}
-.hoverMen:hover {
   color: #f7797d;
 }
+
 .botMenu {
-  opacity: 0;
-  position: fixed;
-  z-index: 200;
-  width: 100%;
-  margin-left: -3%;
-  margin-top: -40px;
-  background: white;
+  position: relative;
+  opacity: 1;
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
   transition: 0.2s;
   padding: 10px 0px;
   /* text-align: center;
@@ -84,26 +111,14 @@ canvas {
   flex-direction: row;
   justify-content: center; */
 }
-.hoverSeek {
-  opacity: 0.9;
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-  font-size: 13px;
-  margin-top: -48px;
-  margin-left: -3%;
-  height: 36px;
-  background: white;
-  transition: 0.2s;
-}
-.botMenu:hover {
-  opacity: 1;
-}
-.botMenu:hover + .hoverSeek {
-  opacity: 0;
-}
 
-.linky {
+.colStat {
+  width: 27%;
+  margin-left: 3%;
+}
+.colBack {
+  width: 67%;
+  margin-right: 3%;
 }
 .absol {
   position: absolute;
@@ -368,6 +383,10 @@ canvas {
   canvas {
     width: 100%;
   }
+  .botMenu {
+    margin: 0px;
+    width: 100%;
+  }
   .aboutDiv {
     margin-top: 5vh;
     left: 95%;
@@ -380,7 +399,8 @@ canvas {
     flex-direction: column;
   }
   .landLeft,
-  .landRight {
+  .landRight,
+  .quad {
     width: 100%;
   }
   .photoDiv {

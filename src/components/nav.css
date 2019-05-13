@@ -1,0 +1,86 @@
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+.header {
+  background-color: transparent;
+  opacity: 1;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 40;
+  transition: background-color 0.5s ease;
+  pointer-events: none;
+}
+
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menuImg {
+  position: fixed;
+  right: 1.5%;
+  top: 1.5%;
+  pointer-events: auto;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.itemContainer {
+  margin: 126px 20px;
+  border-top: 1px solid white;
+}
+
+.menuItem {
+  color: white;
+  padding: 20px;
+
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.menuItem:hover {
+  opacity: 0.7;
+  background: rgba(90, 89, 133, 0.422);
+}
+.whiteLink {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .logo {
+    padding-left: 15px;
+  }
+  .menuImg {
+    right: 0.5%;
+  }
+}

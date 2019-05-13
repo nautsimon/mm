@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-
+import Nav from "./Nav";
 import * as Scroll from "react-scroll";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
-
+import leg1 from "../img/leg1.png";
+import comingSoon from "../img/comingSoon.png";
 import {
   Link as ScrollLink,
   Element,
@@ -23,6 +24,418 @@ import { Link } from "react-router-dom";
 //   // marginLeft: "-35%"
 // };
 var days = [
+  {
+    day: "day_37",
+    url: [1557651894, 1557651894, 1557651725, 1557703279],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["sky", "deported", "customs", "plane"],
+    date: "04/23/19",
+    location: "Baltimore Interlude",
+    miles: 0,
+    money: 17,
+    text:
+      "Woke up at 545. Connor, the mvp, drove me to the airport. I spent the whole day hopping between 4 different planes. Finally arrived to Baltimore at 1030. Zaz picked me up and I spent the night at his house. We watched some movies and it was super chill. Worked a bunch on this blog and preparing for the 15th event."
+  },
+  {
+    day: "day_36",
+    url: [1557651893, 1557651895],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["handle", "best ramen"],
+    date: "04/23/19",
+    location: "Weyburn to Regina",
+    miles: 81,
+    money: 9,
+    text:
+      "Woke up, ate breakfast, and then began biking. Stayed on 39 then 6. Very uneventful. Only took one break to drink a Powerade. Right around where I was supposed to start moving north an extremely strong west wind apparated and slowed me down significantly. As soon as I cleared the corner I started moving really fast. Got to Connors house. Flew my drone a bit in his house. He made some of the best ramen. I’m leaving my bike at his house for a couple of days while I go back to Frederick to work on Makerspace stuff."
+  },
+  {
+    day: "day_35",
+    url: [1557651895, 1557651896, 1557651897, 1557651889, 1557651890],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["break", "arriving", "partyvan", "blackbeards", "poutine"],
+    date: "04/23/19",
+    location: "Estevan to Weyburn",
+    miles: 55,
+    money: 0,
+    text:
+      "This morning Kolby the Poutine King took me out to breakfast for my first poutine. I got a huge breakfast Poutine. It was so good. Began a short 50 miles ride to Weyburn. First time using Kilos, got used to doing the conversion in my head. Was so tired bc of the huge poutine I ate, had to stop at a gas station to buy a red bull. Destroyed the rest of the miles after my drink. Arrived to Codies house. Hes a nationally ranked pro dirt bike racer and pretty rad. Drank a bunch, worked on some ghana stuff then went to sleep."
+  },
+  {
+    day: "day_34",
+    url: [
+      1557651870,
+      1557651870,
+      1557651873,
+      1557651877,
+      1557651873,
+      1557651881,
+      1557651884,
+      1557651888,
+      1557651886,
+      1557651893,
+      1557651893,
+      1557651882
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "road",
+      "sky",
+      "the road",
+      "road",
+      "sky",
+      "cool",
+      "cool",
+      "cool",
+      "this pissed me off",
+      "oil",
+      "the border",
+      "waiting..."
+    ],
+    date: "05/08/19",
+    location: "Minot to Estevan",
+    miles: 121,
+    money: 15,
+    text:
+      "Another long day. Started very late considering this was a 120 mile day. Biked through very nice scenery. Saw lots of cool hills and oil fields. Google Maps screwed me over and put me onto a bunch of gravel and farm roads. At one point I was literally just biking through a field. After that I just plotted my own route through ND. Arrived to the northern border at portal around 730pm. Got flagged bc of my upcoming flight. Got stuck at the border for 3 hours. They searched me and my bike. Of course they found allllll the contraband I was smuggling into Canada. The main agent was worried that I was a wandering homeless kid trying to die in the Canadian wilderness. They tried to contact my dad to verify that I knew what I was doing. He didn’t answer so they called zo. They asked her if I actually knew how far away Alaska was lol. Finally got out of the border center at 1030. Sprint biked to Estevan in the dark. Arrived to the house late, around 1200, but they were still awake. They were so cool and gave me tons of food. "
+  },
+  {
+    day: "day_33",
+    url: [1557651857],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["about that action"],
+    date: "05/07/19",
+    location: "Minot",
+    miles: 0,
+    money: 0,
+    text:
+      "Messed around with swords. Meant to work on scholarships but got super distracted by the intricate uchi ARG that was released that morning. Read part of some random book and made a huge spreadsheet in the process. At the end of the day Ryan googled uchicago and one of the game’s key words and the key for something that should’ve taken us a week or so to find showed up. Supposedly this online scav hunt/ARG took about two years to made and they didn’t even bother adding robots.txt in the root folder or obfuscating their content of their main website (which was supposed to be hidden). Anyways nothing like a day wasted. Ate pizza and sour patch kids. Also this was my first break day in 9 days so it was nice."
+  },
+  {
+    day: "day_32",
+    url: [
+      1557651838,
+      1557651849,
+      1557651855,
+      1557651853,
+      1557651855,
+      1557651858,
+      1557651861,
+      1557651863,
+      1557651854
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "cold",
+      "tree",
+      "break",
+      "velva",
+      "flower",
+      "velva",
+      "v cool",
+      "road",
+      "sword fight"
+    ],
+    date: "05/06/19",
+    location: "Fessenden to Minot",
+    miles: 91,
+    money: 3,
+    text:
+      "What a rough night. Temp dropped well below freezing. Started the night with just my sleeping pad Bc I was too lazy to break out the sleeping bag but that proved to be a big mistake. Got my sleeping bag and slipped in. Kept all my clothes and shoes on Bc I was so cold. Woke up at 545. Sat in the park sipping freezing cold oj until 630 (when a nearby gas station opened). Sat in the gas station for a good hour and a half eating doughnuts and drinking hot chocolate. After my regained feeling in my legs I hopped on my bike and grinded out 90 miles. Saw many many cows. Beautiful scenery everywhere. Many grain elevators. Didn’t take too much breaks except in velva which is 22 miles out from minot. I mixed the tuna that I got in valley city with the last bag of ramen that Maddie gave me back in Baltimore. It was actually really good. The dry ramen and chicken powder really complimented the wet tuna. As I was big munchin in the parking lot of an abandoned diner this woman came around the corner. She was definitely scared of me lmao and she turned around. Got to minot. some dude told me that I should be carrying a gun and said he could teach me how to kill anyone. I accepted his mentor ship offer but he said that he was busy. My host is a super cool history nerd. She used to do kendo and challenged me to a Sword battle. Big mistake. She didn’t know that I’ve been studying the blade for quite some time now. Banished her to the shadow realm. Her bf is literally Jeff from American dad, he’s also cool af too. Made a cad model keychain for the event on the 15th then went to bed."
+  },
+  {
+    day: "day_31",
+    url: [
+      1557651825,
+      1557651827,
+      1557651828,
+      1557651830,
+      1557651833,
+      1557651835,
+      1557651841,
+      1557651839,
+      1557651841,
+      1557651846,
+      1557651834,
+      1557651836
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "squad",
+      "road",
+      "snow",
+      "water",
+      "car",
+      "cow",
+      "break",
+      "sand water",
+      "damn",
+      "damn",
+      "very cool!",
+      "OJ"
+    ],
+    date: "05/05/19",
+    location: "Valley City to Fessenden",
+    miles: 115,
+    money: 3,
+    text:
+      "Long day today. Slept 5 hours and biked 120 miles in a strong ass headwind all day. Started off by eating two bowls of corn flakes. My hosts sent me off with a bag of tuna a carton of oj. Saw some snow and Urbana high school. Day started off easy, stunning avian wildlife, pretty water, good weather. But as soon as I hit the main highway my morale tanked. The loud cars, the strong wind, and the 100 miles in front of me was a bit discouraging. Took a quick break to get myself together. Lay down on a pile of sand on the side of the road and watched the cars pass by. Got back on my bike and killed the next 100 miles. Stopped in subway for dinner. My dummy self bought two bags of candy for lunch so it was good finally actually getting food in me belly. As the sun started to sent, I truly began to understand how beautiful this place is. Yeah nd is boring as hell but when you’re all alone on an empty highway at night it kinda grows on you. Got to Fessenden at 10. Bikes around trying to find bars. Nothing was open. Went to the Fessenden park and pushed two picnic tables together. Slept on the seats of the tables. It was coolllld. Also will from St. Cloud gave me these shoe covers that he used when motorcycling and they have saved my toes. No more numb toes, on baby. Also my legs are very strong now and I don’t get fatigued anymore. My knees are also better, but still hurt a bit when going uphill, shout out ibuprofen."
+  },
+  {
+    day: "day_30",
+    url: [1557651816, 1557651816, 1557651817],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["bike", "cow shelter", "cow shelter"],
+    date: "05/04/19",
+    location: "Fargo to Valley City",
+    miles: 63,
+    money: 6,
+    text:
+      "Struck conversation with a pregnant woman smoking cigarettes outside of a gas station. She was telling me how she needed to hold onto the baby for 22 days until the incarcerated father was freed. Then she started berating me about how I needed to watch my nutrition as I was eating a gas station burrito. Biked fast, north Dakota has cool birds. Found some cool stuff. Found a spongebob and a strangely surreal scene of a bus in the ground with a waiting for godot tree in the distance. Coming across this scene of a decapitated bus partially submerged in a prairie was one of the most beautiful things I’ve seen in a while. While it did remind me of the land of the lost, a will Ferrell movie I liked as a kid, it made me feel strangely content. Existence is absurd. Stimuli, (whether it be art, satire, or literature) that pushes one out of the characteristic incremental mentation that we use to get through each day to truly acknowledge the nonsensical reality of reality is much appreciated by myself. For as long as I can remember, I’ve been drawn to the ridiculous and surreal. So yeah low-resolution images of yoda tposing makes me laugh, but its deeper than that. Im just more woke than you and am experiencing reality on a higher plane of existence, amoebae. Anyways, I took that pic of me on the bus by propping up my camera on a old pile of cow poo. Got to valley city. Stayed with a nice older farming couple. Bought new glasses (my glasses broke way back in Milwaukee and ive been rocking glasses with just a single leg). They kept falling off my face and it was annoying. Responded to emails. Slept well. Also turns out that bus was just for cows."
+  },
+  {
+    day: "day_29",
+    url: [
+      1557651812,
+      1557651810,
+      1557651813,
+      1557651801,
+      1557651801,
+      1557651803,
+      1557651804
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "alone",
+      "water",
+      "road",
+      "lil homie",
+      "rest",
+      "my room",
+      "bathroom"
+    ],
+    date: "05/03/19",
+    location: "Alexandria to Fargo",
+    miles: 112,
+    money: 16,
+    text:
+      "Woke up at 7. Logan took me out to a really nice breakfast. I think the place was called the travel lodge or inn. Something of that sort. Headed out. Met a lil homie. Logan also set me up with a bunch of candy for the road so I was steady munching along the way. It rained pretty hard for awhile. Spaced out for like 2 hours and found myself at this gas station cafe. Ate two sandwiches. Started seeing more Tesoros a gas station that I only remember seeing in Alaska so the logo makes me a bit nostalgic. Logan set me up with a frat guy in Fargo. I never actually met the guy though Bc he was at a Future Farmers Association meeting in a different city. I pulled up to the frat house, which was called “the farm house” as it turns out this was a farming fraternity. The guys who Logan linked me up with had instructed me to go in from the back door and to the third floor, which was an unused room. It was wild Bc I felt so out of place as a non farming individual. Ate a gas station burrito for dinner. Slept well on a couch. Also almost got hit by a 18 wheeler."
+  },
+  {
+    day: "day_28",
+    url: [
+      1557651791,
+      1557651805,
+      1557651805,
+      1557651797,
+      1557651794,
+      1557651794,
+      1557651795,
+      1557651796
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "prep",
+      "lil break",
+      "path",
+      "climb",
+      "fix",
+      "fix",
+      "fix",
+      "doggo"
+    ],
+    date: "05/02/19",
+    location: "St Cloud to Alexandria",
+    miles: 70,
+    money: 12,
+    text:
+      "Started early. Will set me up with a huge stash of food. Climbed something for the first time in awhile. Met some other bikers, as usual they made fun of me for not using clips. Encountered a big huge bird posted up on the trail. A dog chased me for a good half a mile. Got to Alexandria. My host Logan is the real mvp. He was super chill and took me out to this classic pizza place in Alexandria. Trivia night was going on at the time. Then Logan and I went to his bike shop (shout-out jakes bikes) and they did a complete take down and turn up of my bike. My chain, rear brake, and cassette were all messed up and they replaced it, I got a free water bottle, pedals, light, the list goes on. Idk how I was planning on continuing my trip without having money to fix my bike, I’d probably end up begging for food or something. Thank you Jakes bikes for saving me."
+  },
+  {
+    day: "day_27",
+    url: [
+      1557651793,
+      1557651791,
+      1557651799,
+      1557651798,
+      1557651786,
+      1557651787,
+      1557651788,
+      1557651789,
+      1557651789
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "thing",
+      "flood",
+      "bird",
+      "sleep",
+      "taco",
+      "bike",
+      "st cloud",
+      "sprite",
+      "burger"
+    ],
+    date: "05/01/19",
+    location: "St Paul to St Cloud",
+    miles: 66,
+    money: 0,
+    text:
+      "Woke up super late. Ate three bowls of cereal and ended up leaving around 1030. Took a can of sprite with me for the trip. Pretty uneventful ride, lots of rain and toes went numb. Lots of flooding. Arrived to St. Cloud around 530. Met this guy Will. Super chill and funny dude. He took me out to this bar that had a Wednesday special for two tacos for 1$. I ordered 8 tacos. The place was full so Will just ran over to a table with two empty spots and sat down. The two other guys at the table were a bit off put at first but after a few minutes it turned to a pretty lively convo that lasted for like an hour. After consuming 8 tacos Will took me to another place that had another Wednesday special. 1/2 pound burgers for 2$. Consumed that with a bucket of tater tots. Will has done a bunch of motorcycle rides, including to Alaska so he had some cool stories. Worked on some scholarship apps then went to sleep."
+  },
+  {
+    day: "day_26",
+    url: [
+      1557651777,
+      1557651774,
+      1557651782,
+      1557651782,
+      1557651777,
+      1557651784,
+      1557651790
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["road", "alaska?", "bike", "bike", "flood", "st paul", "sci"],
+    date: "04/30/19",
+    location: "Wabasha to St Paul",
+    miles: 80,
+    money: 3,
+    text:
+      "Woke up at 5am. Surprised that I survived. Got 5 hours of sleep. Headed out at 545. Tried to get a jump on the rain. Got like 25 miles done before it started. Went up a few mountains. Saw the first proper mountains in a long while. Got super wet. Clouds gave me the ultra super soaka wet wet. Didn’t matter tho. Map told me to go on this dirt road, but took the highway instead. Got to Minneapolis at 2. Chilled in a cafe until my host got home at 5. She said “cook whatever you want” and went to bed. I cooked up the whole fridge. Watched the new got episode. Want to update my blog-blog but I’m tired. Gotta apply for some loans for college too. "
+  },
+  {
+    day: "day_25",
+    url: [
+      1557651751,
+      1557651749,
+      1557651751,
+      1557651752,
+      1557651754,
+      1557651760,
+      1557651768,
+      1557651765,
+      1557651765,
+      1557651765,
+      1557651764,
+      1557651761
+    ],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "rain in sparta",
+      "farm",
+      "mountain",
+      "trail",
+      "flood",
+      "flood",
+      "town",
+      "grain",
+      "flood",
+      "minn",
+      "hitchhike attempt",
+      "zzz"
+    ],
+    date: "04/29/19",
+    location: "Sparta to Wabasha",
+    miles: 86,
+    money: 7,
+    text:
+      "Finally getting a hang of this biking thing. Left knee still b*tches occasionally but I’ve started popping ibuprofen from the bottle jack gave me way back in Ohio. Don’t really need it tho. Started out at 8. Rained all morning. Went up a mountain. Peed on top of the mountain. Got real nice after lunch. The Mississippi wildin fr tho. A road I was supposed to cross was completely flooded (see pics). Went to a kwik stop. It’s so cheap. Met a woman who lives in Alaska. Gave her my blog address. Got near wabasha early. Saw a pizza box on the side of the road and tried to hitchhike and skip the rain tomorrow. Didn’t have any luck. It’s probably Bc my sign looks like it was created by someone with the motor skills of an infant. Anyways, hitchhiking is illegal in Minnesota so a cop pulled up. He ran My Id and let me go. Gonna have to get supa wet tomorrow. Climbed a mountain. Slept in this mansion place completely alone. Kinda creepy but survived. Talked to my family for the first time in a month. Slept at midnight with my knife in my hand."
+  },
+  {
+    day: "day_24",
+    url: [1557651731, 1557651734, 1557651732, 1557651734, 1557651735],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["departing", "closed trail", "wrecked", "jump", "crossing"],
+    date: "04/28/19",
+    location: "Madison to Sparta",
+    miles: 69,
+    money: 6,
+    text:
+      "Kate drove me out to some place up the road from Madison to give me a head start. It turned my 120 miles day to 60. Pretty sick. Went on a closed trail up to Elroy. So dumb. There were broken bridges and stuff. like I had to carry my bike numerous times. Once I got to Elroy I went to a bar and ate a blt. The bartender was pooping bricks Bc his race car driver crashed. Biked to Sparta. My hosts were this older couple. There had a full feast ready for me. I ate. Watched some Netflix show about Canadian hunters on Netflix with them. Slept in one the top ten beds I’ve ever slept in. it was so comfy."
+  },
+  {
+    day: "day_23",
+    url: [1557651731, 1557651729],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["cheese", "pizza"],
+    date: "04/27/19",
+    location: "Madison",
+    miles: 0,
+    money: 15,
+    text:
+      "Ate some cheese 🧀 CHEESE STATE 🧀. Went to the Madison farmer's market. snowed. Made pizza. Watched a bunch of movies with Kate. The departed is pretty good. "
+  },
+  {
+    day: "day_22",
+    url: [1557651734, 1557651739, 1557651743],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["pole", "community ride", "ride"],
+    date: "04/26/19",
+    location: "Madison",
+    miles: 0,
+    money: 8,
+    text:
+      "After some thought this morning, I decided to stay back in madison to wait out the incoming snow after Kate offered her couch for a few more days. Worked on my second leg plan, bought plane tickets, and went on a 'social ride' with the local bike team. Ate dinner with Kate and her friends. Good oriental takeout"
+  },
+  {
+    day: "day_21",
+    url: [1557651725, 1557651726, 1557651725, 1557651725],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["drone", "drone", "pooped", "madison"],
+    date: "04/25/19",
+    location: "Milwaukee to Madison",
+    miles: 85,
+    money: 0,
+    text:
+      "After some thought this morning, I decided to stay back in madison to wait out the incoming snow after Kate offered her couch for a few more days. Worked on my second leg plan, bought plane tickets, and went on a 'social ride' with the local bike team. Ate dinner with Kate and her friends. Good oriental takeout"
+  },
+  {
+    day: "day_20",
+    url: [1557651735],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["on the way back"],
+    date: "04/24/19",
+    location: "Milwaukee",
+    miles: 0,
+    money: 30,
+    text:
+      "Worked on some projects, looked around Milwaukee. Stopped by this really eccentric coffee shop. Took a bus to Chicago to pick up my deposit, took a bus back. Watched some tv with Ed and his daughter."
+  },
   {
     day: "day_19",
     url: [1556126620, 1556120474, 1556126102, 1556126124, 1556126150],
@@ -545,7 +958,7 @@ class Vis extends Component {
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
+    // this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
   }
 
   componentDidMount() {
@@ -607,13 +1020,14 @@ class Vis extends Component {
       }
     );
   }
-  _executeAfterModalClose() {
-    this.setState({ img: "x" });
-  }
+  // _executeAfterModalClose() {
+  //   this.setState({ img: "x" });
+  // }
 
   render() {
     return (
       <div className="outerBikeDiv">
+        <Nav days={days} />
         <SkyLight
           afterClose={this._executeAfterModalClose}
           closeButtonStyle={{ color: "#000" }}
@@ -638,37 +1052,113 @@ class Vis extends Component {
             </div>
           </div>
         </SkyLight>
-
-        <div className="botMenu row">
-          {days.map(day => {
-            return (
-              <ScrollLink
-                to={day.day}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-                className="linky"
-              >
-                <p className=" hoverMen menuBike">[{day.day}]</p>
-              </ScrollLink>
-            );
-          })}
-        </div>
-        <div className="hoverSeek">
-          <p className="center">hover to seek</p>
-        </div>
         <div className="returnDiv">
           <Link to="/" className="linkStyle">
             <img src={returnImg} alt="return" className="returnIcon" />
           </Link>
         </div>
         <br />
-
-        <p className="center">
-          <i>Baltimore, MD to Anchorage, AK</i>
+        <p className="center bottomBord">
+          <i>A Bike Trip to Alaska</i>
+          <br />
+          <i className="subtitle">Baltimore, MD to Anchorage, AK</i>
+          <br />
+          <br />
         </p>
+        <div className="row bottomBord small">
+          <div className="colStat">
+            <p className="titleX">Stats</p>
+            <p className="mediumSize">
+              Total Miles: <i>≈ 4,500</i>
+            </p>
+            <p className="mediumSize">
+              Miles Left: <i>≈ 2,100</i>
+            </p>
+            <p className="mediumSize">
+              Time Elapsed: <i>35 days</i>
+            </p>
+            <p className="mediumSize">
+              Start Date: <i>04/04/2019</i>
+            </p>
+            <p className="mediumSize">
+              Target Completion Date: <i>06/22/2019</i>
+            </p>
 
+            <p className="mediumSize">
+              Daily Avg: <i>81 miles</i>
+            </p>
+            <p className="mediumSize">
+              Bike Model: <i>Fuji Touring</i>
+            </p>
+          </div>
+          <div className="colBack rightText">
+            <p className="titleX">Background/Cause</p>
+            <p className="mediumSize">
+              I was born and raised in Anchorage Alaska. When I was 15 my family
+              packed up all of our belongings into a big uhaul and a van and
+              drove down to Maryland. I drove for a portion of this trek, and
+              while doing so I continuously noticed myself wanting to pull over
+              and check out a mountain, a building, roadside attraction, etc. It
+              was then when my idea to “Bike to Alaska” manifested. Initially a
+              joke, I can remember telling friends about my “big plans”, of
+              course no body believed me, even myself. However, when senior year
+              drew to a close, I began investigating the options of doing a gap
+              year. I felt as if this ethereal time between high school and
+              college could be the perfect time, if not the only time, I could
+              embark on such an adventure. So, when I was given an option to
+              defer admission at the University of Chicago for a year and
+              matriculate in the fall of 2019, I took it. <br /> <br />
+              For the first 6 months of my gap year I lived alone in Baltimore
+              as my parents and family moved to Tokyo last July. I worked as an
+              EMT and a waiter in a Turkish restaurant (although I left my
+              waiter job after a few months to just overtime at my EMT job) to
+              pay bills, buy food, and most importantly, save for this bike
+              ride. When April finally rolled around I sold all my furniture,
+              packed my things, and hopped onto my bike. <br /> <br />
+              Besides the personal sentimental reasons that this trip holds, I
+              am also riding to raise money for a STEM education camp that my
+              small non-profit is running with STEMBees (a Ghana based
+              nonprofit) at the University of Ghana. While we have completed
+              curriculum, secured a location and instructors and have robotics
+              parts, we need funding to actually transport myself, another
+              instructor and all of the parts to Accra Ghana. Any help is beyond
+              greatly appreciated. To donate {""}
+              <a
+                className="linkK"
+                href="https://www.gofundme.com/stem-education-for-ghanaian-students"
+              >
+                visit our go fund me.
+              </a>
+              Thank you!
+            </p>
+          </div>
+          <br />
+        </div>
+        <div className="row bottomBord small">
+          <div className="quad center">
+            <p className="titleL">First leg</p>
+            <i className="mediumSize">Baltimore - Chicago | 821 miles</i>
+            <a href="https://youtu.be/7C-V3sWZqw0">
+              <img src={leg1} alt="leg1" className="img hover" />
+            </a>
+          </div>
+          <div className="quad center">
+            <p className="titleL">Second leg</p>
+            <i className="mediumSize">Chicago - Regina | 1,221 miles</i>
+            <img src={comingSoon} alt="leg2" className="img hover" />
+          </div>
+          <div className="quad center">
+            <p className="titleL">Third leg</p>
+            <i className="mediumSize">Regina - Tok | 2,106 miles</i>
+            <img src={comingSoon} alt="leg3" className="img hover" />
+          </div>
+          <div className="quad center">
+            <p className="titleL">Fourth leg</p>
+            <i className="mediumSize">Tok - Anchorage | 323 miles</i>
+            <img src={comingSoon} alt="leg4" className="img hover" />
+          </div>
+        </div>
+        <br /> <br /> <br />
         {days.map((day, dayIndex) => {
           return (
             <Element name={day.day} className="dayDiv">

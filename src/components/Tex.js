@@ -9,7 +9,10 @@ const musings = [
       "whip and nasdial jd asjd lasjd sj lsjlkasjd lasjkdlkasjkld ajslkd aslkd jasldjasdslajalkj lae",
     date: "09/24/1999"
   },
-  { musing: "whip and nae", date: "09/24/1999" },
+  {
+    musing: "Emily blunt in Sicario is so fucking annoying",
+    date: "05/01/2019"
+  },
   { musing: "whip and nae", date: "09/24/1999" },
   { musing: "whip and nae", date: "09/24/1999" },
   { musing: "whip and nae", date: "09/24/1999" },
