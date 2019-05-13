@@ -36,7 +36,7 @@ var days = [
     miles: 0,
     money: 17,
     text:
-      "Woke up at 545. Connor, the mvp, drove me to the airport. I spent the whole day hopping between 4 different planes. Finally arrived to Baltimore at 1030. Zaz picked me up and I spent the night at his house. We watched some movies and it was super chill. Worked a bunch on this blog and preparing for the 15th event."
+      "Woke up at 545. Connor, the mvp, drove me to the airport. I spent the whole day hopping between 4 different planes. Finally arrived to Baltimore at 1030. Zaz picked me up and I spent the night at his house. We watched some movies and it was super chill. Worked a bunch on this blog and preparing for the 15th event. For those that do not know, I have returned to Baltimore/Fredrick for a few days to a responsibility I previously committed to. "
   },
   {
     day: "day_36",
