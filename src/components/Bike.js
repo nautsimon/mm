@@ -1114,7 +1114,8 @@ class Vis extends Component {
               waiter job after a few months to just overtime at my EMT job) to
               pay bills, buy food, and most importantly, save for this bike
               ride. When April finally rolled around I sold all my furniture,
-              packed my things, and hopped onto my bike. <br /> <br />
+              packed my things, and hopped onto my bike.
+              {/* <br /> <br />
               Besides the personal sentimental reasons that this trip holds, I
               am also riding to raise money for a STEM education camp that my
               small non-profit is running with STEMBees (a Ghana based
@@ -1122,7 +1123,7 @@ class Vis extends Component {
               curriculum, secured a location and instructors and have robotics
               parts, we need funding to actually transport myself, another
               instructor and all of the parts to Accra Ghana. Any help is beyond
-              greatly appreciated. To donate {""}
+              greatly appreciated. To donate {""} */}
               <a
                 className="linkK"
                 href="https://www.gofundme.com/stem-education-for-ghanaian-students"
