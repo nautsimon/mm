@@ -1123,14 +1123,14 @@ class Vis extends Component {
               curriculum, secured a location and instructors and have robotics
               parts, we need funding to actually transport myself, another
               instructor and all of the parts to Accra Ghana. Any help is beyond
-              greatly appreciated. To donate {""} */}
+              greatly appreciated. To donate {""}
               <a
                 className="linkK"
                 href="https://www.gofundme.com/stem-education-for-ghanaian-students"
               >
                 visit our go fund me.
               </a>
-              Thank you!
+              Thank you! */}
             </p>
           </div>
           <br />
