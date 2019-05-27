@@ -5,6 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
 import leg1 from "../img/leg1.png";
+import leg2 from "../img/leg2.png";
 import comingSoon from "../img/comingSoon.png";
 import {
   Link as ScrollLink,
@@ -907,28 +908,21 @@ for (var day = 0; day < days.length; day++) {
   var organizer = 0;
   for (var i = 0; i < days[day].url.length; i++) {
     days[day].col[organizer].push(
-      "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco/v" +
-        days[day].url[i] +
-        "/bike/" +
+      "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco/v1/bike/" +
         days[day].day +
         "-" +
         i +
         ".jpg"
     );
     days[day].popUrl.push(
-      "https://res.cloudinary.com/dgmuzb9mm/image/upload/" +
-        "q_auto:eco,w_400,c_fill,ar_4:3/v" +
-        days[day].url[i] +
-        "/bike/" +
+      "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco,w_400,c_fill,ar_4:3/v1/bike/" +
         days[day].day +
         "-" +
         i +
         ".jpg"
     );
     days[day].ogUrl.push(
-      "https://res.cloudinary.com/dgmuzb9mm/image/upload/v" +
-        days[day].url[i] +
-        "/bike/" +
+      "https://res.cloudinary.com/dgmuzb9mm/image/upload/v1/bike/" +
         days[day].day +
         "-" +
         i +
@@ -958,7 +952,7 @@ class Vis extends Component {
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    // this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
+    this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
   }
 
   componentDidMount() {
@@ -1015,14 +1009,13 @@ class Vis extends Component {
         link: days[dayIndex].col[colNum][index],
         caption: days[dayIndex].captions[indexFull]
       },
-      () => {
-        this.phoPop.show();
-      }
+
+      this.phoPop.show()
     );
   }
-  // _executeAfterModalClose() {
-  //   this.setState({ img: "x" });
-  // }
+  _executeAfterModalClose() {
+    this.setState({ img: "x", link: "x" });
+  }
 
   render() {
     return (
@@ -1146,7 +1139,9 @@ class Vis extends Component {
           <div className="quad center">
             <p className="titleL">Second leg</p>
             <i className="mediumSize">Chicago - Regina | 1,221 miles</i>
-            <img src={comingSoon} alt="leg2" className="img hover" />
+            <a href="https://www.youtube.com/watch?v=8377CK2pmo8">
+              <img src={leg2} alt="leg2" className="img hover" />
+            </a>
           </div>
           <div className="quad center">
             <p className="titleL">Third leg</p>
