@@ -26,18 +26,557 @@ import { Link } from "react-router-dom";
 // };
 var days = [
   {
-    day: "day_37",
-    url: [1557651894, 1557651894, 1557651725, 1557703279],
+    day: "day_64",
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["sky", "deported", "customs", "plane"],
-    date: "04/23/19",
+    captions: [
+      "hot water boys",
+      "breakfast 2",
+      "lunch",
+      "house",
+      "omw",
+      "cool",
+      "hot springs"
+    ],
+    date: "06/07/19",
+    location: "Teslin Lake to Whitehorse",
+    miles: 118,
+    money: 24,
+    text: ""
+  },
+  {
+    day: "day_63",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "bike",
+      "dum",
+      "dum",
+      "car comin",
+      "spiky boy",
+      "dinner",
+      "teslin lake",
+      "road"
+    ],
+    date: "06/06/19",
+    location: "Continental Divide to Teslin Lake",
+    miles: 93,
+    money: 24,
+    text: ""
+  },
+  {
+    day: "day_62",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "bike",
+      "lunch",
+      "fellow biker",
+      "nice",
+      " clouds",
+      "dinner",
+      "dinner",
+      "gn",
+      "gn"
+    ],
+    date: "06/05/19",
+    location: "Watson Lake to Continental Divide",
+    miles: 85,
+    money: 15,
+    text: ""
+  },
+  {
+    day: "day_61",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["my sign"],
+    date: "06/04/19",
+    location: "Watson Lake",
+    miles: 0,
+    money: 0,
+    text: ""
+  },
+  {
+    day: "day_60",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "yukon",
+      "first fellow biker",
+      "the crew",
+      "contact creek",
+      "burnt",
+      "forest",
+      "jump"
+    ],
+    date: "06/03/19",
+    location: "Liard Hot Springs to Watson Lake",
+    miles: 43,
+    money: 20,
+    text: ""
+  },
+  {
+    day: "day_59",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "tent: 0 wind: 100",
+      "table",
+      "mountain",
+      "going down",
+      "bridge",
+      "lodge",
+      "caution",
+      "huge",
+      "chillin",
+      "woah",
+      "plane",
+      "clear",
+      "almost died",
+      "hotsprings",
+      "hotsprings",
+      "uphill",
+      "uhh",
+      "recreation of my bison encounter by dr joe",
+      "asserting dominance on the road"
+    ],
+    date: "06/02/19",
+    location: "Summit Lake to Liard Hot Springs",
+    miles: 84,
+    money: 35,
+    text: ""
+  },
+  {
+    day: "day_58",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "cool",
+      "leaving",
+      "cow",
+      "clouds",
+      "first bear",
+      "uphill",
+      "uphill",
+      "third bear, he was huge",
+      "snow",
+      "after the storm",
+      "almost",
+      "arrived"
+    ],
+    date: "06/01/19",
+    location: "Ft Nelson to Summit Lake",
+    miles: 84,
+    money: 35,
+    text: ""
+  },
+  {
+    day: "day_57",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "smoke",
+      "smoke",
+      "smoke",
+      "smoke",
+      "bike",
+      "smoke",
+      "bridge",
+      "arrive",
+      "quilt",
+      "sun",
+      "best doughnut ever"
+    ],
+    date: "05/31/19",
+    location: "Prophet River to Ft Nelson",
+    miles: 57,
+    money: 20,
+    text:
+      "Woke up early. Left early. After 20 minutes of biking I entered a huge smoke cloud. This cloud enveloped me and the following 70 miles. Fort Nelson is full of smoke as well. It looks really cool Bc it looks like fog, and it also constantly smells like a campfire but it lowkey messes with your lungs if you breath really hard. Got a bunch of drone footage. Stopped in a quilt shop. Chilled in a Tim Horton’s before going to my hosts house and almost fought a guy Bc I dropped my wallet and then this guy said that he saw this dude sitting where I was sitting and that he might have taken it so I went to confront the guy and then this cop came over and was like son I got your wallet. The guy was super mad tho but oh well. Talked to the fam. Ate lasagna."
+  },
+  {
+    day: "day_56",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "bathroom break",
+      "gate",
+      "sigh",
+      "drone",
+      "drone",
+      "mountain",
+      "yee",
+      "bad",
+      "konichiwa",
+      "longg dogg",
+      "bed"
+    ],
+    date: "05/30/19",
+    location: "Pink Mountain to Prophet River",
+    miles: 84,
+    money: 35,
+    text:
+      "Got stung by a wasp going down a hill. Yelled motherfucker super loud and it echoed throughout the mountains. I also have a spider bite that is acting suspiciously like a brown recluse bite. It really hurt yesterday. Woke up at 630 and walked to the inn across the street. Meant just to buy a hot drink but ended up buying a buffet of food. Smh I’m gonna run outta money. I started watching this Steven Spielberg movie called ai artificial intelligence and ended up staying at the inns lobby to finish the movie. It almost made me cry man, they did David so wrong😢. Was supposed to see a few bears as reported by the people at the inn but didn’t see any. Saw more mountains in the distance. Almost ran out of water but made it to prophet river in time. My current water carrying capacity is about 3.2 liters. I have two empty 950ml Gatorade bottle I use for water purification and storage. Anyways got to prophet river. Debated on biking another sixty to just get to ft Nelson a day early. Ended up not Bc this Chinese lady who owns this big house and advertises it as an inn said I could sleep in her parking lot for free. She made me dinner but charged me 20$ lmao. She unlocked the bathroom and Then I realized that the bathroom was heated so I ended up sleeping on the bathroom floor. One year ago I graduated high school, come a long way lol. Got a bunch of Ghana stuff done."
+  },
+  {
+    day: "day_55",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "drone",
+      "hill",
+      "mountain",
+      "fire",
+      "run",
+      "pink mountain",
+      "walk"
+    ],
+    date: "05/29/19",
+    location: "Ft St John to Pink Mountain",
+    miles: 90,
+    money: 12,
+    text:
+      "It was very hot today. Biked many hills. Began seeing big boy mountains. Flew drone a bit.  Got super mentally tired, kept going. Got some drone footage. Arrived to pink mountains late and slept in front of the air pump at the gas station. Watched the rest of the Maze runner movie. Ate some really good curry leftovers from last night’s dinner."
+  },
+  {
+    day: "day_54",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "cya dawson creek",
+      "mile 0",
+      "4 years apart",
+      "4 years apart",
+      "4 years apart",
+      "4 years apart",
+      "cliff",
+      "woah",
+      "drone"
+    ],
+    date: "05/28/19",
+    location: "Dawson Creek to Ft St John",
+    miles: 45,
+    money: 6,
+    text:
+      "Woke up late. Zach’s wife made me taco salad and literally it was so good that I ate it all before I left Dawson creek. Stopped by the historic Dawson creek. Took some corny pics mirroring the pics that my family took when we were here four years ago. Checked out some other souvenir shops. Biked for awhile but got very mentally tired. Bought a milkshake at an inn and justified it Bc it was one of the last inns on the way. Watched maze runner. Got some drone footage. Arrived to ft St. John early. Stopped in a Walmart McDonald’s. Met this bike tourer. He forgot his wallet. A security guard gave me a hard time about having my bike indoors but eventually he caved. Spent the night with my host. He is so chill and fixed my bike up, cooked bomb food and let me take whatever I wanted. Such a guy."
+  },
+  {
+    day: "day_53",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "running",
+      "zach",
+      "climb",
+      "jumpin pic",
+      "down",
+      "bridge",
+      "zach",
+      "bridge"
+    ],
+    date: "05/27/19",
+    location: "Dawson Creek",
+    miles: 0,
+    money: 12,
+    text:
+      "Went to a bike shop to get my chain checked out. Spent the rest of the day trying to fundraise for ghana. We are screwed, we have everything but money. I wish I was born into a rich family sometimes (not really). A fat trust fund would make everything so much easier lol. After Zach came back from work he took me to this abandoned train bridge. We climbed it and messed around with my drone. I tried to land it on a skinny piece of wood and almost crashed it. Then we went to McDonald’s with his wife and her friend. He introduced me to how I met your mother and it’s a pretty good show. We tried to fly the drone around his apt. Zach flew the drone from outside into his house but it crash landed into the couch Bc the sport and regular mode is wired backwards on the remote for some reason. Ate some pizza and ham. Went to bed feeling excited as i am about to embark on the final stretch."
+  },
+  {
+    day: "day_52",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "a superior form of transportation?",
+      "jumpin pic",
+      "jumpin pic",
+      "jumpin pic",
+      "horse",
+      "bridge",
+      "beaverlodge",
+      "rio",
+      "BC",
+      "pouce coupe",
+      "ayo",
+      "sign",
+      "pic"
+    ],
+    date: "05/26/19",
+    location: "Grand Prairie to Dawson Creek",
+    miles: 70,
+    money: 10,
+    text:
+      "Woke up at 530 on the sidewalk. Didn’t get robbed. Walked to Tim hortons and chilled there for a solid hour and a half. Started biking to Dawson creek. Some serious hills going on. Got watched some movies. Watched this weird abduction movie. Stopped in an A&W and ate a good burger and drank root beer. Watched cloverfield paradox. Took lots of pics. Got to Dawson creek early. Worked a bit then rolled up to Zach’s house. Host is a man actual cook so he made some really good chicken breasts. Passed out watching Star Wars. Wild how Anikin just goes sicko mode on those kids. "
+  },
+  {
+    day: "day_51",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "pretty",
+      "bridge",
+      "grass",
+      "grass",
+      "flowers",
+      "bridge",
+      "sun dial",
+      "gn",
+      "new fender",
+      "clouds"
+    ],
+    date: "05/25/19",
+    location: "Valleyview to Grand Prairie",
+    miles: 72,
+    money: 15,
+    text:
+      "First non 100+ mile day in awhile so got to actually stop and take good pics. Starting to get really hilly. Slept in. I hit them zzs so hard I woke up confused as to where I was. Had to drink a red bull to snap out of it. Saw cool stuff. Watched meg, rampage, and splice on the way. Splice is actually disgusting af I was literally screaming. Do not recommend that movie it was some trash. Arrived to Grand Prairie. Saw first Alaska sign. Don’t have a host so I scouted out a good homeless spot for the night. I will be sleeping under a Canadian Lowes’ overhang. Ate dinner at a&w. This morning I cut my orange triangle sign with some pliers back and strapped it down to my rack thus making it a makeshift fender/visibility thing. Relocated to the parking lot of a funeral home and currently leaching off the WiFi of a nearby Kia dealership. The grind never stop lol. A homeless guy rolled up to me and asked me where moe was. "
+  },
+  {
+    day: "day_50",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "road",
+      "trees",
+      "mud",
+      "speed",
+      "gloves broken",
+      "gn",
+      "dinner",
+      "birdie"
+    ],
+    date: "05/24/19",
+    location: "Whitecourt to Valleyview",
+    miles: 109,
+    money: 14,
+    text:
+      "The sky gave me the superb sideways Samsung slam dunk wet wet. Rained for a long while. Took one break in a subway. My host had given me lots of food so I was munching heavy. My fingers are starting to bust out my gloves thus complimenting my homeless aesthetic. My host is super nice. weighed my bike finally, about 76lbs with all my gear. His neighbor rolled in and made us drink lime beer. We then went to dinner and she (his neighbor) almost made the supervisor cry lol. Had a wrap and a thicc poutine. Slept like a rock."
+  },
+  {
+    day: "day_49",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "Edmonton",
+      "Edmonton",
+      "field",
+      "road",
+      "fog",
+      "god",
+      "cloud",
+      "station",
+      "area 51",
+      "last hill"
+    ],
+    date: "05/23/19",
+    location: "Edmonton to Whitecourt",
+    miles: 113,
+    money: 14,
+    text:
+      "Left super late -- woke up after 5 hours of sleep and kinda just moseyed around Matt’s apt wasting time. Finally got all packed up and out the door at 1030. Had a rough time leaving Edmonton be of all the construction and gravel roads. Ran all the way out of food. 20 miles out from Whitecourt I couldn’t stand it and ran in a gas station and bought some candy. Holy shit. Maynard peach gummies are literally Canadian ambrosia. My host is such a bro. Cooked up a bomb pizza and ate three apples for dinner. "
+  },
+  {
+    day: "day_48",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["a new friend", "art", "art", "art", "outside", "the city"],
+    date: "05/22/19",
+    location: "Edmonton",
+    miles: 0,
+    money: 10,
+    text:
+      "Went and got my tires filled at giant bikes. Stopped at staples to pick up some more sd cards Bc my computer can’t hold all my pics. Matt bought me a ticket to this hardcore metal concert he was gonna go this evening. We decided to part ways then link back up in the evening. While on my own, I did some exploring and scholarship apps. Went to a donair place which is just like doner just Canadian (?). The show was fire lol. after the show my third eye opened and I understood the appeal of the edgy genre. All the screaming inspired me to finally get around to editing my second leg video recap and got it done in 3 hours, went to sleep around 330 am."
+  },
+  {
+    day: "day_47",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "edmonton in the distance",
+      "streets",
+      "toilet",
+      "clouds",
+      "a nice trail",
+      "metropolis",
+      "a flat",
+      "more trail",
+      "small horses"
+    ],
+    date: "05/21/19",
+    location: "Vermillion to Edmonton",
+    miles: 127,
+    money: 13,
+    text:
+      "Nancy invited me to the restaurant she works at this morning. Ate huge. Fortunately, it was on the house. Thank you Nancy 🙏🙏. Didn’t really take any breaks. Got a flat 15 miles out from Edmonton with a big boy nail. Got so pissed but got over it. Figured out I can watch amazon prime while biking. Watched the last got episode and a few vice episodes. Met Matt the host for the next two nights. He’s super cool and has a chinchilla. Longboarded to subway for dinner. Saw a bison and some small horses."
+  },
+  {
+    day: "day_46",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["a new providence", "car", "zoom", "bike", "a quick break"],
+    date: "05/20/19",
+    location: "Battleford to Vermillion",
+    miles: 124,
+    money: 10,
+    text:
+      "Woke up and ate breakfast. Tony’s family gave me an Oakley windbreaker. They also gave me some cash so I could actually pay for campsites 😓. Pretty solid ride. A ~125 mile day. Found a toilet. The mosquitoes have officially risen. All types of bugs occasionally land on me as I bike. I swear if I get hit by a car it’s Bc a bee or smn landed on me and I started tweaken trying to get it off. Arrived to vermillion. My host Nancy and I watched some weird movie on Netflix where the Hispanic cop from narcos and this girl with thick eyebrows were on mars or something trying to mine gems. Ate pizza drank some beer then slept on the couch. Edmonton tomorrow."
+  },
+  {
+    day: "day_45",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["another jumping pic", "break", "bike"],
+    date: "05/19/19",
+    location: "Saskatoon to Battleford",
+    miles: 81,
+    money: 14,
+    text:
+      "Neil sauced me three days worth of food. He also gave a few water purifying tablets which will really help me once I get on the alcan highway. Found an abandoned trailer on the side of the highway. Filmed myself climbing on top of it then jumping off - typical Simon behavior. Found a tractor’s orange triangle visibility thing on the side of the road as well. It’s strapped on the back of my pack now. Went to Burger King. Diet Pepsi is the superior cola product. Currently in tim Horton’s working on some stuff, updating this insta blog thing. Was planning on sleeping in between a few dirt mounds I spotted on the side of the highway but ended up being taken in by tony, a big man, and his family. Ate well and slept well."
+  },
+  {
+    day: "day_44",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "esso",
+      "horse",
+      "eco",
+      "the cabin",
+      "bike",
+      "cool",
+      "saskatoon",
+      "meditation",
+      "food",
+      "meditation house",
+      "a good view"
+    ],
+    date: "05/18/19",
+    location: "Craik to Saskatoon",
+    miles: 88,
+    money: 9,
+    text:
+      "Woke up, Paul and I checked out this “eco village”. It was pretty sick. Pretty uneventful ride. Getting good at spacing out. Got a back wind so that was nice. Lots of bugs. Arrived to Saskatoon, a pretty rad city. Once I got to Saskatoon I met Neil. This guy is a rad mf. He did a ton of traveling from when he was 17-22. Like hitchhiking traveling, true og stuff. He had many many wild stories, a truly enlightened individual. He wrote a book that became a “international bestseller”. Anyways, Neil took me to a “full moon gathering” which is basically a congregation of all the woke weird people of Saskatoon in a unfinished mansion. It was so sick. So much good food. Many Buddha’s were scattered throughout the land. We then meditated. An ex-tebitian monk who was homies with the dalai lama led the exercise. Lots of chanting. I may or may not have opened my third eye in the process. It could’ve been Bc I was super tired, but I started seeing visions of this crazy geometric void. It was probably Bc I was falling asleep. Neil drove me back to his house at 1130. A very peaceful night. The full moon illuminating the interior of Neil’s car complimented the serene silence that enveloped the ride back home. Very beautiful evening, won’t forget it soon. "
+  },
+  {
+    day: "day_43",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "worn out",
+      "oiling the bike",
+      "cabin",
+      "on the road",
+      "shadow",
+      "beaver",
+      "bees",
+      "civilization"
+    ],
+    date: "05/17/19",
+    location: "Regina to Craik",
+    miles: 85,
+    money: 12,
+    text:
+      "After the break, my legs have become infatiguable. I can pump mile after mile without much trouble. Mentally though, I got super bored, today at least. Replaced my back tire in the morning, shoutout DUTCH CYCLES. My tire had gotten completely worn out with the first 2000 miles. Hit the road at 1030, got to Craik around 430. Met Paul, a teacher and the most wholesome dad I’ve ever met in my entire life. He has this cool cabin over a lake. He’s got a lot of land too. He took me on a tour and I got to see a bunch of cool stuff, including his bee farm. Spotted a beaver. Ate some really really good steak."
+  },
+  {
+    day: "day_42",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["plane", "airport"],
+    date: "05/16/19",
+    location: "Flying back to Regina",
+    miles: 0,
+    money: 12,
+    text:
+      "Zoe dropped me off at BWI at 4am. Spent the rest of the day on the plane sleeping and recovering. Had some weird dreams. Landed in Regina around 4pm. Walked to a bus stop then took the bus to downtown regina. Walked around, found a starbucks in a hotel. Started working on my computer. Had a surreal moment when old country road started playing in a Canadian starbucks. Cant believe that song is on the radio now. Connor came and picked me up after he went to dinner with his mom. Dropped me off at his house and then he went to hang out with his gf. I ordered a taco pizza which was really really good. Connor and I chilled for a bit and then went to sleep."
+  },
+  {
+    day: "day_41",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["our booth", "the booth"],
+    date: "05/15/19",
     location: "Baltimore Interlude",
     miles: 0,
     money: 17,
     text:
-      "Woke up at 545. Connor, the mvp, drove me to the airport. I spent the whole day hopping between 4 different planes. Finally arrived to Baltimore at 1030. Zaz picked me up and I spent the night at his house. We watched some movies and it was super chill. Worked a bunch on this blog and preparing for the 15th event. For those that do not know, I have returned to Baltimore/Fredrick for a few days to a responsibility I previously committed to. "
+      "Stayed up all night, worked on getting open cv compiled on a raspberry pi. Ran into some problems bc my power source failed. Built a root cellar sign bc i was bored and couldn't sleep. Shoved some 3D printed hollow text into the packaging foam from the 3D printer's packaging then stuck RGBs into them. The final sign had lights controlled by an IR remote and an LCD displaying 'coming soon'. In the morning Zoe picked me up, I showered and changed. Zoe was supposed to cut my hair but I fell asleep. Noah picked me up and we drove over to the fortress. We finished the rest of the keychains then moved everything to the event. The event was a success, very tired but ready to bike"
+  },
+  {
+    day: "day_40",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["sky", "deported", "customs", "plane"],
+    date: "05/14/19",
+    location: "Baltimore Interlude",
+    miles: 0,
+    money: 17,
+    text:
+      "Today was a big grind day. Stayed at the fortress. Slept for a couple hours 5am - 7am. I woke up to one of the FITCI employees checking out a keychain. Speaking of keychains, I need a second 3D printer to pull this off, there are way too many keychains needed. Also, I’ve gone through like 10 unique keychain designs. Anyways, today I went to FITCI to get the ORION 3D printer. Did some calculations and figured out how to pull it off. Worked on a 16x2 LCD Arduino game. Postmated Chipotle which was probably one of the best ideas I’ve ever had in my life."
+  },
+  {
+    day: "day_39",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["new printer", "built", "tables", "outside the fitci fortress"],
+    date: "05/13/19",
+    location: "Baltimore Interlude",
+    miles: 0,
+    money: 0,
+    text:
+      "Got dropped off at the FITCI fortress in the morning. Had an amazing lunch prepped for me by Katherine. Built a 3D printer. Realized that the FITCI people needed 200 keychains by the 15th event. This was annoying bc that meant I had to edit the designs to be time efficient. Oh well, an extra challenge is always exciting. Spent the day modelling other keychains, figuring out how to print with a filament too small for the printer, and began to work on a couple robots. Spent the night at the fortress."
+  },
+  {
+    day: "day_38",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["fitci"],
+    date: "05/12/19",
+    location: "Baltimore Interlude",
+    miles: 0,
+    money: 0,
+    text:
+      "It was mothers day, joined the bukis for brunch, hung out at the house with zoe. Grabbed some parts from FITCI. Called my family early in the morning and got about 4 hours of sleep"
+  },
+  {
+    day: "day_37",
+    url: [17651894, 1557651894, 1557651725, 1557703279],
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["sky", "deported", "customs", "plane"],
+    date: "05/11/19",
+    location: "Baltimore Interlude",
+    miles: 0,
+    money: 17,
+    text:
+      "Woke up at 545. Connor, the mvp, drove me to the airport. I spent the whole day hopping between 4 different planes. Finally arrived to Baltimore at 1030. Zaz picked me up and I spent the night at his house. We watched some movies and it was super chill. Worked a bunch on this blog and preparing for the 15th event. Ended up staying up all night and then called my family at 6am."
   },
   {
     day: "day_36",
@@ -46,7 +585,7 @@ var days = [
     popUrl: [],
     ogUrl: [],
     captions: ["handle", "best ramen"],
-    date: "04/23/19",
+    date: "05/10/19",
     location: "Weyburn to Regina",
     miles: 81,
     money: 9,
@@ -60,7 +599,7 @@ var days = [
     popUrl: [],
     ogUrl: [],
     captions: ["break", "arriving", "partyvan", "blackbeards", "poutine"],
-    date: "04/23/19",
+    date: "05/09/19",
     location: "Estevan to Weyburn",
     miles: 55,
     money: 0,
@@ -906,7 +1445,7 @@ var content;
 
 for (var day = 0; day < days.length; day++) {
   var organizer = 0;
-  for (var i = 0; i < days[day].url.length; i++) {
+  for (var i = 0; i < days[day].captions.length; i++) {
     days[day].col[organizer].push(
       "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco/v1/bike/" +
         days[day].day +
@@ -942,7 +1481,7 @@ class Vis extends Component {
     super(props);
     this.state = {
       filter: 0,
-      img: "x",
+      img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif",
       caption: "x",
       link: "x",
       width: window.innerWidth,
@@ -1014,7 +1553,10 @@ class Vis extends Component {
     );
   }
   _executeAfterModalClose() {
-    this.setState({ img: "x", link: "x" });
+    this.setState({
+      img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif",
+      link: "x"
+    });
   }
 
   render() {
