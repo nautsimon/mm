@@ -21,9 +21,14 @@ html {
 a {
   text-decoration: none;
 }
+.goImg {
+  width: 100%;
+  padding: 16px;
+}
+
 .linkK {
   color: black;
-  border-bottom: 1px solid #ec70dc;
+  border-bottom: 2px solid #ec70dc;
   transition: 0.3s;
 }
 .linkK:hover {
@@ -60,8 +65,7 @@ canvas {
 .center {
   text-align: center;
 }
-.colBack {
-}
+
 .mediumSize {
   font-size: 13px;
 }
@@ -113,12 +117,16 @@ canvas {
 }
 
 .colStat {
-  width: 27%;
-  margin-left: 3%;
+  width: 23%;
+  margin-left: 2%;
 }
 .colBack {
-  width: 67%;
-  margin-right: 3%;
+  width: 50%;
+  margin-right: 0%;
+}
+.gofund {
+  width: 23%;
+  margin-right: 2%;
 }
 .absol {
   position: absolute;
@@ -378,7 +386,20 @@ canvas {
 
   /* margin-left: -42vw; */
 }
-
+@media screen and (max-width: 880px) {
+  .gofund {
+    display: none;
+    width: 0%;
+  }
+  .colBack {
+    width: 67%;
+    margin-right: 3%;
+  }
+  .colStat {
+    width: 27%;
+    margin-left: 3%;
+  }
+}
 @media screen and (max-width: 660px) {
   canvas {
     width: 100%;

@@ -7,6 +7,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import leg1 from "../img/leg1.png";
 import leg2 from "../img/leg2.png";
 import comingSoon from "../img/comingSoon.png";
+import gofund from "../img/gofund.PNG";
 import {
   Link as ScrollLink,
   Element,
@@ -26,6 +27,105 @@ import { Link } from "react-router-dom";
 // };
 var days = [
   {
+    day: "day_69",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "cool",
+      "where it all started",
+      "climbing",
+      "border",
+      "rain",
+      "drone",
+      "hot mountains",
+      "bridge",
+      "had to do it to em",
+      "sleeping in a bus",
+      "international border"
+    ],
+    date: "06/12/19",
+    location: "Beaver Creek to Tok",
+    miles: 118,
+    money: 24,
+    text:
+      "Woke up at 4am to a wet feeling on my leg. Opened my eyes are realized it was pouring. Moved to the lodge under an overhang and just sat there with my eyes closed until 7 when buckshot betty’s reopened. I hung up my sleeping bag outside the restaurant (it still hadn’t dried) and went inside. Ordered two pancakes and a Nanaimo bar, which is a dessert of Canadian origin that zach had recommended I try before I leave Canada back in Dawson creek. Ate up and then went to pay and found out the owner had paid for me. Thank you so much. Had some coffee, filled up my water, and then headed out. Spent the last of my CAD cash on maynards fuzzy peach gummies, a treat that I had grown quite fond of. Biked the last 20 miles in Canada quite fast. Met a group of five bikers making their way down to Seattle. Once at the border, I took a bunch of pics, and met this guy named Yousef (I think, didn’t quite hear correctly). He had come from Amish country with his big family and was planning on staying in anchorage for a while. He and his wife used to be big bikers so he ended up giving me loads of food. Loaded up and headed to customs, which were a complete breeze compared to the 3 hours fiasco at the north Dakota/Canada border. Biked into Alaska feeling very content, after 4,100 miles, I had finally made it. Biked fast to Tok as I still had 90 miles to go and It was already noon. Met a pair of bikers from Belgium going down to NYC. Entered a few rainstorms. One of which I met another biker who was going down to Vancouver. The final rainstorm of the day was absolutely massive and lasted for about 2 miles. The rain drops were literally the size of grapes. It was absolutely mad. I couldn’t see and it felt as if I was in a hail storm. Once out of the storm I stopped to take a pic at Tanana river and then made the final push to Tok, which was a straight away. Got to my hosts house, found out I’m sleeping in the old bus he turned into a hunting vehicle. My host is like a complete G, not only has be motorcycled all around the world, but he is a diesel mechanic and has taught engineering all over Alaska. He even cut out the back out of the bus and put it on hinges so he can load a f*cking truck into the back of it when he goes out to hunt. He cooked up some rabbit and pasta and we ate while exchanging stories. Went to bed. Going to a clinic tomorrow to finally get my thumb fixed. The fact that I am finally back in Alaska after 4 years has not set in yet."
+  },
+  {
+    day: "day_68",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "classroom",
+      "drone",
+      "eating like a king",
+      "crazy horse man",
+      "AMR!",
+      "bridge",
+      "fingie",
+      "burwash landing",
+      "road",
+      "drone"
+    ],
+    date: "06/11/19",
+    location: "Destruction Bay to Beaver Creek",
+    miles: 121,
+    money: 24,
+    text:
+      "Slept like a rock and made espresso to wake up. Ate some yogurt which im almost sure now that had been passed and then packed up. Walked through the school one last time and realized that the students get to see these amazing mountains right outside their window. Got on my bike and started moving. Kept getting cars yelling at me that there was a grizzly just a few km down the road but I never saw one. I did see a moose though. I also saw met this guy who is actually riding a horse down to Calgary. He had previously ridden from Brazil to Calgary and now was going to Calgary from Fairbanks. He had his gf driving a motorhome just a few meters behind him. I also saw the couple who I stayed with at summit lake which was absolutely crazy. Got to white water creek and took some pics as it was another place my family stayed four years ago. I also got my water filled up there which was really nice. I started to feel sick and put on all my clothes to try to sweat it out. I biked the rest of the miles pretty quick, completing the entire 120 mile ride to beaver creek in about 8 hours. When I got to Beaver creek I stopped at the visitor center to ask about the cheapest food in town bc I only had 12.65 dollars left. Walked in every place in town and decided to go and get a BLT at Buckshot Betty’s because that’s what I could afford. As I was going in I started talking with a woman I met at the visitor center. She ended up giving me a bit more money to get more food. Thank you so much. I ate a buckshot burger and got a drink highly concentrated with vitamin C to combat my cold. After dinner I went back to this lodge and plugged in my battery and just was chilling. The woman at the desk came out and gave me halibut which was extremely nice. After 11pm, when everyone had pretty much gone home and to sleep, I went to the parking lot behind the lodge, put my bike next to a tree and lay on the ground with my sleeping bag. Went to bed."
+  },
+  {
+    day: "day_67",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: [
+      "broke pannier",
+      "extra terrestrial",
+      "jump",
+      "walk",
+      "sand",
+      "sand",
+      "walk",
+      "washing clothes",
+      "drone",
+      "biking"
+    ],
+    date: "06/10/19",
+    location: "Otter Falls to Destruction Bay",
+    miles: 94,
+    money: 8,
+    text:
+      "Woke up at 8 and met wally for breakfast. He ordered me the “Alcan Surprise” which was  huge breakfast and then paid for it. Thank you so much Wally. I got packed up and then took one picture with him at otter falls then headed out. Met this biker who was a legitimate homeless biker. Big respect. Made to haines junction. As I pulled into a gas station, my right pannier got caught onto the railing of some steps and got completely ripped off. Smh. I went inside the gas station and plugged in my camera’s battery then went outside and fixed my pannier with paracord. I don’t have a knife so I walked around the gas station for broken glass. Sure enough I found some and used it to cut my rope. Secured the pannier and then just loitered around waiting for the battery to charge. After 30 mins I went back in the gas station, thanked the woman working there and hopped on my bike. Biked without any breaks until I got to Kluane lake. A absolutely beautiful lake that I remember back when we drove down 4 years ago. However the lake really changed, and has receded so much. Part of where the lake used to be is now super sandy and because of the wind is constantly blowing up in the air. It was such a beautiful place and looked as if I had landed on a different planet. Flew my drone around the “desert” and then continued. Flew my drone again on another section of the lake. Arrived to destruction bay around 740 which was early so I had a bowl of soup with my remaining cash that Wally had given me (which was 20$). I spent the rest on water and Powerade back at haines junction. Chilled at a fasgas until my host arrived and then biked over to his place. My host works as a teacher and has a suite that is connected to the school. I had the entire place to myself as he went to burwash landing after I settled in. I went through my drone footage, took my first shower in about a week, washed my clothed and socialized with the janitor. I also cooked up some chili which had also been given to me by Wally. Thank you so much Wally. I ate all 6 servings and went to bed. My thumb has now been infected for a week."
+  },
+  {
+    day: "day_66",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["flip", "flip", "flower", "flip", "drone", "gn", "a bluff"],
+    date: "06/09/19",
+    location: "Whitehorse to Otter Falls",
+    miles: 74,
+    money: 0,
+    text:
+      "Met the hosts at the airport at 430 after sleeping like 3 hours. Got a ride back and then fell asleep. Woke up at 1030 and packed up. Ended up pushing off to haines junction. I was so tired the whole day, only stopped twice to take pics of a cool sand area and at this cool sand cliff place on the side of the road to do backflips and stuff. I stayed there for an hour just jumping off these huge cliffs onto this powder-like sand. 20 miles out from haines junction I was so out of water so I stopped at a lodge called otter falls. Filled up on water and was chilling looking at some footage of me falling off the sand cliffs. As I was laughing the owner of the place, wally, came up to me and was like “you talking to yourself”. Iol. I showed him some footage and he asked me where I was planning on staying. I said on the side of the road somewhere by haines junction, which was true and he basically said, alright you stayin here for free boy. He showed me to this little area that he was developing into a camping spot exclusively for bikers. It was really nice and had a closed tarp area. Then Wally fed me which was a huge blessing bc I had no money. He recommended I check out this trail by the campsite so I did. Flew my drone around then biked back and went to sleep."
+  },
+  {
+    day: "day_65",
+    col: [[], [], []],
+    popUrl: [],
+    ogUrl: [],
+    captions: ["dogg", "yukon inn", "whitehorse at night", "steps", "sleep"],
+    date: "06/08/19",
+    location: "Whitehorse",
+    miles: 0,
+    money: 24,
+    text:
+      "Woke up at 7 and headed out. Because the place is so off there grid I couldn’t wash my clothes and now that I had 0$ there was no way I could take my clothes to a laundromat to wash them. Fortunately I had 10$ that the people at the rainy hotdog party the day before had given me was still in my pants pocket. I used that to eat at Boston pizza, where we had celebrated my sisters birthday 4 years ago while we were on the road down to Maryland. Anyways I biked down to Whitehorse because my hosts didn’t want to drive lol. I tried to hitchhike but that didn’t work. In Whitehorse I biked around the places my family visited four years ago. I also got my bike checked out. My chain is so stretched (it skips a lot). But I can’t fix it because I’m a broke boy. Worked in a tim hortons updating blogs and answering emails. At 7 I went to this bar to meet some other couch surfers. Had some good conversation. Went back to tim hortons to try to find ways to work in Anchorage. Saw two French guys from back at the bar and hung out with them. They, like myself, had no place to stay for the night. The reason why I was bumming it was because I really didn’t feel like biking 20 miles back in the rain with my laptop and camera in my backpack. Because my hosts were driving to Whitehorse at 430 the next morning to the airport, we made a deal that I would just meet them at the airport for a ride back. Anyways, ended up sleeping at the airport with the French guys. Ate my last specialty long john doughnut from tim hortons. Also ate a 2000 calorie 3$ strudel from the Canadian Walmart in town. The way to the airport (which is on a bluff overlooking the city) was actually really pretty. "
+  },
+  {
     day: "day_64",
     col: [[], [], []],
     popUrl: [],
@@ -43,7 +143,8 @@ var days = [
     location: "Teslin Lake to Whitehorse",
     miles: 118,
     money: 24,
-    text: ""
+    text:
+      "Woke up with a sore throat and feeling sick. Had 130 miles ahead of me to get to Whitehorse so I was a bit worried. Jake fired up his stove and we ate warm oatmeal. Took a sick pic and parted ways. Biked 25 miles then had “the best cinnamon buns in the world” according to the milepost. They were alright, personally I think the great harvest cinnamon buns in anchorage are way better though. Biked to jakes corner, to my disappointment everything was closed, leaving me to face an incoming rain storm without any lunch. I zipped up my rain jacket and headed out. It pretty much rained for the whole rest of the day. I stopped by this lake and was feasting on my trailmix under a day use area. A family came in and started cooking hotdogs. They offered me a some and I ate 5 hotdogs. They also gave me a lot of beverages. One guy was super drunk and he started treating my helmet like a soccer ball. After they left I pulled myself together and biked the next 70 miles without stopping for water or food. Once in white horse it cleared up a bit. Contacted my host for an address and realized that they were 20 miles north from Whitehorse completely off the grid. “well shit” I thought to myself. Anyways, biked on some rough road in pouring rain then on gravel road to get to the house. The place was actually really nice and completely self-sustained by solar panels. We went to the kahini hotsprings so I could get cleaned. Met this really cool dude who had recently broken his skull and neck at a skate park. It rained as we soaked in the springs. When we returned home I realized all my cash had been stolen out of my wallet in my locker while I was in the hotsprings. That was disappointing, no more salmon and ribs :’(. Ate some dry pasta from J-M’s house and then went to sleep. "
   },
   {
     day: "day_63",
@@ -64,7 +165,8 @@ var days = [
     location: "Continental Divide to Teslin Lake",
     miles: 93,
     money: 24,
-    text: ""
+    text:
+      "Last night was rough, not the roughest night, but still pretty rough. I woke up at midnight, very cold. I moved to the bathroom which was heated and fell asleep sitting in a chair. I woke up at 3am cold once again – the heat had been turned off. I went outside and moved my bike back to the overhang outside of the lodge, this time pulling out my sleeping bag. I fell back asleep only to wake up about two hours later soaking wet. I had been half asleep this whole time and remember noticing the rain coming down and ignoring it because I was under the overhang. Well the rain came down really hard and splashed all over me. I stood up and took my bike to a day use area and fell asleep on a picnic table in my sleeping bag. Woke up at 7 and went and got breakfast. The Owner sauced me some coffee. Had really really good toast. Had a orange fresca which are super good btw. Finally got off the 10km stretch of gravel and biked pretty fast, got lots of drone footage. Took some pics by an abandoned lodge. Sat in the seat of this old volvo and had a piece of glass slice my left buttcheek. Rip. Got to Teslin lake. Met a guy named jake driving up from Utah to UAF for an internship. He invited me to his campsite. Met another biker going south in a gas station. He bought me a coke and shared stories. Gave him some advice. Had a cheap burger at the diner across the street and then headed to the government campground at Teslin lake. Camped with jake, talked a bunch, ate pasta then went to sleep."
   },
   {
     day: "day_62",
@@ -86,7 +188,8 @@ var days = [
     location: "Watson Lake to Continental Divide",
     miles: 85,
     money: 15,
-    text: ""
+    text:
+      "Woke up at 8 and got everything packed up and ready to go. Met J-M at his house at 1030 because he had to go out to a meeting. He gave me some leftovers for breakfast and a bunch of dried food. I don’t have a stove but I happily accepted. I also had that godly hot chocolate for the last time. Headed out the latest I’ve ever headed out: 1145. Lots of rain in the morning. Stopped at the junction 2km before nugget city for a snack. Ate ketchup chips (which are really good) and mikenikes. Once at nugget city I paid 10$ for a ridiculously small sandwich. Met this couple driving back to anchorage. After some conversation the guy offered me a job which is a huge blessing. Will be contacting him once I get to Anchorage. Kept biking. Met an Estonian biker and a retired guy who had run into a damn wolf along the way. Was loudly singing along to “the less I know the better” and realized I was passing by a recreation site. People waved to me lol. Arrived to the continental divide and tried eating some dried pad tai without cooking it. It was very disgusting. Chilled at a campsite eating trail mix and crunchy uncooked pad tai. Moved to the front of the lodge and fell asleep under an overhang, cowboy style without a sleeping bag."
   },
   {
     day: "day_61",
@@ -98,7 +201,8 @@ var days = [
     location: "Watson Lake",
     miles: 0,
     money: 0,
-    text: ""
+    text:
+      "Slept in, woke up at 9. Went inside and took a shower and started washing my clothes. J-M had cooked a massive amount of pancakes and made literally the best hot chocolate ive ever had in my life. Ate about 9 pancakes. He told me about the Japanese guy who has and still is on an adventure around the world. Crazy and inspiring. J-M, an RCMP officer, got a ride in a cop car from his friend. I sat in the back. We parted ways and I went back to the rec center to do scholarship applications. Worked on my sign for the sign forest and went to put it up. I basically took off the makeshift fender made of the slow sign I found on the side of highway 16 and wrote on it. I put the sign by the little bridge on the west side of the forest. A nice family that I saw at Liard let me their screwdriver. I took a picture of their crew in exchange. J-M is one of the main people promoting hockey in the town so he and a police officers, EMT/medics and Dads ran a free barbecue in the rain. Ate 7 burgers. After the rec center closed I walked back to the house and then oiled up my bike. Went to bed early to finished ronin and sorting through pics."
   },
   {
     day: "day_60",
@@ -118,7 +222,8 @@ var days = [
     location: "Liard Hot Springs to Watson Lake",
     miles: 43,
     money: 20,
-    text: ""
+    text:
+      "Woke up at 530, me and kelvin’s crew had negotiated last night on possible ride situations. Kelvin wanted to drive me all the way to Whitehorse to take me out to dinner at a salmon and ribs place. Unfortunately, I couldn’t skip that much of the Alcan. We settled that I go with them for a few miles outside of the prominent Bison zone – a few miles before contact creek.  I hopped in their truck and we drove for a bit, stopped at a few rapids, spotted a swan and saw plenty bison. Once we stopped after about 50 miles I got out and biked to Watson lake. Before I we parted ways, kelvin gave me 50$ to go to the restaurant he wanted to take me to and an address to send a letter to him once I finished my trip. Such great people. He also gave me some more “vitamin L” (Lindor Chocolates”) which was what he gave me when we first met a few days ago. *unfortunately all my money got stolen so I didn’t get to go to the restaurant rip lol*. Stopped at contact creek gas station, chugged a red bull and then grinded out the miles to Watson lake. Lots of rain, and a single bear. Finished my beef jerky. Crossed into the Yukon and in classic simon nature I climbed the sign and took a picture of me on top of it. Once in Watson lake I had lunch in a small diner and then went to the library. It was closed so I went to the rec center. On the way some native people told me I probably would get eaten by wolves. Very spooky. Watson lake was my first place with reception and wifi for a few days so I got caught up with emails and such in the rec center. It hailed like crazy. Checked out the sign forest, got an idea for a sign of my own. Met my first biker on the road, an Austrian guy who was about 60 biking to Vancouver. Met my host J-M and camped in his backyard. Ate Chinese takeout for dinner. Fell asleep watching ronin in my tent."
   },
   {
     day: "day_59",
@@ -150,7 +255,8 @@ var days = [
     location: "Summit Lake to Liard Hot Springs",
     miles: 84,
     money: 35,
-    text: ""
+    text:
+      "Wind wrecked me yet again. My cheap 80$ tent from amazon collapsed from all the wind at night and I had to wake up at 2am and re stake everything. Ofc it got all blown away. Around 730 a voice outside of my tent said “anyone alive?” I woke up and stayed quiet for a few moments, I decided to answer, “yeah what’s up” I responded. Turns out it was a park ranger. He made me give him 20$ for camping there. Should’ve stayed quiet. Hiked a tiny bit then began my descent. Saw a bunch of bears, nbd tho my yelling scared them off. Saw two moose as well. Had lunch in toad river. Had a nice wrap. Met some cool veterans going up to Alaska for the Veteran games. Terrain changed up yet again after toad river, with grand cliffs stretching way above me. After a couple miles terrain changed again and I found myself going up a mountain. Halfway up I was taking a break and this dude in a shitty car going south (I’m going north) stopped next to me and started telling me to get in his car. I was like tf, why tf would I get in your car. He kept insisting. I just gave home a thumbs up and said no thanks lmao. Then I filmed myself dancing to tame impala’s eventually. At the top of the mountain I got a bunch of drone footage. Got to muncho lake Then I realized that I still had to get through bison territory and it was already 705 and I had over 43 miles to go. Then began the fastest 43 miles I’ve ever biked. I got to liard hot springs at 930. It was crazy, I absolutely booked it. Also I almost got killed by a bison Bc APPARENTLY you’re not supposed yell at them. Anyways, was going down a hill that curved to the left. Spotted like five bison chilling on the left side as I was descending. Concluded I would just zoom past them. Went around the turn came across a huge herd with tons of calves on the left side of the road. My Ayo’s scared them and they started running away along the left hand side of the road in front of me which was chill until they decided to hang a right. The back half of the herd stopped in the middle of the road in front of me. As I began to slow down I looked behind me and was greeted by a charging bull from the small satellite herd that I just passed. As I began switching my gears so I could swerve onto the muddy grass and dip, I yelled “f*ck”. This f*ck saved my life. My yell scared the herd in front of me and they ran off the road, I hauled ass. The bull lost interest after I passed the other herd. Met a man named dr joe. He let me set up camp at his site while I took a dip in the hotsprings. At the hot springs I met kelvin carrol and Norris, an elderly trio of tourists that I had met the previous day at a viewpoint. They gave me Gatorade and chocolate (back at the viewpoint) and offered me food and to let me sleep in their car. I said, “bet” then continued to the springs. Was in black spandex underwear Bc I don’t have a swimsuit. Met some cool people. One dude that saw me early down the road asked if I was the crazy biker guy, I said yessir. A guy there got in a argument with a park ranger about where he was parked and said he would axe the parks gate if they closed it. The ranger was lowkey a narc. The bro then gave me his last beer. Ate cheese and chilled with kelvin and his crew. Moved my stuff quietly from dr joes spot. Dr joe also is a orthopedic dr and gave me some recommendations for my knees. Shoutout dr joe, for helping me out. Slept well."
   },
   {
     day: "day_58",
@@ -175,7 +281,8 @@ var days = [
     location: "Ft Nelson to Summit Lake",
     miles: 84,
     money: 35,
-    text: ""
+    text:
+      "Alright, what a day. I saw ten bears on the side of the road man. In just one day. Like I’ve seen bears and all that plenty of times but when I do I usually go the other way and avoid them, not try to go around them. Anyways, the second bear I saw started coming at me. I had my bear spray thang on me, although I didn’t want to spray him Bc it could blind him and really hurt him. Fortunately, this truck pulled out of nowhere and saved me. From then on, my bear encounters were alright, except the one right after. I came across two bears on both sides of the road. The one on the right was so huge. I couldn’t scare him off so I slowly biked past him with my thang ready to go. He was all stanced up and ready to destroy me. He stared me down. It was so intense. After that I perfected my bear repellent protocol. Anyways besides the bears, today was the most ascent I will and have had in a single day: over 6000 feet. Summit lake is at the highest point of the alcan. Anyways so besides shredding my knees all day, it stormed all morning and then again about an hour out. Headwind was huge. By the last few hours of my bike trip I was like 110% alert scanning every bush for a bear. I was literally acting like a crackhead. I also saw the biggest moose I’ve ever seen ever chillin on the side of the road. But I got through it. Arrived to the summit pass campground a little before 10. A couple that had passed me while I biked through the storm fed me and gave me beverages. I slept well and dreamed about bears."
   },
   {
     day: "day_57",
@@ -1607,20 +1714,20 @@ class Vis extends Component {
               Total Miles: <i>≈ 4,500</i>
             </p>
             <p className="mediumSize">
-              Miles Left: <i>≈ 2,100</i>
+              Miles Left: <i>≈ 320</i>
             </p>
             <p className="mediumSize">
-              Time Elapsed: <i>35 days</i>
+              Time Elapsed: <i>70 days</i>
             </p>
             <p className="mediumSize">
               Start Date: <i>04/04/2019</i>
             </p>
             <p className="mediumSize">
-              Target Completion Date: <i>06/22/2019</i>
+              Target Completion Date: <i>06/16/2019</i>
             </p>
 
             <p className="mediumSize">
-              Daily Avg: <i>81 miles</i>
+              Daily Avg: <i>91 miles</i>
             </p>
             <p className="mediumSize">
               Bike Model: <i>Fuji Touring</i>
@@ -1650,23 +1757,36 @@ class Vis extends Component {
               pay bills, buy food, and most importantly, save for this bike
               ride. When April finally rolled around I sold all my furniture,
               packed my things, and hopped onto my bike.
-              {/* <br /> <br />
+              <br />
+              <br />
               Besides the personal sentimental reasons that this trip holds, I
               am also riding to raise money for a STEM education camp that my
               small non-profit is running with STEMBees (a Ghana based
               nonprofit) at the University of Ghana. While we have completed
               curriculum, secured a location and instructors and have robotics
-              parts, we need funding to actually transport myself, another
-              instructor and all of the parts to Accra Ghana. Any help is beyond
-              greatly appreciated. To donate {""}
+              parts, we need funding to transport instructors and all of the
+              parts to Accra Ghana. Any help is beyond greatly appreciated. To
+              donate {""}
               <a
                 className="linkK"
                 href="https://www.gofundme.com/stem-education-for-ghanaian-students"
               >
                 visit our go fund me.
               </a>
-              Thank you! */}
+              Thank you!
             </p>
+          </div>
+          <div className="gofund">
+            <br />
+            <a href="https://www.gofundme.com/stem-education-for-ghanaian-students">
+              <img className="goImg hover" src={gofund} alt="gofund" />
+            </a>
+            {/* <embed
+              height="500px"
+              width="100%"
+              src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=stem-education-for-ghanaian-students&image=1&coinfo=1&preview=1"
+              type="text/html"
+            /> */}
           </div>
           <br />
         </div>
@@ -1696,7 +1816,16 @@ class Vis extends Component {
             <img src={comingSoon} alt="leg4" className="img hover" />
           </div>
         </div>
-        <br /> <br /> <br />
+        <br />{" "}
+        <p className="center mediumSize">
+          <i>
+            Below are my daily logs for my trip. These logs are written as
+            "braindumps" and with much haste so I guarantee they are fraught
+            with grammatical errors. For navigational ease between dates, click
+            the menu toggle in the upper right hand corner.
+          </i>
+        </p>
+        <br /> <br />
         {days.map((day, dayIndex) => {
           return (
             <Element name={day.day} className="dayDiv">
