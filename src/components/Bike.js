@@ -246,7 +246,6 @@ var days = [
       "almost died",
       "hotsprings",
       "hotsprings",
-      "uphill",
       "uhh",
       "recreation of my bison encounter by dr joe",
       "asserting dominance on the road"
@@ -383,16 +382,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: [
-      "running",
-      "zach",
-      "climb",
-      "jumpin pic",
-      "down",
-      "bridge",
-      "zach",
-      "bridge"
-    ],
+    captions: ["running", "zach", "climb", "down", "zach", "bridge"],
     date: "05/27/19",
     location: "Dawson Creek",
     miles: 0,
@@ -411,7 +401,6 @@ var days = [
       "jumpin pic",
       "jumpin pic",
       "horse",
-      "bridge",
       "beaverlodge",
       "rio",
       "BC",
@@ -438,10 +427,11 @@ var days = [
       "grass",
       "grass",
       "flowers",
+      "new fender",
       "bridge",
       "sun dial",
       "gn",
-      "new fender",
+
       "clouds"
     ],
     date: "05/25/19",
@@ -502,7 +492,7 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["a new friend", "art", "art", "art", "outside", "the city"],
+    captions: ["a new friend", "art", "the city", "art", "art", "outside"],
     date: "05/22/19",
     location: "Edmonton",
     miles: 0,
@@ -1598,7 +1588,7 @@ class Vis extends Component {
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
+    // this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
   }
 
   componentDidMount() {
@@ -1656,22 +1646,23 @@ class Vis extends Component {
         caption: days[dayIndex].captions[indexFull]
       },
 
-      this.phoPop.show()
+      this.phoPop.show(),
+      console.log(this.state.img)
     );
   }
-  _executeAfterModalClose() {
-    this.setState({
-      img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif",
-      link: "x"
-    });
-  }
+  // _executeAfterModalClose() {
+  //   this.setState({
+  //     img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif",
+  //     link: "x"
+  //   });
+  // }
 
   render() {
     return (
       <div className="outerBikeDiv">
         <Nav days={days} />
         <SkyLight
-          afterClose={this._executeAfterModalClose}
+          // afterClose={this._executeAfterModalClose}
           closeButtonStyle={{ color: "#000" }}
           dialogStyles={this.state.popupStyle}
           hideOnOverlayClicked
