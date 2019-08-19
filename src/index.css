@@ -22,8 +22,9 @@ a {
   text-decoration: none;
 }
 .goImg {
-  width: 100%;
-  padding: 16px;
+  width: 90%;
+  padding: 0px 5%;
+  padding-top: 12px;
 }
 
 .linkK {
@@ -124,9 +125,11 @@ canvas {
   width: 50%;
   margin-right: 0%;
 }
-.gofund {
+.filmDiv {
   width: 23%;
   margin-right: 2%;
+  display: flex;
+  align-items: center;
 }
 .absol {
   position: absolute;
@@ -386,21 +389,30 @@ canvas {
 
   /* margin-left: -42vw; */
 }
-@media screen and (max-width: 880px) {
-  .gofund {
-    display: none;
-    width: 0%;
+/* @media screen and (max-width: 880px) {
+  .colStat,
+  .colBack,
+  .filmDiv {
+    width: 100%;
+    margin: 1%;
+    padding: 0px;
   }
-  .colBack {
-    width: 67%;
-    margin-right: 3%;
+  .goImg {
+    padding: 0px;
   }
-  .colStat {
-    width: 27%;
-    margin-left: 3%;
-  }
-}
+} */
 @media screen and (max-width: 660px) {
+  .colStat,
+  .colBack,
+  .filmDiv {
+    width: 100%;
+    margin: 1%;
+    padding: 0px;
+  }
+  .goImg {
+    padding: 0px;
+    width: 70%;
+  }
   canvas {
     width: 100%;
   }
@@ -447,7 +459,8 @@ canvas {
   }
 }
 @media screen and (max-width: 460px) {
-  .photoF {
+  .photoF,
+  .goImg {
     width: 100%;
   }
 }
