@@ -252,7 +252,7 @@ class Vis extends Component {
           <div className="filmDiv">
             <br />
             <div className="center">
-              <a href="https://www.gofundme.com/stem-education-for-ghanaian-students">
+              <a href="">
                 <img className="goImg hover" src={film} alt="gofund" />
               </a>
               <p className="center mediumSize">
