@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 body,
 html {
   margin: 0;
@@ -26,11 +27,129 @@ a {
   padding: 0px 5%;
   padding-top: 12px;
 }
+.popupBackDiv {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupOverlay {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.5;
+  pointer-events: all;
+}
+.popDiv {
+  background: white;
+  width: 600px;
+  height: 800;
+  z-index: 103;
+  text-align: center;
+}
+
+.popupImgDiv {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 45px;
+  width: 550px;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.absolCap {
+  position: absolute;
+
+  left: 50%;
+  margin-left: -65px;
+  top: 50%;
+  margin-top: -10px;
+  z-index: -1;
+}
+.imgPH {
+  max-height: 550px;
+}
+.popupLinkImg {
+  transition: opacity 1s;
+}
+.popupLinkImg:hover {
+  opacity: 0.7;
+}
+
+.popopCaption {
+  margin: 0px;
+  padding: 0px;
+  height: 85px;
+  font-size: 23px;
+  font-family: "Nothing You Could Do", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuOut {
+  position: absolute;
+  width: 96%;
+  bottom: 10px;
+  left: 2%;
+  right: 2%;
+}
+.menuIn {
+  position: relative;
+  color: white;
+  z-index: 100;
+  width: 100%;
+}
+li {
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+}
+li .menuLi {
+  display: flex;
+  flex-direction: column;
+}
+.menuText {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 55px;
+  cursor: pointer;
+  pointer-events: all;
+  top: 1px;
+}
+
+.borderStrike {
+  position: absolute;
+  width: 100%;
+  border-top: 10px solid white;
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+}
+.aboutDiv {
+  width: 100%;
+  transition: all 1s;
+}
 
 .linkK {
   color: black;
   border-bottom: 2px solid #ec70dc;
   transition: 0.3s;
+  cursor: pointer;
 }
 .linkK:hover {
   color: #ec70dc;
@@ -58,10 +177,74 @@ a {
   margin-bottom: -7px;
 }
 canvas {
-  width: 50%;
+  width: 100%;
   height: 100vh;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
+}
+.displayVidOut {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.logoDiv {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.logoImg {
+  position: relative;
+  width: 40px;
+  padding: 7px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.logoImg:hover {
+  transform: scale(0.9);
+}
+.displayVid {
+  position: absolute;
+  width: 700px;
+  display: flex;
+  justify-items: center;
+}
+video {
+  z-index: 43;
+  width: 100%;
+
+  cursor: pointer;
+}
+.vidColor1 {
+  filter: hue-rotate(190deg);
+  transition: all 1s;
+}
+.vidColor2 {
+  filter: hue-rotate(250deg);
+  transition: all 1s;
+}
+.vidColor3 {
+  filter: hue-rotate(310deg);
+  transition: all 1s;
+}
+.vidColor1:hover {
+  filter: hue-rotate(0deg);
+  transform: scale(0.97);
+}
+.vidColor2:hover {
+  filter: hue-rotate(0deg);
+  transform: scale(0.97);
+}
+.vidColor3:hover {
+  filter: hue-rotate(0deg);
+  transform: scale(0.97);
 }
 .center {
   text-align: center;
@@ -70,19 +253,11 @@ canvas {
 .mediumSize {
   font-size: 13px;
 }
-.popDiv {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: column;
-}
+
 .popOutDiv {
   width: 80% !important;
 }
-.imgPH {
-  min-height: 300px;
-}
+
 .hover {
   transition: 0.2s;
   cursor: pointer;
@@ -104,13 +279,15 @@ canvas {
 
 .botMenu {
   position: relative;
+  margin: 0px;
   opacity: 1;
   width: 90%;
-  margin-top: 25px;
+
   margin-left: 5%;
   margin-right: 5%;
   transition: 0.2s;
   padding: 10px 0px;
+
   /* text-align: center;
   display: flex;
   flex-direction: row;
@@ -131,13 +308,7 @@ canvas {
   display: flex;
   align-items: center;
 }
-.absol {
-  position: absolute;
-  left: 50%;
-  margin-left: -70px;
-  margin-top: 140px;
-  z-index: -1;
-}
+
 .outerBikeDiv {
   margin: 0px 3%;
 }
@@ -152,10 +323,10 @@ canvas {
   transition: 0.2s;
 }
 .landing {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   height: 100vh;
+  z-index: -51;
+  background: transparent;
 }
 .smallFont {
   font-size: 13px;
@@ -163,8 +334,8 @@ canvas {
 .landLeft {
   /* background: transparent; */
   background: #c6ffdd;
-  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
-  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd);
 }
 .landRight {
   background: #bdc3c7; /* fallback for old browsers */
@@ -230,13 +401,7 @@ canvas {
   margin-right: 2%;
   margin-top: 0px;
 }
-.photoF {
-  padding-top: 20px;
-  transition: 0.3s;
-}
-.photoF:hover {
-  opacity: 0.7;
-}
+
 .tri {
   display: flex;
 
@@ -353,7 +518,14 @@ canvas {
 .linkStyle {
   text-decoration: none;
 }
-
+.linky:hover {
+  opacity: 0.6;
+}
+.centerH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*Icon/Photo Styling*/
 .menuIcon {
   max-width: 25px;
@@ -386,21 +558,100 @@ canvas {
   height: 45vh;
   text-align: center;
   width: 80%;
-
-  /* margin-left: -42vw; */
 }
-/* @media screen and (max-width: 880px) {
-  .colStat,
-  .colBack,
-  .filmDiv {
-    width: 100%;
-    margin: 1%;
-    padding: 0px;
+.fade {
+  z-index: 100;
+  -webkit-animation: fadein 7s;
+  -moz-animation: fadein 7s;
+  -ms-animation: fadein 7s;
+  -o-animation: fadein 7s;
+  animation: fadein 7s;
+  margin: 0px;
+}
+/* margin-left: -42vw; */
+@keyframes fadein {
+  0% {
+    opacity: 0;
   }
-  .goImg {
-    padding: 0px;
+  20% {
+    opacity: 0;
   }
-} */
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 660px) {
   .colStat,
   .colBack,
@@ -416,10 +667,7 @@ canvas {
   canvas {
     width: 100%;
   }
-  .botMenu {
-    margin: 0px;
-    width: 100%;
-  }
+
   .aboutDiv {
     margin-top: 5vh;
     left: 95%;
@@ -428,9 +676,7 @@ canvas {
     margin-top: 5vh;
     left: 5%;
   }
-  .landing {
-    flex-direction: column;
-  }
+
   .landLeft,
   .landRight,
   .quad {

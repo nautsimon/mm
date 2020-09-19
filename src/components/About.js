@@ -1,4 +1,4 @@
-import simonDumb from "../img/simonDumb.JPG";
+import simonDumb from "../img/simonon.jpg";
 import returnImg from "../img/return.png";
 import "./about.css";
 import React, { Component } from "react";
@@ -16,53 +16,37 @@ class PopulateText extends Component {
               </Link>
             </div>
           </div>
-          <img className="aboutPhoto" src={simonDumb} alt="simonDumb" />
+          <div className="aboutDivOut">
+            <div className="aboutDivIn">
+              <a className="aboutLink" href="https://simonmahns.tech">
+                [my actual website]
+              </a>
+              <a className="aboutLink" href="https://instagram.com/simonmahns">
+                [instagram]
+              </a>
+              <a className="aboutLink" href="https://github.com/simonmahns/mm">
+                [code for this site]
+              </a>
+            </div>
+          </div>
+          {/* <img className="aboutPhoto" src={simonDumb} alt="simonDumb" />
           <p className="aboutText">
-            <b>name:</b> simon
+            <b>welcome to my site</b>
           </p>
-          <p className="aboutText">
-            <b>sex:</b> egg
-          </p>
-          <p className="aboutText">
-            <b>interests:</b> Rotisserie Chicken
-          </p>
-          <p className="aboutText">
-            <b>vertical jump:</b> 5 meters
-          </p>
-          <p className="aboutText">
-            <b>height:</b> 1cm
-          </p>
-          <p className="aboutText">
-            <b>shoe size:</b> 9.5US
-          </p>
-
-          <b className="aboutLink">PROJECTS (coming soon eventually)</b>
 
           <p className="aboutText">
             <b>
               <a className="aboutLink" href="https://instagram.com/simonmahns/">
-                insta 1
-              </a>{" "}
-              |{" "}
-              <a
-                className="aboutLink"
-                href="https://www.instagram.com/simonononononon/"
-              >
-                insta 2
-              </a>{" "}
-              |{" "}
-              <a className="aboutLink" href="https://twitter.com/907simon">
-                twitter
-              </a>{" "}
-              |{" "}
-              <a
-                className="aboutLink"
-                href="https://github.com/simonmahns/muse"
-              >
-                code for this site
+                [insta 1]
+              </a>
+              <a className="aboutLink" href="https://simonmahns.tech">
+                [my actual website]
+              </a>
+              <a className="aboutLink" href="https://github.com/simonmahns/mm">
+                [code for this site]
               </a>
             </b>
-          </p>
+          </p> */}
         </div>
       </div>
     );

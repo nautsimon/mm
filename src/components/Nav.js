@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import {
   Link as ScrollLink,
   Element,
-  animateScroll as scroll
+  animateScroll as scroll,
 } from "react-scroll";
 class Nav extends Component {
   constructor(props) {
@@ -44,31 +44,31 @@ class Nav extends Component {
         top: 0,
         right: this.state.isOpen ? "0px" : "-100%",
         width: "100%",
-        height: "15%",
+        height: "35%",
         display: "flex",
         flexDirection: "column",
         background: "#e7a2a4",
         transition: "right 0.3s ease",
-        zIndex: 20
+        zIndex: 20,
       },
       overlay: {
         background: "#000000",
         opacity: 0.1,
-        top: "15%",
+        top: "35%",
         left: "0",
         position: "fixed",
         height: "100%",
         width: this.state.isOpen ? "100% " : "0px",
         zIndex: 50,
-        transition: "width 0.3s ease"
-      }
+        transition: "width 0.3s ease",
+      },
     };
     return (
       <div>
         <div style={styles.overlay} onClick={() => this.handleLink()} />
-        <div style={styles.container}>
-          <div className="botMenu row">
-            {this.props.days.map(day => {
+        <div style={styles.container} className="centerH">
+          <div className="botMenu row centerH">
+            {this.props.days.map((day) => {
               return (
                 <ScrollLink
                   to={day.day}

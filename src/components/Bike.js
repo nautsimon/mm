@@ -8,13 +8,13 @@ import leg1 from "../img/leg1.png";
 import leg2 from "../img/leg2.png";
 import leg3 from "../img/leg3.png";
 import leg4 from "../img/leg4.png";
-import film from "../img/film.png";
+import film from "../img/path.PNG";
 // import comingSoon from "../img/comingSoon.png";
 import days from "./days.js";
 import {
   Link as ScrollLink,
   Element,
-  animateScroll as scroll
+  animateScroll as scroll,
 } from "react-scroll";
 
 import SkyLight from "react-skylight";
@@ -42,7 +42,7 @@ for (var day = 0; day < days.length; day++) {
         ".jpg"
     );
     days[day].popUrl.push(
-      "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco,w_400,c_fill,ar_4:3/v1/bike/" +
+      "https://res.cloudinary.com/dgmuzb9mm/image/upload/q_auto:eco/v1/bike/" +
         days[day].day +
         "-" +
         i +
@@ -74,10 +74,14 @@ class Vis extends Component {
       link: "x",
       width: window.innerWidth,
       height: window.innerHeight,
-      popupStyle: {}
+      popupStyle: {},
+      popupO: 0,
+      popupVis: "hidden",
     };
     this.handleMenu = this.handleMenu.bind(this);
     this.updateStyle = this.updateStyle.bind(this);
+    this.handlePop = this.handlePop.bind(this);
+    this.handlePopClose = this.handlePopClose.bind(this);
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     // this._executeAfterModalClose = this._executeAfterModalClose.bind(this);
   }
@@ -108,8 +112,8 @@ class Vis extends Component {
           marginLeft: "-45%",
           textAlign: "center",
           backgroundColor: "#ffffff",
-          minHeight: "auto"
-        }
+          minHeight: "auto",
+        },
       });
     } else {
       this.setState({
@@ -119,8 +123,8 @@ class Vis extends Component {
           marginLeft: "-216px",
           textAlign: "center",
           backgroundColor: "#ffffff",
-          minHeight: "auto"
-        }
+          minHeight: "auto",
+        },
       });
     }
   }
@@ -130,16 +134,22 @@ class Vis extends Component {
     console.log(this.state);
   }
   handlePop(colNum, indexFull, index, dayIndex) {
-    this.setState(
-      {
-        img: days[dayIndex].popUrl[indexFull],
-        link: days[dayIndex].col[colNum][index],
-        caption: days[dayIndex].captions[indexFull]
-      },
-
-      this.phoPop.show(),
-      console.log(this.state.img)
-    );
+    this.setState({
+      img: days[dayIndex].popUrl[indexFull],
+      link: days[dayIndex].col[colNum][index],
+      caption: days[dayIndex].captions[indexFull],
+      popupO: 1,
+      popupVis: "visible",
+    });
+  }
+  handlePopClose() {
+    this.setState({
+      img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Loading.gif",
+      link: "x",
+      caption: "loading...",
+      popupO: 0,
+      popupVis: "hidden",
+    });
   }
   // _executeAfterModalClose() {
   //   this.setState({
@@ -152,30 +162,33 @@ class Vis extends Component {
     return (
       <div className="outerBikeDiv">
         <Nav days={days} />
-        <SkyLight
-          // afterClose={this._executeAfterModalClose}
-          closeButtonStyle={{ color: "#000" }}
-          dialogStyles={this.state.popupStyle}
-          hideOnOverlayClicked
-          ref={ref => (this.phoPop = ref)}
+        <div
+          style={{
+            visibility: this.state.popupVis,
+          }}
+          className="popupBackDiv"
         >
+          <div
+            className="popupOverlay"
+            onClick={() => this.handlePopClose()}
+          ></div>
           <div className="popDiv">
-            <div>
-              <p className="absol">click to view raw img</p>
-              <a href={this.state.link}>
-                <LazyLoadImage
-                  alt={"img"}
-                  src={this.state.img}
-                  effect="blur"
-                  className="photoF imgPH"
-                />
+            <div className="popupImgDiv">
+              <p className="absolCap">click to view raw img</p>
+              <a
+                href={this.state.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="popupLinkImg"
+              >
+                <img alt={"img"} src={this.state.img} className="imgPH " />
               </a>
-              <p>
-                <i>"{this.state.caption}"</i>
-              </p>
             </div>
+            <p className="popopCaption">
+              <i>"{this.state.caption}"</i>
+            </p>
           </div>
-        </SkyLight>
+        </div>
         <div className="returnDiv">
           <Link to="/" className="linkStyle">
             <img src={returnImg} alt="return" className="returnIcon" />
@@ -252,11 +265,15 @@ class Vis extends Component {
           <div className="filmDiv">
             <br />
             <div className="center">
-              <a href="">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.google.com/maps/dir/Baltimore,+Maryland,+USA/Frederick,+MD,+USA/University+of+Pittsburgh/Toledo,+OH,+USA/Case+Western+Reserve+University/Anchorage,+Alaska,+USA/@37.7607724,-135.8525419,3z/data=!4m73!4m72!1m5!1m1!1s0x89c803aed6f483b7:0x44896a84223e758!2m2!1d-76.6121893!2d39.2903848!1m5!1m1!1s0x89c9c50c8cbdaee3:0xda6247bdbd111c99!2m2!1d-77.4105409!2d39.4142688!1m10!1m1!1s0x8834f22bd95af11f:0x52e119b60d23ad0f!2m2!1d-79.960835!2d40.4443533!3m4!1m2!1d-81.581518!2d41.4949292!3s0x8830fc5fd406856b:0x15e566fbbe930950!1m5!1m1!1s0x883b872dfc1e4e79:0x7c3cc89f453ac345!2m2!1d-83.5378674!2d41.6528052!1m35!1m1!1s0x8830fb893658122d:0x719069e07bb00b91!2m2!1d-81.6083838!2d41.5043413!3m4!1m2!1d-83.6863709!2d41.6135828!3s0x883c7a24f4dc0923:0x500b5132b26ad611!3m4!1m2!1d-87.9112007!2d43.0165356!3s0x880519c10b344793:0xa160efb2fa1d13aa!3m4!1m2!1d-104.6008943!2d50.4283093!3s0x531c1e273d08c553:0x6939227b89497181!3m4!1m2!1d-112.7955365!2d53.5702992!3s0x53a0660563de91bf:0x28de672ad7e866b3!3m4!1m2!1d-113.4944769!2d53.5111432!3s0x53a022078d62a593:0x665000730891a69f!3m4!1m2!1d-118.7949125!2d55.1864713!3s0x539096aa32802681:0xf51b77c1af8da478!1m5!1m1!1s0x56c8917604b33f41:0x257dba5aa78468e3!2m2!1d-149.9002778!2d61.2180556!3e1"
+              >
                 <img className="goImg hover" src={film} alt="gofund" />
               </a>
               <p className="center mediumSize">
-                <i>A short film on my trip (fall 2020)</i>
+                <i>The Approximate Route</i>
               </p>
             </div>
             {/* <embed
