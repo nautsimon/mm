@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
@@ -7,12 +7,11 @@ import About from "./components/About";
 // import Pro from "./components/Pro";
 import East from "./components/East";
 import Bike from "./components/Bike";
-import Vis from "./components/Vis";
+//import Vis from "./components/Vis";
 import Lucy from "./components/Lucy";
 
 import aboutIcon from "./img/aboutIcon.png";
-import allIcon from "./img/all.png";
-import logo from "./cornlogowhite.png";
+
 // import projectIcon from "./img/inspire.png";
 import SceneAlt from "./components/ThreeRenderAlt";
 import { BrowserRouter as Router, Link } from "react-router-dom";
@@ -42,7 +41,7 @@ class App extends React.Component {
     }));
   }
   handleClick(button) {
-    if (button == 1) {
+    if (button === 1) {
       this.setState((state) => ({
         hex: "0x45C6EE",
         back1: 1,
@@ -53,7 +52,7 @@ class App extends React.Component {
         dis3: "hidden",
       }));
     }
-    if (button == 2) {
+    if (button === 2) {
       this.setState((state) => ({
         hex: "0xA244F0",
         back1: 0,
@@ -64,7 +63,7 @@ class App extends React.Component {
         dis3: "hidden",
       }));
     }
-    if (button == 3) {
+    if (button === 3) {
       this.setState((state) => ({
         hex: "0xEE9C45",
         back1: 0,
@@ -300,14 +299,14 @@ class App extends React.Component {
               return <Pro />;
             }}
           /> */}
-          <Route
+          {/* <Route
             path="/vis"
             exact
             strict
             render={() => {
               return <Vis />;
             }}
-          />{" "}
+          />{" "} */}
           <Route
             path="/roadtrip"
             exact

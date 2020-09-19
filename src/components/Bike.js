@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
-import * as Scroll from "react-scroll";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -11,15 +11,7 @@ import leg4 from "../img/leg4.png";
 import film from "../img/path.PNG";
 // import comingSoon from "../img/comingSoon.png";
 import days from "./days.js";
-import {
-  Link as ScrollLink,
-  Element,
-  animateScroll as scroll,
-} from "react-scroll";
-
-import SkyLight from "react-skylight";
-
-import LazyLoad from "react-lazyload";
+import { Element } from "react-scroll";
 
 import returnImg from "../img/return.png";
 import { Link } from "react-router-dom";
@@ -28,8 +20,6 @@ import { Link } from "react-router-dom";
 //   // marginTop: "-300px",
 //   // marginLeft: "-35%"
 // };
-
-var content;
 
 for (var day = 0; day < days.length; day++) {
   var organizer = 0;

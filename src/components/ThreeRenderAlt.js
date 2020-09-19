@@ -134,7 +134,7 @@ class SceneAlt extends Component {
       this.camera.rotation.z +=
         (-counter * counter + 21 * counter - 20) * 0.00005;
     }
-    if (this.props.hex == "0x45C6EE") {
+    if (this.props.hex === "0x45C6EE") {
       if (hslH < 0.46) {
         hslH += 0.003;
         this.redLight.color.setHSL(hslH, 0.5, 0.5);
@@ -152,7 +152,7 @@ class SceneAlt extends Component {
         // this.renderer.setClearColor.color.setHSL(hslH, 0.2, 0.2);
       }
     }
-    if (this.props.hex == "0xA244F0") {
+    if (this.props.hex === "0xA244F0") {
       if (hslH < 0.56) {
         hslH += 0.003;
         this.redLight.color.setHSL(hslH, 0.5, 0.5);
@@ -170,7 +170,7 @@ class SceneAlt extends Component {
         // this.renderer.setClearColorHSL(hslH, 0.2, 0.2);
       }
     }
-    if (this.props.hex == "0xEE9C45") {
+    if (this.props.hex === "0xEE9C45") {
       if (hslH < 0.95) {
         hslH += 0.003;
         this.redLight.color.setHSL(hslH, 0.5, 0.5);

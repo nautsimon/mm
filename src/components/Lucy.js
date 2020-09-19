@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./Nav";
-import * as Scroll from "react-scroll";
+
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -8,13 +8,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import film from "../img/lucnsi.jpg";
 // import comingSoon from "../img/comingSoon.png";
 import days from "./roadDay.js";
-import {
-  Link as ScrollLink,
-  Element,
-  animateScroll as scroll,
-} from "react-scroll";
-
-import LazyLoad from "react-lazyload";
+import { Element } from "react-scroll";
 
 import returnImg from "../img/return.png";
 import { Link } from "react-router-dom";
@@ -24,7 +18,6 @@ import { Link } from "react-router-dom";
 //   // marginLeft: "-35%"
 // };
 
-var content;
 console.log(days);
 for (var day = 1; day < days.length + 1; day++) {
   var organizer = 0;
@@ -249,7 +242,11 @@ class Lucy extends Component {
           <div className="filmDiv">
             <br />
             <div className="center">
-              <a target="_blank" rel="noopener noreferrer" href="">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="www.cookedcorn.casa"
+              >
                 <img className="goImg hover" src={film} alt="gofund" />
               </a>
               <p className="center mediumSize">

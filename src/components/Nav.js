@@ -2,12 +2,8 @@ import "./nav.css";
 
 import React, { Component } from "react";
 import HamburgerMenu from "react-hamburger-menu";
-import { Link } from "react-router-dom";
-import {
-  Link as ScrollLink,
-  Element,
-  animateScroll as scroll,
-} from "react-scroll";
+//import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 class Nav extends Component {
   constructor(props) {
     super(props);

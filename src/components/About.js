@@ -1,4 +1,3 @@
-import simonDumb from "../img/simonon.jpg";
 import returnImg from "../img/return.png";
 import "./about.css";
 import React, { Component } from "react";
