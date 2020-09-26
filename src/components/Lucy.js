@@ -225,7 +225,7 @@ class Lucy extends Component {
               thousand miles across and around the continental US. Also, this
               car has a manual transmission, so Lucy and I learned how to drive
               stick the day before we left RIP clutch. Below are some pic and
-              things.
+              things (written by Lucy).
               <br />
             </p>
           </div>
