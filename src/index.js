@@ -1,16 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-
-// import Scene from "./components/ThreeRender";
 import About from "./components/About";
-// import Pro from "./components/Pro";
 import East from "./components/East";
 import Bike from "./components/Bike";
-//import Vis from "./components/Vis";
 import Lucy from "./components/Lucy";
-
-// import projectIcon from "./img/inspire.png";
 import SceneAlt from "./components/ThreeRenderAlt";
 import { BrowserRouter as Router } from "react-router-dom";
 import Route from "react-router-dom/Route";

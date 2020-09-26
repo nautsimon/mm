@@ -28,24 +28,6 @@ class PopulateText extends Component {
               </a>
             </div>
           </div>
-          {/* <img className="aboutPhoto" src={simonDumb} alt="simonDumb" />
-          <p className="aboutText">
-            <b>welcome to my site</b>
-          </p>
-
-          <p className="aboutText">
-            <b>
-              <a className="aboutLink" href="https://instagram.com/simonmahns/">
-                [insta 1]
-              </a>
-              <a className="aboutLink" href="https://simonmahns.tech">
-                [my actual website]
-              </a>
-              <a className="aboutLink" href="https://github.com/simonmahns/mm">
-                [code for this site]
-              </a>
-            </b>
-          </p> */}
         </div>
       </div>
     );
