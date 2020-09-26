@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-import film from "../img/lucnsi.jpg";
+import film from "../img/videohold.jpg";
 // import comingSoon from "../img/comingSoon.png";
 import days from "./roadDay.js";
 import { Element } from "react-scroll";
@@ -198,7 +198,7 @@ class Lucy extends Component {
           <div className="colStat">
             <p className="titleX">Stats</p>
             <p className="mediumSize">
-              Total Miles: <i>≈ 7,500</i>
+              Total Miles: <i>≈ 6,547</i>
             </p>
             <p className="mediumSize">
               Time Elapsed: <i>15 days</i>
@@ -211,7 +211,7 @@ class Lucy extends Component {
             </p>
 
             <p className="mediumSize">
-              Daily Avg: <i>320 miles</i>
+              Daily Avg: <i>430 miles</i>
             </p>
             <p className="mediumSize">
               Car Model: <i>Honda Accord LX 1996</i>
@@ -230,13 +230,6 @@ class Lucy extends Component {
               stick the day before we left RIP clutch. Below are some pic and
               things.
               <br />
-              {/* <br />
-              <i>
-                Edit (7/31/2019): I still cannot believe that I completed this
-                trip. It is still so surreal. I can;t even begin to describe how
-                amazing it was to finally be back in Alaska and see all of my
-                friends again. I'm just so thankful.
-              </i> */}
             </p>
           </div>
           <div className="filmDiv">
@@ -245,24 +238,18 @@ class Lucy extends Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="www.cookedcorn.casa"
+                href="https://www.youtube.com/watch?v=iYt4BfeyX8A"
               >
                 <img className="goImg hover" src={film} alt="gofund" />
               </a>
               <p className="center mediumSize">
-                <i>^vid recap of the trip (coming soon)^</i>
+                <i>^vid recap of the trip^</i>
               </p>
             </div>
-            {/* <embed
-              height="500px"
-              width="100%"
-              src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=stem-education-for-ghanaian-students&image=1&coinfo=1&preview=1"
-              type="text/html"
-            /> */}
           </div>
           <br />
         </div>
-        <br />{" "}
+        <br />
         <p className="center mediumSize">
           <i>
             For navigational ease between dates, click the menu toggle in the

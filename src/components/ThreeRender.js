@@ -1,190 +1,235 @@
-class World {
-  constructor(width, height) {
-    this.renderer = new THREE.WebGLRenderer({
-      alpha: true,
-      antialias: true
-    });
-    this.renderer.setPixelRatio(window.devicePixelRatio);
-    this.renderer.setSize(width, height);
-    this.container = document.getElementsByClassName("world")[0];
-    this.scene = new THREE.Scene();
-    this.width = width;
-    this.height = height;
-    this.aspectRatio = width / height;
-    this.fieldOfView = 50;
-    var nearPlane = 0.1;
-    var farPlane = 20000;
-    this.camera = new THREE.PerspectiveCamera(
-      this.fieldOfView,
-      this.aspectRatio,
-      nearPlane,
-      farPlane
-    );
-    this.camera.position.z = 200;
-    this.container.appendChild(this.renderer.domElement);
-    this.timer = 0;
-    this.mousePos = { x: 0, y: 0 };
-    this.targetMousePos = { x: 0, y: 0 };
-    this.createPlane();
-    this.render();
-  }
+var ww = window.innerWidth;
+var wh = window.innerHeight;
 
-  createPlane() {
-    this.material = new THREE.RawShaderMaterial({
-      vertexShader: document.getElementById("vertexShader").textContent,
-      fragmentShader: document.getElementById("fragmentShader").textContent,
+function Tunnel(texture) {
+  this.init();
+  this.createMesh(texture);
 
-      uniforms: {
-        uTime: { type: "f", value: 0 },
-        uHue: { type: "f", value: 0.5 },
-        uHueVariation: { type: "f", value: 1 },
-        uGradient: { type: "f", value: 1 },
-        uDensity: { type: "f", value: 1 },
-        uDisplacement: { type: "f", value: 1 },
-        uMousePosition: { type: "v2", value: new THREE.Vector2(0.5, 0.5) }
-      }
-    });
-    this.planeGeometry = new THREE.PlaneGeometry(2, 2, 1, 1);
+  this.handleEvents();
 
-    this.plane = new THREE.Mesh(this.planeGeometry, this.material);
-    this.scene.add(this.plane);
-  }
+  this.initAnimation();
 
-  render() {
-    this.timer += parameters.speed;
-    this.plane.material.uniforms.uTime.value = this.timer;
-
-    this.mousePos.x += (this.targetMousePos.x - this.mousePos.x) * 0.1;
-    this.mousePos.y += (this.targetMousePos.y - this.mousePos.y) * 0.1;
-
-    if (this.plane) {
-      this.plane.material.uniforms.uMousePosition.value = new THREE.Vector2(
-        this.mousePos.x,
-        this.mousePos.y
-      );
-    }
-
-    this.renderer.render(this.scene, this.camera);
-  }
-
-  loop() {
-    this.render();
-    requestAnimationFrame(this.loop.bind(this));
-  }
-
-  updateSize(w, h) {
-    this.renderer.setSize(w, h);
-    this.camera.aspect = w / h;
-    this.camera.updateProjectionMatrix();
-  }
-  mouseMove(mousePos) {
-    this.targetMousePos.x = mousePos.px;
-    this.targetMousePos.y = mousePos.py;
-  }
+  window.requestAnimationFrame(this.render.bind(this));
 }
 
-document.addEventListener("DOMContentLoaded", domIsReady);
-let mousePos = { x: 0, y: 0, px: 0, py: 0 };
-let world;
-let gui = new dat.GUI();
+Tunnel.prototype.init = function () {
+  this.speed = 8;
 
-let parameters = {
-  speed: 0.2,
-  hue: 0.5,
-  hueVariation: 1,
-  gradient: 0.3,
-  density: 0.5,
-  displacement: 0.66
+  this.mouse = {
+    position: new THREE.Vector2(ww * 0.5, wh * 0.5),
+    ratio: new THREE.Vector2(0, 0),
+    target: new THREE.Vector2(ww * 0.5, wh * 0.5),
+  };
+
+  this.renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    canvas: document.querySelector("#scene"),
+  });
+  this.renderer.setSize(ww, wh);
+
+  this.camera = new THREE.PerspectiveCamera(15, ww / wh, 0.01, 1000);
+  this.camera.rotation.y = Math.PI;
+  this.camera.position.z = 0.35;
+
+  this.scene = new THREE.Scene();
 };
 
-function domIsReady() {
-  world = new World(
-    this.container,
-    this.renderer,
-    window.innerWidth,
-    window.innerHeight
+Tunnel.prototype.createMesh = function (texture) {
+  var points = [];
+  var i = 0;
+  var geometry = new THREE.Geometry();
+
+  this.scene.remove(this.tubeMesh);
+
+  for (i = 0; i < 5; i += 1) {
+    points.push(new THREE.Vector3(0, 0, 3 * (i / 4)));
+  }
+  points[4].y = -0.06;
+
+  this.curve = new THREE.CatmullRomCurve3(points);
+  this.curve.type = "catmullrom";
+
+  geometry = new THREE.Geometry();
+  geometry.vertices = this.curve.getPoints(70);
+  this.splineMesh = new THREE.Line(geometry, new THREE.LineBasicMaterial());
+
+  this.tubeMaterial = new THREE.MeshBasicMaterial({
+    side: THREE.BackSide,
+    map: texture,
+  });
+  this.tubeMaterial.map.wrapS = THREE.MirroredRepeatWrapping;
+  this.tubeMaterial.map.wrapT = THREE.MirroredRepeatWrapping;
+  this.tubeMaterial.map.repeat.set(
+    this.tubeMaterial.repx,
+    this.tubeMaterial.repy
   );
-  window.addEventListener("resize", handleWindowResize, false);
-  document.addEventListener("mousemove", handleMouseMove, false);
-  handleWindowResize();
-  world.loop();
-  initGui();
-}
 
-var guiHue;
+  this.tubeGeometry = new THREE.TubeGeometry(this.curve, 70, 0.02, 30, false);
+  this.tubeGeometry_o = this.tubeGeometry.clone();
+  this.tubeMesh = new THREE.Mesh(this.tubeGeometry, this.tubeMaterial);
 
-function initGui() {
-  gui.width = 250;
-  guiSpeed = gui
-    .add(parameters, "speed")
-    .min(0.1)
-    .max(1)
-    .step(0.01)
-    .name("speed");
-  guiHue = gui
-    .add(parameters, "hue")
-    .min(0)
-    .max(1)
-    .step(0.01)
-    .name("hue");
-  guiVariation = gui
-    .add(parameters, "hueVariation")
-    .min(0)
-    .max(1)
-    .step(0.01)
-    .name("hue variation");
-  //guiGradient = gui.add(parameters, 'gradient').min(0).max(1).step(.01).name('inner gradient');
-  guiDensity = gui
-    .add(parameters, "density")
-    .min(0)
-    .max(1)
-    .step(0.01)
-    .name("density");
-  guiDisp = gui
-    .add(parameters, "displacement")
-    .min(0)
-    .max(1)
-    .step(0.01)
-    .name("displacement");
+  this.scene.add(this.tubeMesh);
+};
 
-  guiHue.onChange(function(value) {
-    updateParameters();
+Tunnel.prototype.handleEvents = function () {
+  window.addEventListener("resize", this.onResize.bind(this), false);
+  document.body.addEventListener(
+    "mousemove",
+    this.onMouseMove.bind(this),
+    false
+  );
+};
+
+Tunnel.prototype.onResize = function () {
+  ww = window.innerWidth;
+  wh = window.innerHeight;
+
+  this.camera.aspect = ww / wh;
+  this.camera.updateProjectionMatrix();
+  this.renderer.setSize(ww, wh);
+};
+
+Tunnel.prototype.onMouseMove = function (e) {
+  this.mouse.target.x = e.clientX;
+  this.mouse.target.y = e.clientY;
+};
+
+Tunnel.prototype.update = function () {
+  this.createMesh();
+};
+
+Tunnel.prototype.initAnimation = function () {
+  // Timeline animation
+  this.textureParams = {
+    offsetX: 0,
+    offsetY: 0,
+    repeatX: 10,
+    repeatY: 4,
+  };
+  this.cameraShake = {
+    x: 0,
+    y: 0,
+  };
+  var self = this;
+  var hyperSpace = new TimelineMax({ repeat: -1 });
+  hyperSpace.to(this.textureParams, 4, {
+    repeatX: 0.3,
+    ease: Power1.easeInOut,
   });
-
-  guiVariation.onChange(function(value) {
-    updateParameters();
+  hyperSpace.to(
+    this.textureParams,
+    12,
+    {
+      offsetX: 8,
+      ease: Power2.easeInOut,
+    },
+    0
+  );
+  hyperSpace.to(
+    this.textureParams,
+    6,
+    {
+      repeatX: 10,
+      ease: Power2.easeInOut,
+    },
+    "-=5"
+  );
+  var shake = new TimelineMax({ repeat: -1, repeatDelay: 5 });
+  shake.to(
+    this.cameraShake,
+    2,
+    {
+      x: -0.01,
+      ease: RoughEase.ease.config({
+        template: Power0.easeNone,
+        strength: 0.5,
+        points: 100,
+        taper: "none",
+        randomize: true,
+        clamp: false,
+      }),
+    },
+    4
+  );
+  shake.to(this.cameraShake, 2, {
+    x: 0,
+    ease: RoughEase.ease.config({
+      template: Power0.easeNone,
+      strength: 0.5,
+      points: 100,
+      taper: "none",
+      randomize: true,
+      clamp: false,
+    }),
   });
-  /*
-	guiGradient.onChange( function(value) {
-		updateParameters();
-	});
-	*/
-  guiDensity.onChange(function(value) {
-    updateParameters();
+};
+Tunnel.prototype.updateMaterialOffset = function () {
+  this.tubeMaterial.map.offset.x = this.textureParams.offsetX;
+  this.tubeMaterial.map.offset.y += 0.001;
+  this.tubeMaterial.map.repeat.set(
+    this.textureParams.repeatX,
+    this.textureParams.repeatY
+  );
+};
+Tunnel.prototype.updateCameraPosition = function () {
+  this.mouse.position.x += (this.mouse.target.x - this.mouse.position.x) / 50;
+  this.mouse.position.y += (this.mouse.target.y - this.mouse.position.y) / 50;
+
+  this.mouse.ratio.x = this.mouse.position.x / ww;
+  this.mouse.ratio.y = this.mouse.position.y / wh;
+
+  this.camera.position.x =
+    this.mouse.ratio.x * 0.044 - 0.025 + this.cameraShake.x;
+  this.camera.position.y = this.mouse.ratio.y * 0.044 - 0.025;
+};
+Tunnel.prototype.updateCurve = function () {
+  var i = 0;
+  var index = 0;
+  var vertice_o = null;
+  var vertice = null;
+  for (i = 0; i < this.tubeGeometry.vertices.length; i += 1) {
+    vertice_o = this.tubeGeometry_o.vertices[i];
+    vertice = this.tubeGeometry.vertices[i];
+    index = Math.floor(i / 30);
+    vertice.x +=
+      (vertice_o.x + this.splineMesh.geometry.vertices[index].x - vertice.x) /
+      15;
+    vertice.y +=
+      (vertice_o.y + this.splineMesh.geometry.vertices[index].y - vertice.y) /
+      15;
+  }
+  this.tubeGeometry.verticesNeedUpdate = true;
+
+  this.curve.points[2].x = 0.6 * (1 - this.mouse.ratio.x) - 0.3;
+  this.curve.points[3].x = 0;
+  this.curve.points[4].x = 0.6 * (1 - this.mouse.ratio.x) - 0.3;
+
+  this.curve.points[2].y = 0.6 * (1 - this.mouse.ratio.y) - 0.3;
+  this.curve.points[3].y = 0;
+  this.curve.points[4].y = 0.6 * (1 - this.mouse.ratio.y) - 0.3;
+
+  this.splineMesh.geometry.verticesNeedUpdate = true;
+  this.splineMesh.geometry.vertices = this.curve.getPoints(70);
+};
+
+Tunnel.prototype.render = function () {
+  this.updateMaterialOffset();
+
+  this.updateCameraPosition();
+
+  this.updateCurve();
+
+  this.renderer.render(this.scene, this.camera);
+
+  window.requestAnimationFrame(this.render.bind(this));
+};
+
+window.onload = function () {
+  var loader = new THREE.TextureLoader();
+  loader.crossOrigin = "Anonymous";
+
+  loader.load("img/demo3/galaxyTexture.jpg", function (texture) {
+    document.body.classList.remove("loading");
+    window.tunnel = new Tunnel(texture);
   });
-
-  guiDisp.onChange(function(value) {
-    updateParameters();
-  });
-  updateParameters();
-}
-
-function updateParameters() {
-  world.plane.material.uniforms.uHue.value = parameters.hue;
-  world.plane.material.uniforms.uHueVariation.value = parameters.hueVariation;
-  //world.plane.material.uniforms.uGradient.value = parameters.gradient;
-  world.plane.material.uniforms.uDensity.value = parameters.density;
-  world.plane.material.uniforms.uDisplacement.value = parameters.displacement;
-}
-
-function handleWindowResize() {
-  world.updateSize(window.innerWidth, window.innerHeight);
-}
-
-function handleMouseMove(e) {
-  mousePos.x = e.clientX;
-  mousePos.y = e.clientY;
-  mousePos.px = mousePos.x / window.innerWidth;
-  mousePos.py = 1.0 - mousePos.y / window.innerHeight;
-  world.mouseMove(mousePos);
-}
+};

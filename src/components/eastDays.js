@@ -4,15 +4,16 @@ var days = [
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
-    captions: ["ryan's room mates are cool", "ryan", "longboarding"],
-    date: "",
+    captions: ["ryan's room mates", "ryan", "longboarding"],
+    date: "03/04/19",
     location: "Baltimore to Princeton",
-    miles: 338,
-    text: "",
+    miles: 150,
+    text:
+      "Had a rough start, brought my bike into penn station at baltimore with my packs and everything to try to take the tain to trenton then bike to princeton and beyond. I got to the platform and was turned away by the conductor because the bike was too big. kinda embarrassing. made a new plan as I carried my bike up the steps to get back to the station. I would leave the bike at home, bring my longboard instead and figure it out from there. Biked home, called amtrack to see if I could push my ticket back an hour, luckly they let me. Longboarded back to the station and then hopped onto a train. Once I got to trenton I longboarded for an hour an half to princeton on the side of the road. Kinda hard because of the snow but I got over it. At princeton I ate and got boba with ryan and his friends, chilled with his room mates, and went to sleep.",
   },
   {
     day: "day_2",
-    date: "",
+    date: "03/05/19",
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
@@ -31,8 +32,9 @@ var days = [
       "goodbye",
     ],
     location: "Princeton to Long Island",
-    miles: 701,
-    text: "",
+    miles: 135,
+    text:
+      "Woke early and hit the dining hall with ryan. Then hopped on a ten buck bus to nyc. At nyc I longboarded to the nearest cafe for wifi (since I wasn't paying for data at the time). I scrolled through craigslist for a bit looking for bikes. I found a cheap one in north nyc for 35 bucks. Longboarded there and bought the bike. He gave me a discount bc of the longboard I had (a cruiser some friends got for me in middle school for my bday). I strapped my longboard to the bike's basket with a iphone cable and my lanyard, put on my backpack and headed off. It was cold at first but I got used to it. Decided to bike up long island and take a ferry to new london and get a bus or something to get to boston (or to baltimore if things didn't go well). Got to take lots of pics. I had like 150 miles to get to orient point and because I really had never biked more than 15 miles, had no concept of how long or how hard that would be. better to learn now than later i thought. I biked nonstop until I literally couldn't move my legs because they were so cramped. I went to dunkin doughnut and had the best sandwich of my life. After a short break and drinking and eating more, my legs stopped cramping. Food is important. I biked for hours, using google maps as guidance and only stopping at a gas station to get some off brand 'hotties' to put in my Vans and gloves (it was so cold holy shit). At 1am, I said fuck this and pulled off the road and into a train station. I looked at a map and for the furthest stop that the train could take me. This was the turning point. Either I send it and take a risk of making it to boston or take a train back to nyc and swallow my pride and take a bus from nyc to boston. I decided to send it and take the train to the last possible spot: port jefferson. As soon as I loaded my bike onto the train I fell asleep. I woke up to a pissed off train worker asking me to leave. I got off in port jefferson and started biking around looking for a place to sleep. At this point, I had a bit over 24 hours to clock in at work so I wasnt sure if I should nap or continue biking. I looked in the parking lot of the hospital in port jefferson but nothing really looked comfy except the giant snow bank. I was so cold, I just wanted to go inside. I decided I would try to get into a bar, since those were the only places open. I loitered around and found a bar near the train station called el limon sport bar. There wasn't a bouncer (it was like 3am), so I just walked right in and sat down at a table. There was loud latin music and people dancing. It was surreal and it was warm. I wanted to stay in the bar all night, so I decided that I should buy something before I got kicked out. I went to the bar and yelled over the music for a coke, the bartender handed me a corona. Pretty sick.",
   },
   {
     day: "day_3",
@@ -54,18 +56,22 @@ var days = [
       "at harvard w/ween",
       "h*rvard",
     ],
-    date: "",
+    date: "03/06/19",
     location: "Long Island to Boston",
     miles: 64,
-    text: "",
+    text:
+      "After deliberating in the bar for about an hour and getting warm, I finally had a plan. I booked an amtrack ticket to boston from new london, a peterpan bus from boston to baltimore to get back to baltimore, and a ferry from orient point to new london - all for under a hundred bucks on my phone (peter pan tickets are dirt cheap). Only thing I had to do was get to orient point before 7am, which gave me 3 hours to either bike or longboard 50 miles (it was 3am at this point). I was so fucking tired and literally had no money left, so I ordered an uber a bit more than halfway to Mattituck. Feeling excited I finally stood up in the now empty bar and walked out. I untied my longboard from the bike i bought from craigslist about 12 hours ago and snapped one last picture of it - it wouldn't fit in the uber. The uber arrived and took off. I set an alarm to wake me up around the destination and passed out. I woke up right as we reached the edge of Mattituck and told him 'this is good'. He looked at me weird, 'here?'. I looked at the empty street in the middle of nowhere and said 'uhhh yeah'. I got out feeling like I could run a million miles. At this point I had 2 hours to longboard 20 miles or else the entire plan would fall apart. I started some music and started zoomin down the empty streets of northeastern long island on my longboard. It was honestly such a beautiful experience. As the sun came up, I experienced literally the most scenic and surreal sunrise of my life (maybe it was because I was so tired at sleep deprived). It actually ended up being really close. I got to the orient point 5  mins before departure. i boarded and passed out. I woke up right before landing, some guy came up to me and asked me if i was the weird guy longboarding down the street in the morning, I said yeah. the port was right next to new london amtrack station, which was really convenient. I had about 30 mins before my train to boston left, so I walked around new london for a bit. I slept on the train and woke up in boston. I navigated the mess that is the boston public transport system without my phone which was dead. Finally I made it to Harvard square and went to a bookstore to charge my phone to text rowena. It was about 3pm, just over 12 hours until I had to clock in. We got tacos and hung out. got to see the pee statue, the long but short trip was over. after 3 hours of hanging out, I had to say good bye. I hopped back on the redline back to main station. I got on the peterpan bus (nearly missed it because I couldn't find it) and went to sleep.",
   },
   {
     day: "day_4",
+    date: "03/07/19",
     col: [[], [], []],
     popUrl: [],
     ogUrl: [],
     location: "Boston to Baltimore",
     captions: ["clocking in"],
+    text:
+      "Made it after a shitty bus ride on a peterpan bus. Got held up in philly because the driver wanted to take a nap so I ended up in baltimore like 2 hours late. Had to take a last minute uber to work and got to take an hour long nap on one of the decommissioned stretchers in the bay. Clocked in on time.",
   },
 ];
 

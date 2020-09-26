@@ -8,7 +8,7 @@ class PopulateText extends Component {
     return (
       <div className="aboutPageBack">
         <div className="aboutMain">
-          <div clasName="center">
+          <div className="center">
             <div className="returnDivAbout">
               <Link to="/" className="linkStyle">
                 <img src={returnImg} alt="return" className="returnIconAbout" />

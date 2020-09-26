@@ -22,10 +22,52 @@ html {
 a {
   text-decoration: none;
 }
+.subtitleDiv {
+  position: absolute;
+  top: 17%;
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 100;
+  padding-left: 5px;
+  border-left: solid 1px white;
+  margin-left: -400px;
+  left: 50%;
+  z-index: 140;
+}
+.subtitleMain {
+  font-size: 30px;
+  margin: 0px;
+}
+.subtitleSpecs {
+  font-size: 15px;
+
+  margin: 0px;
+}
+.subtitleDes {
+  font-size: 15px;
+  margin: 0px;
+  padding-bottom: 4px;
+  margin-left: -5px;
+  padding-left: 5px;
+  border-bottom: solid 1px white;
+}
+.subtitleOrg {
+  font-size: 15px;
+  margin: 0px;
+}
 .goImg {
   width: 90%;
   padding: 0px 5%;
   padding-top: 12px;
+}
+
+.bottMenuLink {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  color: white;
 }
 .popupBackDiv {
   position: fixed;
@@ -182,18 +224,42 @@ canvas {
   position: absolute;
   z-index: -3;
 }
+.navArrs {
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navArrsRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+}
+.navArrsImg {
+  width: 30px;
+  transition: all 0.7s;
+}
+.navArrsImg:hover {
+  background: rgb(159, 201, 226);
+}
 .displayVidOut {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: absolute;
   z-index: 10;
 }
+
 .logoDiv {
   position: absolute;
   width: 100%;
-  top: 40px;
+  bottom: 10px;
   z-index: 20;
   display: flex;
   flex-direction: row;
@@ -202,7 +268,7 @@ canvas {
 }
 .logoImg {
   position: relative;
-  width: 40px;
+  width: 20px;
   padding: 7px;
   transition: all 1s;
   cursor: pointer;
@@ -325,7 +391,8 @@ video {
 .landing {
   width: 100%;
   height: 100vh;
-  z-index: -51;
+  z-index: 10;
+  position: absolute;
   background: transparent;
 }
 .smallFont {
@@ -561,11 +628,11 @@ video {
 }
 .fade {
   z-index: 100;
-  -webkit-animation: fadein 7s;
-  -moz-animation: fadein 7s;
-  -ms-animation: fadein 7s;
-  -o-animation: fadein 7s;
-  animation: fadein 7s;
+  -webkit-animation: fadein 10s;
+  -moz-animation: fadein 10s;
+  -ms-animation: fadein 10s;
+  -o-animation: fadein 10s;
+  animation: fadein 10s;
   margin: 0px;
 }
 /* margin-left: -42vw; */
@@ -652,6 +719,39 @@ video {
     opacity: 1;
   }
 }
+@media screen and (max-width: 800px) {
+  .displayVid {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .menuOut {
+    bottom: 5%;
+  }
+
+  .borderStrike {
+    border-top: 2px solid white;
+    margin-top: -1px;
+  }
+
+  li .menuLi {
+    display: flex;
+    justify-content: center;
+  }
+  .menuText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+  }
+  .navArrs {
+    top: 70%;
+  }
+  .subtitleDiv {
+    top: -21%;
+    margin-left: -50%;
+  }
+}
 @media screen and (max-width: 660px) {
   .colStat,
   .colBack,
@@ -664,10 +764,6 @@ video {
     padding: 0px;
     width: 70%;
   }
-  canvas {
-    width: 100%;
-  }
-
   .aboutDiv {
     margin-top: 5vh;
     left: 95%;

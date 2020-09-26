@@ -4,19 +4,12 @@ import Nav from "./Nav";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import "react-lazy-load-image-component/src/effects/blur.css";
-
-import film from "../img/lucnsi.jpg";
-// import comingSoon from "../img/comingSoon.png";
 import days from "./eastDays.js";
 import { Element } from "react-scroll";
 
 import returnImg from "../img/return.png";
 import { Link } from "react-router-dom";
-// var popupStyle = {
-//   // height: "64vh"
-//   // marginTop: "-300px",
-//   // marginLeft: "-35%"
-// };
+import eastMap from "../img/eastMap.JPG";
 
 console.log(days);
 for (var day = 1; day < days.length + 1; day++) {
@@ -198,20 +191,20 @@ class East extends Component {
           <div className="colStat">
             <p className="titleX">Stats</p>
             <p className="mediumSize">
-              Total Miles: <i>≈</i>
+              Total Miles: <i>≈405</i>
             </p>
             <p className="mediumSize">
               Time Elapsed: <i>4 days</i>
             </p>
             <p className="mediumSize">
-              Start Date: <i>2019</i>
+              Start Date: <i>03/04/2019</i>
             </p>
             <p className="mediumSize">
-              Completion Date: <i>2019</i>
+              Completion Date: <i>03/06/2019</i>
             </p>
 
             <p className="mediumSize">
-              Daily Avg: <i>100 miles</i>
+              Daily Avg: <i>135 miles</i>
             </p>
             <p className="mediumSize">
               Transportation used: <i>bike, longboard, train, bus, car, boat</i>
@@ -220,15 +213,14 @@ class East extends Component {
           <div className="colBack rightText">
             <p className="titleX">Background</p>
             <p className="mediumSize">
-              Under Construction
+              Basically my goal for this trek was to visit a couple of friends
+              in Boston/Princeton while attempting to train for my big bike
+              trip. Because I work full time as an EMT and part time as a waiter
+              I didn't really know how far I would get. I didn't have a plan
+              besides trying to get as far as possible in a three days and to
+              return to Baltimore by 5am by Wednesday 04/07/19 to clock into my
+              12 hour EMT shift. Below are some braindumps from each day.
               <br />
-              {/* <br />
-              <i>
-                Edit (7/31/2019): I still cannot believe that I completed this
-                trip. It is still so surreal. I can;t even begin to describe how
-                amazing it was to finally be back in Alaska and see all of my
-                friends again. I'm just so thankful.
-              </i> */}
             </p>
           </div>
           <div className="filmDiv">
@@ -237,24 +229,18 @@ class East extends Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="www.cookedcorn.casa"
+                href="https://www.google.com/maps/dir/Baltimore,+Maryland,+USA/Harvard,+MA,+USA/@41.2876549,-77.6156479,6z/data=!4m19!4m18!1m10!1m1!1s0x89c803aed6f483b7:0x44896a84223e758!2m2!1d-76.6121893!2d39.2903848!3m4!1m2!1d-72.3084105!2d41.1437975!3s0x89e8a038418dfa0b:0x9332b2ad7b780dc0!1m5!1m1!1s0x89e3ecb80090cd81:0x4a92bb8ced93430c!2m2!1d-71.5828444!2d42.5000919!3e0"
               >
-                <img className="goImg hover" src={film} alt="gofund" />
+                <img className="goImg hover" src={eastMap} alt="gofund" />
               </a>
               <p className="center mediumSize">
-                <i>^under construction^</i>
+                <i>General Route</i>
               </p>
             </div>
-            {/* <embed
-              height="500px"
-              width="100%"
-              src="https://www.gofundme.com/mvc.php?route=widgets/mediawidget&fund=stem-education-for-ghanaian-students&image=1&coinfo=1&preview=1"
-              type="text/html"
-            /> */}
           </div>
           <br />
         </div>
-        <br />{" "}
+        <br />
         <p className="center mediumSize">
           <i>
             For navigational ease between dates, click the menu toggle in the
