@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 body,
 html {
   margin: 0;
@@ -15,7 +15,6 @@ a {
 .subtitleDiv {
   position: absolute;
   top: 17%;
-
   display: flex;
   flex-direction: column;
   color: white;
@@ -119,12 +118,13 @@ a {
   opacity: 0.7;
 }
 
-.popopCaption {
+.popopCaption i {
   margin: 0px;
   padding: 0px;
   height: 85px;
-  font-size: 23px;
-  font-family: "Nothing You Could Do", cursive;
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -713,8 +713,6 @@ video {
 @media screen and (max-width: 800px) {
   .displayVid {
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
   .menuOut {
     bottom: 5%;
@@ -739,17 +737,53 @@ video {
     top: 70%;
   }
   .subtitleDiv {
-    top: -21%;
+    top: -40%;
     margin-left: -50%;
+  }
+  .subtitleDes,
+  .subtitleOrg,
+  .subtitleSpecs {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 660px) {
+  .popopCaption {
+    margin-top: -15px;
+    padding: 0px;
+    height: 85px;
+    font-size: 23px;
+  }
+  .popDiv {
+    background: white;
+    width: 95%;
+    height: 60%;
+    z-index: 103;
+    text-align: center;
+  }
+  .popupImgDiv {
+    margin: 0px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .imgPH {
+    max-height: 300px;
+  }
   .colStat,
   .colBack,
   .filmDiv {
     width: 100%;
     margin: 1%;
     padding: 0px;
+  }
+  .subtitleMain {
+    font-size: 25px;
   }
   .goImg {
     padding: 0px;

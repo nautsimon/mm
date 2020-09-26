@@ -21,9 +21,11 @@ class SceneAlt extends Component {
       dis2: "visible",
       dis3: "hidden",
       exiting: false,
+      contentOpacity: 0,
+      contentVis: "hidden",
     };
     this.handleClick = this.handleClick.bind(this);
-    this.handleExitNav = this.handleExitNav.bind(this);
+    this.handleContent = this.handleContent.bind(this);
     this.video1 = React.createRef();
     this.video2 = React.createRef();
     this.video3 = React.createRef();
@@ -149,10 +151,10 @@ class SceneAlt extends Component {
       this.camera.updateProjectionMatrix();
     }
   }
-  handleExitNav = (event) => {
-    event.preventDefault();
-    setTimeout(() => this.props.history.push("/bike"), 1000);
-  };
+  handleContent() {
+    this.setState({ contentOpacity: 1, contentVis: "visible" });
+  }
+
   handleClick(isRight) {
     if (isRight) {
       if (this.state.back3 === 0.7) {
@@ -253,7 +255,8 @@ class SceneAlt extends Component {
       this.camera.position.y +=
         (-this.counter * this.counter * 0.05 + this.counter) * 0.37;
     }
-    if (this.props.hex === "0x45C6EE") {
+    if (this.counter > 20.05 && this.counter < 20.3) {
+      this.handleContent();
     }
 
     if (this.state.hex === "0x45C6EE") {
@@ -530,7 +533,7 @@ class SceneAlt extends Component {
                   }}
                   className="subtitleOrg"
                 >
-                  [47.6062°N 122.3321°W] [Seattle]
+                  [47.6062°N 122.332°W] [Seattle]
                 </p>
                 <p
                   style={{
