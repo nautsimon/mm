@@ -240,6 +240,7 @@ canvas {
 }
 .navArrsImg {
   width: 30px;
+  height: 30px;
   transition: all 0.7s;
 }
 .navArrsImg:hover {

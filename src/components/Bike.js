@@ -121,7 +121,6 @@ class Vis extends Component {
 
   handleMenu(type) {
     this.setState({ filter: type });
-    console.log(this.state);
   }
   handlePop(colNum, indexFull, index, dayIndex) {
     this.setState({

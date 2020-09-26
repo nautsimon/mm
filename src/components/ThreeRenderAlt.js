@@ -154,7 +154,6 @@ class SceneAlt extends Component {
     setTimeout(() => this.props.history.push("/bike"), 1000);
   };
   handleClick(isRight) {
-    console.log(isRight);
     if (isRight) {
       if (this.state.back3 === 0.7) {
         this.video1.current.play();

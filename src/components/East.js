@@ -11,7 +11,6 @@ import returnImg from "../img/return.png";
 import { Link } from "react-router-dom";
 import eastMap from "../img/eastMap.JPG";
 
-console.log(days);
 for (var day = 1; day < days.length + 1; day++) {
   var organizer = 0;
   for (var i = 1; i < days[day - 1].captions.length + 1; i++) {
@@ -46,7 +45,6 @@ for (var day = 1; day < days.length + 1; day++) {
       organizer++;
     }
   }
-  console.log(days);
 }
 
 class East extends Component {
@@ -116,7 +114,6 @@ class East extends Component {
 
   handleMenu(type) {
     this.setState({ filter: type });
-    console.log(this.state);
   }
   handlePop(colNum, indexFull, index, dayIndex) {
     this.setState({

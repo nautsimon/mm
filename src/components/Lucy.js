@@ -18,7 +18,6 @@ import { Link } from "react-router-dom";
 //   // marginLeft: "-35%"
 // };
 
-console.log(days);
 for (var day = 1; day < days.length + 1; day++) {
   var organizer = 0;
   for (var i = 1; i < days[day - 1].captions.length + 1; i++) {
@@ -53,7 +52,6 @@ for (var day = 1; day < days.length + 1; day++) {
       organizer++;
     }
   }
-  console.log(days);
 }
 
 class Lucy extends Component {
@@ -123,7 +121,6 @@ class Lucy extends Component {
 
   handleMenu(type) {
     this.setState({ filter: type });
-    console.log(this.state);
   }
   handlePop(colNum, indexFull, index, dayIndex) {
     this.setState({
