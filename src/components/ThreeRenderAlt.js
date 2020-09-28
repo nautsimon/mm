@@ -369,7 +369,7 @@ class SceneAlt extends Component {
                   type="video/mp4"
                 />
               </video>
-              <section className="subtitleDiv">
+              <div className="subtitleDiv">
                 <p
                   style={{
                     visibility: this.state.dis1,
@@ -414,7 +414,7 @@ class SceneAlt extends Component {
                 >
                   EAST COAST TREK
                 </p>
-              </section>
+              </div>
             </Link>
             <Link
               to={{
@@ -442,7 +442,7 @@ class SceneAlt extends Component {
                   type="video/mp4"
                 />
               </video>
-              <section className="subtitleDiv">
+              <div className="subtitleDiv">
                 <p
                   style={{
                     visibility: this.state.dis2,
@@ -487,7 +487,7 @@ class SceneAlt extends Component {
                 >
                   BIKING TO ALASKA
                 </p>
-              </section>
+              </div>
             </Link>
             <Link
               to={{ pathname: "/roadtrip" }}
@@ -512,7 +512,7 @@ class SceneAlt extends Component {
                   type="video/mp4"
                 />
               </video>
-              <section className="subtitleDiv">
+              <div className="subtitleDiv">
                 <p
                   style={{
                     visibility: this.state.dis3,
@@ -557,7 +557,7 @@ class SceneAlt extends Component {
                 >
                   ROAD TRIP WITH LUCY
                 </p>
-              </section>
+              </div>
             </Link>
           </div>
 
