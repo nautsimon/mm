@@ -245,7 +245,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  pointer-events: none;
   position: absolute;
   z-index: 10;
 }
@@ -271,6 +271,7 @@ canvas {
   transform: scale(0.9);
 }
 .displayVid {
+  pointer-events: all;
   position: absolute;
   width: 700px;
   display: flex;

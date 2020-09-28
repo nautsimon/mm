@@ -79,4 +79,8 @@
   .aboutMain {
     margin: 0px;
   }
+  .aboutText,
+  .aboutLink {
+    font-size: 10px;
+  }
 }
