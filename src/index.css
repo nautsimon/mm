@@ -17,7 +17,7 @@ a {
 }
 .subtitleDiv {
   position: absolute;
-  top: 17%;
+  margin-top: -19%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -282,7 +282,8 @@ video {
   z-index: 43;
   width: 100%;
   pointer-events: all;
-  cursor: pointer;
+  position: absolute;
+  align-self: center;
 }
 .vidColor1 {
   filter: hue-rotate(190deg);
@@ -742,8 +743,7 @@ video {
     top: 70%;
   }
   .subtitleDiv {
-    top: 50%;
-    margin-top: -56%;
+    margin-top: -45%;
     margin-left: -50%;
   }
   .subtitleDes,
@@ -753,6 +753,9 @@ video {
   }
 }
 @media screen and (max-width: 660px) {
+  .subtitleDiv {
+    margin-top: -55%;
+  }
   .popopCaption i {
     margin-top: -30px;
     padding: 0px;
