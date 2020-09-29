@@ -561,11 +561,6 @@ class SceneAlt extends Component {
             </Link>
           </div>
 
-          <div className="logoDiv fade">
-            <Link to="/about" style={{ margin: "0px", padding: "0px" }}>
-              <img src={aboutIcon} alt="logo" className="logoImg" />
-            </Link>
-          </div>
           <div className="navArrs fade">
             <div className="navArrsRow">
               <img
@@ -586,6 +581,12 @@ class SceneAlt extends Component {
               />
             </div>
           </div>
+        </div>
+
+        <div className="logoDiv fade">
+          <Link to="/about" style={{ margin: "0px", padding: "0px" }}>
+            <img src={aboutIcon} alt="logo" className="logoImg" />
+          </Link>
         </div>
       </div>
     );
