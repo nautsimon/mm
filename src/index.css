@@ -624,11 +624,11 @@ video {
 }
 .fade {
   z-index: 100;
-  -webkit-animation: fadein 10s;
-  -moz-animation: fadein 10s;
-  -ms-animation: fadein 10s;
-  -o-animation: fadein 10s;
-  animation: fadein 10s;
+  -webkit-animation: fadein 9s;
+  -moz-animation: fadein 9s;
+  -ms-animation: fadein 9s;
+  -o-animation: fadein 9s;
+  animation: fadein 9s;
   margin: 0px;
 }
 /* margin-left: -42vw; */
