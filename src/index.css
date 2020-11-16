@@ -15,6 +15,40 @@ html {
 a {
   text-decoration: none;
 }
+.welcomeDiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  align-items: center;
+  background-color: #000000;
+}
+.welcomeInDiv {
+  width: 250px;
+  margin-top: 70px;
+  height: 250px;
+  text-align: center;
+}
+
+.welcomeH {
+  pointer-events: all;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 25px;
+}
+.welcomeHe {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  color: black;
+}
+.welcomeH:hover ~ .welcomeHe {
+  color: rgb(177, 177, 177);
+}
 .subtitleDiv {
   position: absolute;
   margin-top: -19%;
@@ -248,7 +282,7 @@ canvas {
   align-items: center;
   pointer-events: none;
   position: absolute;
-  z-index: 10;
+  transition: all 10s;
 }
 
 .logoDiv {
@@ -286,27 +320,27 @@ video {
   align-self: center;
 }
 .vidColor1 {
-  filter: hue-rotate(190deg);
+  /* filter: hue-rotate(190deg); */
   transition: all 1s;
 }
 .vidColor2 {
-  filter: hue-rotate(250deg);
+  /* filter: hue-rotate(250deg); */
   transition: all 1s;
 }
 .vidColor3 {
-  filter: hue-rotate(310deg);
+  /* filter: hue-rotate(310deg); */
   transition: all 1s;
 }
 .vidColor1:hover {
-  filter: hue-rotate(0deg);
+  filter: hue-rotate(190deg);
   transform: scale(0.97);
 }
 .vidColor2:hover {
-  filter: hue-rotate(0deg);
+  filter: hue-rotate(250deg);
   transform: scale(0.97);
 }
 .vidColor3:hover {
-  filter: hue-rotate(0deg);
+  filter: hue-rotate(310deg);
   transform: scale(0.97);
 }
 .center {
@@ -632,7 +666,98 @@ video {
   animation: fadein 9s;
   margin: 0px;
 }
+.fadeo {
+  -webkit-animation: fadeout 3s;
+  -moz-animation: fadeout 3s;
+  -ms-animation: fadeout 3s;
+  -o-animation: fadeout 3s;
+  animation: fadeout 3s;
+  margin: 0px;
+}
 /* margin-left: -42vw; */
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes fadein {
   0% {
     opacity: 0;

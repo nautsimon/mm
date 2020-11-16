@@ -23,6 +23,8 @@ class SceneAlt extends Component {
       exiting: false,
       contentOpacity: 0,
       contentVis: "hidden",
+      landerOpacity: 1,
+      landerVis: "visible",
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleContent = this.handleContent.bind(this);
@@ -42,8 +44,8 @@ class SceneAlt extends Component {
     scene.fog = new THREE.FogExp2(0x03544e, 0.001);
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 2000);
     counter = 0;
-    camera.position.z = -90;
-    camera.position.y = -20;
+    camera.position.z = -110;
+    camera.position.y = -40;
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     var stColor = new THREE.Color("hsl(201.6, 50%, 50%)");
     renderer.setClearColor(0x111111);
@@ -154,6 +156,9 @@ class SceneAlt extends Component {
   handleContent() {
     this.setState({ contentOpacity: 1, contentVis: "visible" });
   }
+  handleLander() {
+    this.setState({ landerOpacity: 0, landerVis: "hidden" });
+  }
 
   handleClick(isRight) {
     if (isRight) {
@@ -242,22 +247,27 @@ class SceneAlt extends Component {
     this.cloudParticles.forEach((p) => {
       p.rotation.z -= 0.004;
     });
-    this.counter += 0.1;
+    if (this.counter < 20.05) {
+      this.counter += 0.1;
+
+      this.camera.position.z -=
+        (-this.counter * this.counter * 0.05 + this.counter) * 0.4;
+      this.camera.position.y +=
+        (-this.counter * this.counter * 0.05 + this.counter) * 0.4;
+
+      if (this.counter > 5.05 && this.counter < 5.3) {
+        this.handleLander();
+      }
+      if (this.counter > 15.05 && this.counter < 15.3) {
+        this.handleContent();
+      }
+    }
+
     // console.log(
     //   this.camera.position.x,
     //   this.camera.position.y,
     //   this.camera.position.z
     // );
-
-    if (this.counter < 20.05) {
-      this.camera.position.z -=
-        (-this.counter * this.counter * 0.05 + this.counter) * 0.35;
-      this.camera.position.y +=
-        (-this.counter * this.counter * 0.05 + this.counter) * 0.37;
-    }
-    if (this.counter > 20.05 && this.counter < 20.3) {
-      this.handleContent();
-    }
 
     if (this.state.hex === "0x45C6EE") {
       if (hslH < 0.46) {
@@ -342,8 +352,28 @@ class SceneAlt extends Component {
           this.mount = mount;
         }}
       >
-        <div className="landing">
-          <div className="displayVidOut fade">
+        <div
+          style={{
+            opacity: this.state.landerOpacity,
+            visibility: this.state.landerVis,
+            transition: "all 1s",
+          }}
+          className="welcomeDiv"
+        >
+          <div className="welcomeInDiv">
+            <h1 className="welcomeH">welcome.</h1>
+            <h1 className="welcomeHe">give me a second</h1>
+          </div>
+        </div>
+        <div
+          className="landing"
+          style={{
+            opacity: this.state.contentOpacity,
+            visibility: this.state.contentVis,
+            transition: "all 3s",
+          }}
+        >
+          <div className="displayVidOut">
             <Link
               to={{
                 pathname: "/east",
@@ -365,7 +395,7 @@ class SceneAlt extends Component {
                 className="vidColor1"
               >
                 <source
-                  src="https://res.cloudinary.com/dxd8gebv1/video/upload/v1601083061/east_kl3khp.mp4"
+                  src="https://res.cloudinary.com/dxd8gebv1/video/upload/v1605562146/east_kl3khp-2_dclef5.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -561,7 +591,7 @@ class SceneAlt extends Component {
             </Link>
           </div>
 
-          <div className="navArrs fade">
+          <div className="navArrs">
             <div className="navArrsRow">
               <img
                 onClick={() => {
@@ -583,7 +613,14 @@ class SceneAlt extends Component {
           </div>
         </div>
 
-        <div className="logoDiv fade">
+        <div
+          style={{
+            opacity: this.state.contentOpacity,
+            visibility: this.state.contentVis,
+            transition: "all 3s",
+          }}
+          className="logoDiv"
+        >
           <Link to="/about" style={{ margin: "0px", padding: "0px" }}>
             <img src={aboutIcon} alt="logo" className="logoImg" />
           </Link>
