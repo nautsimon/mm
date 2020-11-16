@@ -47,7 +47,7 @@ class SceneAlt extends Component {
     camera.position.z = -110;
     camera.position.y = -40;
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    var stColor = new THREE.Color("hsl(201.6, 50%, 50%)");
+    var stColor = new THREE.Color("hsl(201.6, 100%, 70%)");
     renderer.setClearColor(0x111111);
     var orangeLight = new THREE.PointLight(stColor, 50, 450, 2);
     orangeLight.position.set(200, 300, 100);
@@ -272,54 +272,54 @@ class SceneAlt extends Component {
     if (this.state.hex === "0x45C6EE") {
       if (hslH < 0.46) {
         hslH += 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         // this.renderer.setClearColor.color.setHSL(hslH, 0.2, 0.2);
       }
       if (hslH > 0.46) {
         hslH -= 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         // this.renderer.setClearColor.color.setHSL(hslH, 0.2, 0.2);
       }
     }
     if (this.state.hex === "0xA244F0") {
       if (hslH < 0.56) {
         hslH += 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         //this.renderer.setClearColorHSL(hslH, 0.2, 0.2);
       }
       if (hslH > 0.56) {
         hslH -= 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         // this.renderer.setClearColorHSL(hslH, 0.2, 0.2);
       }
     }
     if (this.state.hex === "0xEE9C45") {
       if (hslH < 0.95) {
         hslH += 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         //this.renderer.color.setHSL(hslH, 0.2, 0.2);
       }
       if (hslH > 0.95) {
         hslH -= 0.003;
-        this.redLight.color.setHSL(hslH, 0.5, 0.5);
-        this.blueLight.color.setHSL(hslH, 0.5, 0.5);
-        this.orangeLight.color.setHSL(hslH, 0.5, 0.5);
-        this.greenLight.color.setHSL(hslH, 0.5, 0.5);
+        this.redLight.color.setHSL(hslH, 1, 0.7);
+        this.blueLight.color.setHSL(hslH, 1, 0.7);
+        this.orangeLight.color.setHSL(hslH, 1, 0.7);
+        this.greenLight.color.setHSL(hslH, 1, 0.7);
         //this.renderer.color.setHSL(hslH, 0.2, 0.2);
       }
     }
