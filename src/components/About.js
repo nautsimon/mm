@@ -17,8 +17,8 @@ class PopulateText extends Component {
           </div>
           <div className="aboutDivOut">
             <div className="aboutDivIn">
-              <a className="aboutLink" href="https://simonmahns.tech">
-                [my actual website]
+              <a className="aboutLink" href="https://www.linkedin.com/in/simonmahns/">
+                [linkedin]
               </a>
               <a className="aboutLink" href="https://instagram.com/simonmahns">
                 [instagram]
