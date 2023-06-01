@@ -4,7 +4,7 @@ import "./index.css";
 import About from "./components/About";
 import East from "./components/East";
 import Bike from "./components/Bike";
-import Lucy from "./components/Lucy";
+// import Lucy from "./components/Lucy";
 import SceneAlt from "./components/ThreeRenderAlt";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import Route from "react-router-dom/Route";
