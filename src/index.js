@@ -16,7 +16,7 @@ class App extends React.Component {
         <Switch className="app">
           <Route path="/" exact strict component={SceneAlt} />
           <Route path="/east" exact strict component={East} />
-          <Route path="/roadtrip" exact strict component={Lucy} />
+          <Route path="/roadtrip" exact strict component={<br/>} />
           <Route path="/about" exact strict component={About} />
           <Route path="/bike" exact strict component={Bike} />
         </Switch>
